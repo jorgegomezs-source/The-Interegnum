@@ -1,0 +1,125 @@
+// ============================================
+// HERO SECTION - Page Section Styles
+// ============================================
+// Block: .hero
+// Elements: __content, __title, __subtitle, __cta-button
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $primary-dark 50%,
+    $secondary-color 100%
+  );
+  color: white;
+  padding: $spacing-xxxl $spacing-md;
+  min-height: 500px;
+  @include flex-center;
+  position: relative;
+  overflow: hidden;
+
+  @include respond-to('md') {
+    min-height: 400px;
+    padding: $spacing-xxl $spacing-md;
+  }
+
+  // Animated background elements
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    animation: float 12s ease-in-out infinite reverse;
+  }
+
+  // ------- CONTENT -------
+  &__content {
+    @include flex-column-center;
+    max-width: 700px;
+    z-index: 2;
+    text-align: center;
+
+    @include respond-to('md') {
+      max-width: 100%;
+    }
+  }
+
+  // ------- TITLE -------
+  &__title {
+    font-family: $font-family-heading;
+    font-size: $font-size-xxxl;
+    font-weight: $font-weight-bold;
+    line-height: $line-height-tight;
+    margin-bottom: $spacing-lg;
+    letter-spacing: -1px;
+
+    @include respond-to('md') {
+      font-size: $font-size-xxl;
+    }
+
+    @include respond-to('sm') {
+      font-size: $font-size-xl;
+    }
+  }
+
+  // ------- SUBTITLE -------
+  &__subtitle {
+    font-size: $font-size-lg;
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-xl;
+    opacity: 0.95;
+
+    @include respond-to('md') {
+      font-size: $font-size-base;
+    }
+  }
+
+  // ------- CTA BUTTON -------
+  &__cta-button {
+    padding: $spacing-md $spacing-xl;
+    font-size: $font-size-lg;
+    background-color: white;
+    color: $primary-color;
+    border: none;
+    font-weight: $font-weight-bold;
+    @include transition(all);
+
+    &:hover {
+      background-color: #f0f0f0;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+      color: $primary-color;
+    }
+  }
+}
+
+// Animation for floating elements
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}

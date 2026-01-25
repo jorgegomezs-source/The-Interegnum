@@ -1,0 +1,201 @@
+// ============================================
+// VENDORS - Bootstrap Customization
+// ============================================
+
+// Override Bootstrap defaults for consistency with our design system
+
+// ------- MODAL OVERRIDES -------
+.modal-content {
+  border: none;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-xl;
+}
+
+.modal-header {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: $border-radius-lg $border-radius-lg 0 0;
+
+  .btn-close {
+    filter: brightness(0) invert(1);
+
+    &:hover {
+      filter: brightness(0) invert(1);
+      opacity: 0.7;
+    }
+  }
+}
+
+.modal-title {
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.5px;
+}
+
+.modal-footer {
+  border-top: 1px solid $border-color;
+  background-color: $light-color;
+  border-radius: 0 0 $border-radius-lg $border-radius-lg;
+}
+
+// ------- FORM CONTROLS -------
+.form-control,
+.form-select {
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  padding: $spacing-md $spacing-lg;
+  font-size: $font-size-base;
+  @include transition(all);
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+  }
+}
+
+.form-label {
+  font-weight: $font-weight-semibold;
+  color: $dark-color;
+  margin-bottom: $spacing-sm;
+}
+
+.form-check-input {
+  border-color: $border-color;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+
+  &:checked {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+  }
+}
+
+// ------- ALERT OVERRIDES -------
+.alert {
+  border: none;
+  border-radius: $border-radius-md;
+  padding: $spacing-lg;
+
+  &-info {
+    background-color: rgba($info-color, 0.1);
+    color: darken($info-color, 20%);
+    border-left: 4px solid $info-color;
+  }
+
+  &-success {
+    background-color: rgba($success-color, 0.1);
+    color: darken($success-color, 20%);
+    border-left: 4px solid $success-color;
+  }
+
+  &-warning {
+    background-color: rgba($warning-color, 0.1);
+    color: darken($warning-color, 20%);
+    border-left: 4px solid $warning-color;
+  }
+
+  &-danger {
+    background-color: rgba($danger-color, 0.1);
+    color: darken($danger-color, 20%);
+    border-left: 4px solid $danger-color;
+  }
+}
+
+// ------- NAVBAR CUSTOMIZATION -------
+.navbar {
+  background: linear-gradient(90deg, $dark-color 0%, darken($dark-color, 5%) 100%);
+
+  .navbar-nav {
+    .nav-link {
+      font-weight: $font-weight-medium;
+      margin: 0 $spacing-sm;
+      @include transition(all);
+
+      &:hover {
+        color: $primary-light !important;
+      }
+
+      &.active {
+        color: $primary-light !important;
+      }
+    }
+  }
+}
+
+// ------- PAGINATION -------
+.pagination {
+  .page-link {
+    color: $primary-color;
+    border-color: $border-color;
+    @include transition(all);
+
+    &:hover {
+      background-color: $primary-color;
+      border-color: $primary-color;
+      color: white;
+    }
+
+    &:focus {
+      color: $primary-color;
+      border-color: $primary-color;
+      box-shadow: 0 0 0 0.2rem rgba($primary-color, 0.25);
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+}
+
+// ------- BADGE -------
+.badge {
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius-md;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: $font-size-sm;
+}
+
+// ------- SPINNER -------
+.spinner-border {
+  border-color: rgba($primary-color, 0.25);
+  border-right-color: $primary-color;
+  width: 3rem;
+  height: 3rem;
+}
+
+.spinner-grow {
+  background-color: $primary-color;
+}
+
+// ------- CARD -------
+.card {
+  border: none;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-md;
+  @include transition(all);
+
+  &:hover {
+    box-shadow: $shadow-lg;
+  }
+
+  .card-header {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: $border-radius-lg $border-radius-lg 0 0;
+    font-weight: $font-weight-semibold;
+  }
+
+  .card-footer {
+    background-color: $light-color;
+    border-top: 1px solid $border-color;
+  }
+}

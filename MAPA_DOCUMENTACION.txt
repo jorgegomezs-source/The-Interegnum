@@ -1,0 +1,349 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║              📝 AGREGAR ARTÍCULOS - MAPA DE DOCUMENTACIÓN                  ║
+║                                                                            ║
+║                        TheInterregnum v1.0.0                              ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  🗺️  MAPA DE DOCUMENTACIÓN (¿CUÁL LEER?)
+═══════════════════════════════════════════════════════════════════════════════
+
+Tu pregunta fue:
+"Dame los pasos para agregar un nuevo artículo y así comenzar a ingresar 
+contenido (artículo de texto)"
+
+Hemos creado 6 documentos diferentes. Este mapa te ayuda a elegir:
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           ERES PRINCIPIANTE                             │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  🌟 RECOMENDACIÓN: TUTORIAL_PRIMER_ARTICULO.md                         │
+│                                                                          │
+│  ¿Por qué?:                                                            │
+│  • Guía paso a paso interactiva                                        │
+│  • Explica CADA cosa que haces                                         │
+│  • No necesitas saber HTML previamente                                 │
+│  • Incluye ejemplos concretos                                          │
+│  • Al final entiendes COMPLETAMENTE el proceso                         │
+│                                                                          │
+│  Tiempo: ~15 minutos                                                   │
+│  Dificultad: ⭐ Fácil                                                  │
+│  Resultado: Un artículo funcional + conocimiento                       │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        TIENES EXPERIENCIA HTML                          │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  ⚡ RECOMENDACIÓN: NUEVO_ARTICULO_RAPIDO.md                            │
+│                                                                          │
+│  ¿Por qué?:                                                            │
+│  • Directo al código                                                   │
+│  • 4 pasos simples                                                     │
+│  • Sin explicaciones largas                                            │
+│  • Perfecto si ya sabes HTML/CSS                                       │
+│  • La forma más rápida posible                                         │
+│                                                                          │
+│  Tiempo: ~5 minutos                                                    │
+│  Dificultad: ⭐⭐ Intermedio                                           │
+│  Resultado: Un artículo funcional rápidamente                          │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                   QUIERES ENTENDER TODO EN DETALLE                      │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  📘 RECOMENDACIÓN: AGREGAR_ARTICULO.md                                 │
+│                                                                          │
+│  ¿Por qué?:                                                            │
+│  • Guía COMPLETA y exhaustiva                                          │
+│  • Template HTML base incluido                                         │
+│  • Explicación de cada sección                                         │
+│  • Múltiples opciones y variantes                                      │
+│  • Troubleshooting extenso                                             │
+│  • Información sobre CSS/SCSS                                          │
+│                                                                          │
+│  Tiempo: ~30-40 minutos                                                │
+│  Dificultad: ⭐⭐⭐ Completo                                            │
+│  Resultado: Entiendes la arquitectura completa                         │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                    PREFIERES VER DIAGRAMAS Y ESQUEMAS                   │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  📊 RECOMENDACIÓN: PASOS_VISUALES.txt                                  │
+│                                                                          │
+│  ¿Por qué?:                                                            │
+│  • Resumen visual con diagramas ASCII                                  │
+│  • Flujos y mapas mentales                                             │
+│  • Checklist visual                                                    │
+│  • Estructura de carpetas dibujada                                     │
+│  • Rápido de leer                                                      │
+│                                                                          │
+│  Tiempo: ~10 minutos                                                   │
+│  Dificultad: ⭐ Fácil                                                  │
+│  Resultado: Entiendes el proceso visualmente                           │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                  NECESITAS REFERENCIA RÁPIDA O ESTÁS ATASCADO           │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  🔍 RECOMENDACIÓN: ARTICULOS_GUIA.txt                                  │
+│                                                                          │
+│  ¿Por qué?:                                                            │
+│  • Índice de todas las guías                                           │
+│  • Troubleshooting común                                               │
+│  • Checklist completo                                                  │
+│  • FAQs rápidas                                                        │
+│  • Mapa de referencias                                                 │
+│                                                                          │
+│  Tiempo: ~15 minutos                                                   │
+│  Dificultad: ⭐ Fácil                                                  │
+│  Resultado: Encuentras lo que necesitas rápidamente                    │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         NO SABES POR DÓNDE EMPEZAR                      │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                          │
+│  🧭 RECOMENDACIÓN: COMENZAR_AQUI.txt                                   │
+│                                                                          │
+│  ¿Por qué?:                                                            │
+│  • Te orienta en la dirección correcta                                 │
+│  • Mapa mental de opciones                                             │
+│  • Resumen ejecutivo                                                   │
+│  • Explica cuál guía es para ti                                        │
+│  • Próximos pasos claros                                               │
+│                                                                          │
+│  Tiempo: ~5 minutos                                                    │
+│  Dificultad: ⭐ Muy fácil                                              │
+│  Resultado: Sabes exactamente qué leer después                         │
+│                                                                          │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  📚 REFERENCIA RÁPIDA: TODOS LOS DOCUMENTOS
+═══════════════════════════════════════════════════════════════════════════════
+
+ARCHIVO                           PROPÓSITO                    IDEAL PARA
+──────────────────────────────────────────────────────────────────────────
+
+TUTORIAL_PRIMER_ARTICULO.md       Tutorial interactivo         Principiantes
+(⭐⭐⭐ TOP)                        paso a paso                  (15 min)
+
+NUEVO_ARTICULO_RAPIDO.md          4 pasos rápidos              Experimentados
+(⭐⭐ FAST)                        sin explicaciones            (5 min)
+
+AGREGAR_ARTICULO.md               Guía exhaustiva              Curiosos/Profundo
+(⭐⭐⭐ COMPLETE)                   con detalles                 (30-40 min)
+
+PASOS_VISUALES.txt                Diagramas ASCII              Visual learners
+(⭐⭐ VISUAL)                      y esquemas                   (10 min)
+
+ARTICULOS_GUIA.txt                Índice y referencia          Referencia
+(⭐ REFERENCE)                     troubleshooting              rápida
+
+COMENZAR_AQUI.txt                 Orientación inicial          Desorientados
+(⭐ START)                         mapa mental                  (5 min)
+
+articulo-ejemplo.html             Ejemplo funcional            Template
+(⭐⭐⭐ TEMPLATE)                   650 líneas                   para copiar
+
+RESUMEN_EJECUTIVO.txt             Resumen visual               Ejecutivo
+(⭐ EXECUTIVE)                     puntos clave                 (5 min)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 DIAGRAMA DE DECISIÓN (¿CUÁL ELIJO?)
+═══════════════════════════════════════════════════════════════════════════════
+
+                    ¿Cuál guía es para mí?
+                              │
+                ┌─────────────┼─────────────┐
+                │             │             │
+         ¿Soy principiante?   │      ¿Tengo prisa?
+                │             │             │
+               SÍ             │            SÍ
+                │             │             │
+                ▼             │             ▼
+        TUTORIAL_            │      NUEVO_ARTICULO_
+        PRIMER_              │      RAPIDO.md
+        ARTICULO.md           │      (5 min)
+        (15 min)              │
+                             │
+                             ▼
+                    ¿Quiero detalles?
+                             │
+                ┌────────────┴────────────┐
+                │                        │
+               SÍ                        NO
+                │                        │
+                ▼                        ▼
+        AGREGAR_            PASOS_VISUALES.txt
+        ARTICULO.md         (diagramas)
+        (30-40 min)         (10 min)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  ✅ CHECKLIST: ANTES DE EMPEZAR
+═══════════════════════════════════════════════════════════════════════════════
+
+Antes de abrir cualquier guía, verifica:
+
+□ Tienes VS Code (o editor) abierto
+□ El proyecto TheInterregnum está abierto
+□ Tienes navegador web disponible
+□ Sabes lo que quieres en tu primer artículo
+□ Tienes ~15 minutos disponibles
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  🚀 TU CAMINO (PASO A PASO)
+═══════════════════════════════════════════════════════════════════════════════
+
+AHORA
+  └─ Elige una guía arriba (según tu perfil)
+  └─ Abre el archivo correspondiente
+  └─ Lee los primeros 2-3 minutos
+
+DENTRO DE 5 MINUTOS
+  └─ Entiende el proceso
+  └─ Empieza a crear tu artículo
+  └─ Sigue cada paso de la guía
+
+DENTRO DE 15 MINUTOS
+  └─ Tu primer artículo está creado
+  └─ Lo has probado en navegador
+  └─ Todo funciona correctamente
+
+SIGUIENTE
+  └─ Crea más artículos (cada vez más rápido)
+  └─ Segundo artículo: 10 minutos
+  └─ Tercero en adelante: 5 minutos
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  💡 CONSEJO IMPORTANTE
+═══════════════════════════════════════════════════════════════════════════════
+
+NO LEAS TODOS LOS DOCUMENTOS.
+
+Elige UNO según tu situación y léelo completamente.
+
+Los otros son referencia para después.
+
+La mejor forma de aprender es HACIENDO, no leyendo todo.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  🎁 TAMBIÉN TIENES
+═══════════════════════════════════════════════════════════════════════════════
+
+articulo-ejemplo.html
+  └─ Artículo de ejemplo completamente funcional (650 líneas)
+  └─ Usa esto como template para todos tus artículos
+  └─ Solo copia, renombra, edita contenido
+
+index.html (actualizado)
+  └─ Ya tiene Article Card 7 como ejemplo
+  └─ Muestra dónde agregar tu tarjeta
+  └─ Personalizable
+
+Documentación general:
+  └─ README.md (descripción del proyecto)
+  └─ TECHNICAL.md (arquitectura)
+  └─ USAGE.md (edición general)
+  └─ Y más...
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  📞 PREGUNTAS RÁPIDAS
+═══════════════════════════════════════════════════════════════════════════════
+
+P: ¿Por dónde empiezo?
+R: Lee este mapa → Elige una guía → Abre el archivo → Comienza
+
+P: ¿Cuál es la guía mejor?
+R: TUTORIAL_PRIMER_ARTICULO.md es la mejor para aprender
+
+P: ¿Cuál es la más rápida?
+R: NUEVO_ARTICULO_RAPIDO.md (5 minutos)
+
+P: ¿Necesito leer todos los documentos?
+R: No, solo uno. Los otros son referencia.
+
+P: ¿Dónde está el ejemplo?
+R: En articulo-ejemplo.html (úsalo como template)
+
+P: ¿Cuánto tarda crear un artículo?
+R: Primer: 15 min | Siguientes: 5-10 min
+
+P: ¿Qué es lo más importante?
+R: Copiar articulo-ejemplo.html y personalizar
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  ✨ RESUMEN FINAL
+═══════════════════════════════════════════════════════════════════════════════
+
+PREGUNTA:    "¿Los pasos para agregar un nuevo artículo?"
+
+RESPUESTA:   ✅ 6 documentos completos creados
+             ✅ 1 ejemplo de artículo funcional
+             ✅ Guías para todos los niveles
+             ✅ Ejemplos prácticos
+             ✅ Troubleshooting completo
+
+PRÓXIMO:     ¡ELIGE UNA GUÍA Y COMIENZA!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+MI RECOMENDACIÓN:
+
+1️⃣  Si es tu PRIMER artículo:
+    → Abre TUTORIAL_PRIMER_ARTICULO.md
+    → Sigue los pasos
+    → Tarda 15 minutos
+
+2️⃣  Si ya sabes HTML:
+    → Abre NUEVO_ARTICULO_RAPIDO.md
+    → Sigue 4 pasos rápidos
+    → Tarda 5 minutos
+
+3️⃣  Si estás perdido:
+    → Lee COMENZAR_AQUI.txt
+    → Te orienta hacia la guía correcta
+    → Tarda 5 minutos
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                        🎯 ¡AHORA MISMO!
+
+        Abre: TUTORIAL_PRIMER_ARTICULO.md (si es tu primer artículo)
+           o: NUEVO_ARTICULO_RAPIDO.md (si tienes experiencia)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Última actualización: Enero 25, 2026
+Versión: 1.0.0
+Estado: ✅ Completamente documentado

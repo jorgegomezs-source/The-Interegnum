@@ -1,0 +1,164 @@
+// ============================================
+// LAYOUT - General Layout Utilities
+// ============================================
+
+// ------- MAIN CONTENT -------
+.main {
+  min-height: calc(100vh - 200px);
+}
+
+// ------- CONTAINER -------
+.container-lg {
+  max-width: $breakpoint-xl;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+
+  @include respond-to('lg') {
+    padding: 0 $spacing-lg;
+  }
+}
+
+// ------- SECTION HEADER -------
+.section-header {
+  text-align: center;
+  margin-bottom: $spacing-xxxl;
+
+  &__title {
+    @include heading-style($font-size-xxl);
+    color: $dark-color;
+    margin-bottom: $spacing-md;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, $primary-color, $secondary-color);
+      border-radius: $border-radius-sm;
+    }
+
+    @include respond-to('md') {
+      font-size: $font-size-xl;
+    }
+  }
+
+  &__subtitle {
+    color: $gray-color;
+    font-size: $font-size-lg;
+    margin-top: $spacing-xxl;
+    margin-bottom: 0;
+
+    @include respond-to('md') {
+      font-size: $font-size-base;
+    }
+  }
+}
+
+// ------- GRID LAYOUTS -------
+.grid {
+  display: grid;
+  gap: $spacing-lg;
+
+  &--2-col {
+    @include grid(2, $spacing-lg);
+
+    @include respond-to('md') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--3-col {
+    @include grid(3, $spacing-lg);
+
+    @include respond-to('lg') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('md') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--4-col {
+    @include grid(4, $spacing-lg);
+
+    @include respond-to('lg') {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include respond-to('md') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('sm') {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// ------- FLEX UTILITIES -------
+.flex {
+  display: flex;
+
+  &--center {
+    @include flex-center;
+  }
+
+  &--between {
+    @include flex-between;
+  }
+
+  &--column {
+    @include flex-column;
+  }
+
+  &--column-center {
+    @include flex-column-center;
+  }
+
+  &--gap-sm {
+    gap: $spacing-sm;
+  }
+
+  &--gap-md {
+    gap: $spacing-md;
+  }
+
+  &--gap-lg {
+    gap: $spacing-lg;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}
+
+// ------- SPACING UTILITIES -------
+.mt {
+  @for $i from 1 through 6 {
+    &-#{$i} {
+      margin-top: $spacing-md * $i !important;
+    }
+  }
+}
+
+.mb {
+  @for $i from 1 through 6 {
+    &-#{$i} {
+      margin-bottom: $spacing-md * $i !important;
+    }
+  }
+}
+
+.p {
+  @for $i from 1 through 6 {
+    &-#{$i} {
+      padding: $spacing-md * $i !important;
+    }
+  }
+}

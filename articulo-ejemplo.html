@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Global Economic Trends 2026: A Comprehensive Analysis | TheInterregnum
+    </title>
+    <meta
+      name="description"
+      content="Exploring the major economic trends shaping global markets in 2026, including inflation, trade dynamics, and emerging market opportunities."
+    />
+    <meta name="author" content="Robert Maxwell" />
+    <meta name="date" content="2026-01-25" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Estilos para página de artículo -->
+    <style>
+      .article-page__hero {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 60px 20px;
+        margin-bottom: 40px;
+      }
+
+      .article-page__meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__category {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .article-page__category--economics {
+        background: rgba(26, 84, 144, 0.9);
+      }
+
+      .article-page__category--geopolitics {
+        background: rgba(45, 90, 61, 0.9);
+      }
+
+      .article-page__category--trade {
+        background: rgba(194, 160, 64, 0.9);
+      }
+
+      .article-page__category--finance {
+        background: rgba(92, 61, 61, 0.9);
+      }
+
+      .article-page__title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .article-page__subtitle {
+        font-size: 20px;
+        opacity: 0.95;
+        margin-bottom: 30px;
+      }
+
+      .article-page__author-info {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__image-section {
+        padding: 40px 20px;
+        background: #f8f9fa;
+      }
+
+      .article-page__featured-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .article-page__image-caption {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 15px;
+        font-style: italic;
+      }
+
+      .article-page__content {
+        padding: 60px 20px;
+      }
+
+      .article-page__body {
+        line-height: 1.8;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .article-page__body h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #1a5490;
+      }
+
+      .article-page__body h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #2d5a3d;
+      }
+
+      .article-page__body p {
+        margin-bottom: 15px;
+      }
+
+      .article-page__body ul,
+      .article-page__body ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .article-page__body li {
+        margin-bottom: 10px;
+      }
+
+      .article-page__quote {
+        border-left: 4px solid #1a5490;
+        padding-left: 20px;
+        margin: 30px 0;
+        font-size: 18px;
+        font-style: italic;
+        color: #555;
+        background: #f0f4f8;
+        padding: 20px;
+        padding-left: 20px;
+        border-radius: 4px;
+      }
+
+      .article-page__highlight {
+        background: #fff3cd;
+        padding: 20px;
+        border-left: 4px solid #ffc107;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+
+      .article-page__tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__tag {
+        background: #e9ecef;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .article-page__cta {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .article-page__cta p {
+        margin-bottom: 20px;
+      }
+
+      .article-page__navigation {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid #ddd;
+      }
+
+      .article-page__navigation a {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .article-page__hero {
+          padding: 40px 20px;
+        }
+
+        .article-page__title {
+          font-size: 32px;
+        }
+
+        .article-page__subtitle {
+          font-size: 18px;
+        }
+
+        .article-page__content {
+          padding: 40px 20px;
+        }
+
+        .article-page__body h2 {
+          font-size: 22px;
+        }
+
+        .article-page__cta {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER/NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg header__navbar">
+        <div class="container">
+          <a class="navbar-brand header__brand" href="index.html">
+            <span class="header__brand-text">TheInterregnum</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#articles"
+                  >Articles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="#newsletter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#newsletterModal"
+                >
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO DEL ARTÍCULO -->
+    <main class="article-page">
+      <!-- Hero del artículo -->
+      <section class="article-page__hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="article-page__meta">
+                <span
+                  class="article-page__category article-page__category--economics"
+                >
+                  Economics
+                </span>
+                <span class="article-page__date">January 25, 2026</span>
+              </div>
+              <h1 class="article-page__title">
+                Global Economic Trends 2026: A Comprehensive Analysis
+              </h1>
+              <p class="article-page__subtitle">
+                Understanding the major economic shifts that will define global
+                markets, trade patterns, and emerging opportunities in 2026
+              </p>
+              <div class="article-page__author-info">
+                <span class="article-page__author-name">By Robert Maxwell</span>
+                <span class="article-page__reading-time"
+                  >Reading time: 8 min</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagen destacada -->
+      <section class="article-page__image-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Global Economic Trends 2026"
+                class="article-page__featured-image"
+              />
+              <p class="article-page__image-caption">
+                Global economic indicators point to significant shifts in
+                international trade and finance
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenido principal -->
+      <section class="article-page__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <article class="article-page__body">
+                <h2>Introduction</h2>
+                <p>
+                  The global economy stands at a critical juncture as we
+                  navigate through 2026. With inflation pressures easing in
+                  developed markets and emerging economies finding their
+                  footing, the economic landscape presents both challenges and
+                  unprecedented opportunities for investors, policymakers, and
+                  businesses.
+                </p>
+                <p>
+                  This comprehensive analysis examines the key economic trends
+                  that will shape global markets throughout the year, from trade
+                  dynamics and currency movements to the growing influence of
+                  digital economies and sustainable finance.
+                </p>
+
+                <h2>1. Inflation and Central Bank Strategies</h2>
+                <p>
+                  Central banks worldwide have made significant progress in
+                  combating inflation over the past two years. However, the path
+                  forward remains nuanced and complex.
+                </p>
+
+                <h3>The Cooling Inflation Narrative</h3>
+                <p>
+                  Inflation rates in major developed economies have fallen from
+                  their 2022 peaks. The Federal Reserve, European Central Bank,
+                  and Bank of England have all signaled potential rate cuts as
+                  inflation approaches their target levels. This shift creates
+                  important implications:
+                </p>
+
+                <ul>
+                  <li>
+                    <strong>Lower borrowing costs:</strong> Reduced interest
+                    rates make mortgages, business loans, and credit more
+                    affordable
+                  </li>
+                  <li>
+                    <strong>Bond market dynamics:</strong> Government securities
+                    will likely see significant repricing
+                  </li>
+                  <li>
+                    <strong>Currency movements:</strong> Interest rate
+                    differentials between countries will drive forex markets
+                  </li>
+                  <li>
+                    <strong>Asset valuations:</strong> Lower discount rates
+                    could boost equity markets, particularly growth stocks
+                  </li>
+                </ul>
+
+                <blockquote class="article-page__quote">
+                  "The transition from monetary tightening to easing represents
+                  one of the most significant macroeconomic shifts we've
+                  witnessed in recent years. The implications extend far beyond
+                  interest rates—they fundamentally reshape global investment
+                  flows."
+                </blockquote>
+
+                <h3>Regional Divergence in Monetary Policy</h3>
+                <p>
+                  Not all central banks will move in lockstep. While Western
+                  central banks may ease policy, some emerging market central
+                  banks might maintain restrictive stances to support weakening
+                  currencies and manage capital flows. This divergence creates
+                  trading opportunities and risks.
+                </p>
+
+                <h2>2. Global Trade Rebalancing</h2>
+                <p>
+                  The structure of global trade continues to evolve
+                  significantly, driven by geopolitical tensions, supply chain
+                  resilience, and sustainability concerns.
+                </p>
+
+                <h3>Nearshoring and Supply Chain Diversification</h3>
+                <p>
+                  The trend toward nearshoring—moving production closer to
+                  consumption centers— accelerates in 2026. Companies recognize
+                  the risks of concentrated supply chains and are actively
+                  restructuring operations:
+                </p>
+
+                <ul>
+                  <li>
+                    Manufacturing investments in Mexico, Eastern Europe, and
+                    Southeast Asia increase
+                  </li>
+                  <li>
+                    Friendshoring arrangements between allied nations strengthen
+                  </li>
+                  <li>
+                    Transportation costs for truly global supply chains rise
+                  </li>
+                  <li>
+                    Regional trade agreements gain prominence over multilateral
+                    frameworks
+                  </li>
+                </ul>
+
+                <div class="article-page__highlight">
+                  <strong>Key Insight:</strong> Companies that successfully
+                  navigate supply chain rebalancing will gain competitive
+                  advantages. This creates investment opportunities in logistics
+                  infrastructure, regional manufacturing hubs, and companies
+                  specializing in supply chain optimization.
+                </div>
+
+                <h3>Trade Tensions and Protectionism</h3>
+                <p>
+                  Protectionist sentiment remains elevated in many developed
+                  economies. Tariffs, local content requirements, and strategic
+                  sector protections will continue shaping trade patterns.
+                  However, extreme protectionism faces headwinds from business
+                  communities and global supply chain integration.
+                </p>
+
+                <h2>3. The Digital Economy and Fintech Revolution</h2>
+                <p>
+                  Digital transformation accelerates across all sectors, with
+                  particular momentum in financial services, e-commerce, and
+                  emerging technologies.
+                </p>
+
+                <h3>Central Bank Digital Currencies (CBDCs)</h3>
+                <p>
+                  An increasing number of central banks will launch or expand
+                  CBDC programs in 2026. These digital currencies offer greater
+                  monetary control, reduced payment settlement times, and
+                  enhanced financial surveillance capabilities. The geopolitical
+                  dimensions of CBDC development cannot be understated, as
+                  alternative digital currency systems represent tools of
+                  economic influence.
+                </p>
+
+                <h3>Cryptocurrency Markets Mature</h3>
+                <p>
+                  Following the spot Bitcoin ETF approvals and increased
+                  institutional participation, cryptocurrency markets mature but
+                  remain volatile. Regulatory frameworks solidify across
+                  jurisdictions, creating a clearer operating environment for
+                  digital assets.
+                </p>
+
+                <h2>4. Sustainable Finance and ESG Evolution</h2>
+                <p>
+                  Environmental, Social, and Governance (ESG) investing
+                  continues evolving, moving beyond headline metrics toward
+                  substantive impact measurement and outcomes.
+                </p>
+
+                <h3>Green Finance Growth</h3>
+                <p>
+                  Green bonds, sustainability-linked loans, and impact investing
+                  grow at double-digit rates. Major economies accelerate
+                  renewable energy investments, creating sustained demand for
+                  infrastructure financing. The transition from fossil fuels to
+                  renewable energy represents the largest capital reallocation
+                  in modern history.
+                </p>
+
+                <h2>Conclusion and Outlook</h2>
+                <p>
+                  The global economy in 2026 presents a complex tapestry of
+                  opportunities and challenges. The transition toward monetary
+                  easing, ongoing supply chain rebalancing, digital
+                  transformation, and the energy transition create significant
+                  investment opportunities while also introducing new risks.
+                </p>
+
+                <p>Successful navigation of this environment requires:</p>
+
+                <ol>
+                  <li>
+                    Diversification across geographies, sectors, and asset
+                    classes
+                  </li>
+                  <li>
+                    Deep understanding of regional policy dynamics and
+                    geopolitical contexts
+                  </li>
+                  <li>
+                    Active monitoring of supply chain developments and potential
+                    disruptions
+                  </li>
+                  <li>
+                    Engagement with technological change and digital
+                    transformation
+                  </li>
+                  <li>
+                    Integration of sustainability considerations into investment
+                    frameworks
+                  </li>
+                </ol>
+
+                <p>
+                  The opportunities for investors who understand these trends
+                  and position accordingly are substantial. However, the
+                  complexity of the global economic environment demands
+                  vigilance, adaptability, and a commitment to continuous
+                  learning.
+                </p>
+
+                <!-- Tags -->
+                <div class="article-page__tags">
+                  <span class="article-page__tag">economics</span>
+                  <span class="article-page__tag">global-finance</span>
+                  <span class="article-page__tag">monetary-policy</span>
+                  <span class="article-page__tag">trade</span>
+                  <span class="article-page__tag">investment</span>
+                  <span class="article-page__tag">2026</span>
+                </div>
+
+                <!-- Call to action -->
+                <div class="article-page__cta">
+                  <p>
+                    <strong
+                      >Want to stay informed about global economic
+                      trends?</strong
+                    ><br />
+                    Subscribe to our newsletter for weekly analysis and insights
+                    on international politics and economics.
+                  </p>
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#newsletterModal"
+                  >
+                    Subscribe to Newsletter
+                  </button>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="article-page__navigation">
+                  <a
+                    href="index.html#articles"
+                    class="btn btn-outline-primary btn-sm"
+                  >
+                    ← Back to Articles
+                  </a>
+                </nav>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__column">
+            <h5>TheInterregnum</h5>
+            <p>Global politics and economics analysis</p>
+          </div>
+          <div class="footer__column">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a class="footer__link" href="index.html">Home</a></li>
+              <li>
+                <a class="footer__link" href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="index.html#articles">Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Categories</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Geopolitics</a></li>
+              <li><a class="footer__link" href="#">Economics</a></li>
+              <li><a class="footer__link" href="#">Trade</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Follow</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Twitter</a></li>
+              <li><a class="footer__link" href="#">LinkedIn</a></li>
+              <li><a class="footer__link" href="#">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; 2026 TheInterregnum. All rights reserved. |
+            <a class="footer__link" href="#">Privacy Policy</a> |
+            <a class="footer__link" href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Newsletter Modal -->
+    <div
+      class="modal fade"
+      id="newsletterModal"
+      tabindex="-1"
+      aria-labelledby="newsletterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Subscribe to Newsletter
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="newsletterForm" class="newsletter__form">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

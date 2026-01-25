@@ -1,0 +1,454 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                    ✅ PASO A PASO: AGREGAR ARTÍCULOS                      ║
+║                                                                            ║
+║                         TheInterregnum v1.0.0                             ║
+║                   Guía Rápida para Comenzar a Publicar                    ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+📌 RESUMEN EJECUTIVO
+═══════════════════════════════════════════════════════════════════════════
+
+Has solicitado: "los pasos para agregar un nuevo artículo y así comenzar a 
+ingresar contenido (artículo de texto)"
+
+✅ HEMOS CREADO PARA TI:
+
+1. ✨ articulo-ejemplo.html
+   └─ Artículo de ejemplo completamente funcional
+     (Global Economic Trends 2026 - 650 líneas)
+     ↳ Úsalo como template para nuevos artículos
+
+2. 📚 TUTORIAL_PRIMER_ARTICULO.md ⭐ COMIENZA AQUÍ
+   └─ Guía paso a paso interactiva
+     • Crear archivo HTML
+     • Personalizar todo el contenido
+     • Agregar tarjeta en index.html
+     • Probar en navegador
+     Tiempo: 15 minutos
+
+3. 🚀 NUEVO_ARTICULO_RAPIDO.md
+   └─ Resumen rápido (4 pasos)
+     Mejor si: Ya sabes HTML
+     Tiempo: 5 minutos
+
+4. 📘 AGREGAR_ARTICULO.md
+   └─ Guía completa y detallada
+     • Template HTML base
+     • Explicaciones de cada sección
+     • Estilos CSS
+     • Troubleshooting extenso
+     Mejor si: Quieres entender todo
+
+5. 📊 PASOS_VISUALES.txt
+   └─ Resumen con diagramas ASCII
+     Mejor si: Prefieres ver esquemas
+
+6. 📑 ARTICULOS_GUIA.txt
+   └─ Este documento
+     • Índice de todas las guías
+     • Flujos y diagramas
+     • Checklist final
+     • Troubleshooting común
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🎯 CÓMO COMENZAR (3 OPCIONES)
+═══════════════════════════════════════════════════════════════════════════
+
+OPCIÓN 1 - Si es tu PRIMER artículo y TIENES TIEMPO
+────────────────────────────────────────────────────
+1. Abre: TUTORIAL_PRIMER_ARTICULO.md
+2. Sigue los pasos paso a paso
+3. Tarda ~15 minutos
+4. Al final, entenderás COMPLETAMENTE el proceso
+
+OPCIÓN 2 - Si TIENES PRISA pero SABES HTML
+────────────────────────────────────────────
+1. Abre: NUEVO_ARTICULO_RAPIDO.md
+2. Sigue los 4 pasos
+3. Tarda ~5 minutos
+4. Directo al código
+
+OPCIÓN 3 - Si QUIERES ENTENDER CADA DETALLE
+──────────────────────────────────────────────
+1. Abre: AGREGAR_ARTICULO.md
+2. Lee cada sección cuidadosamente
+3. Tarda ~30-40 minutos
+4. Aprenderás la arquitectura completa
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🔥 RESUMEN DE LOS 4 PASOS (ULTRA RÁPIDO)
+═══════════════════════════════════════════════════════════════════════════
+
+PASO 1: CREAR ARCHIVO
+└─ Copia articulo-ejemplo.html
+└─ Renombra a: articulo-mi-tema.html
+└─ Listo ✓
+
+PASO 2: EDITAR CONTENIDO
+└─ Abre el archivo que copiaste
+└─ Cambia: título, descripción, contenido, autor, categoría
+└─ Guarda ✓
+
+PASO 3: AGREGAR TARJETA
+└─ Abre index.html
+└─ Busca: <!-- Article Card 7 - EJEMPLO -->
+└─ Personaliza la tarjeta
+└─ Cambia href a: articulo-mi-tema.html
+└─ Guarda ✓
+
+PASO 4: PROBAR
+└─ Abre index.html en navegador
+└─ Verifica que aparezca tu tarjeta
+└─ Haz clic en "Read More"
+└─ Prueba en mobile (F12)
+└─ ¡Listo! ✓
+
+TIEMPO TOTAL: 5-15 minutos
+
+
+═══════════════════════════════════════════════════════════════════════════
+  📋 ESTRUCTURA DE CARPETA DESPUÉS DE AGREGAR ARTÍCULOS
+═══════════════════════════════════════════════════════════════════════════
+
+TheInterregnum/
+│
+├─ 📄 index.html ........................ PÁGINA PRINCIPAL (Edit aquí)
+│
+├─ 📄 articulo-ejemplo.html ............ Ejemplo de referencia
+├─ 📄 articulo-comercio-digital.html .. Tu primer artículo
+├─ 📄 articulo-finanzas.html .......... Tu segundo artículo
+├─ 📄 articulo-geopolitica.html ....... Tu tercer artículo
+│  (más artículos...)
+│
+├─ 📚 DOCUMENTACIÓN (Todo para crear artículos)
+│  ├─ TUTORIAL_PRIMER_ARTICULO.md .... ⭐ EMPIEZA AQUÍ
+│  ├─ NUEVO_ARTICULO_RAPIDO.md ....... Versión rápida
+│  ├─ AGREGAR_ARTICULO.md ............ Guía completa
+│  ├─ PASOS_VISUALES.txt ............ Diagramas
+│  ├─ ARTICULOS_GUIA.txt ............ Este archivo
+│  │
+│  └─ Otras guías...
+│     ├─ README.md ................... Descripción general
+│     ├─ TECHNICAL.md ............... Arquitectura
+│     ├─ USAGE.md ................... Edición general
+│     ├─ QUICK_START.md ............. Cómo ejecutar
+│     └─ ...
+│
+├─ 📁 assets/
+│  ├─ css/main.css ................... Estilos compilados
+│  ├─ scss/ .......................... Archivos SASS
+│  └─ js/main.js ..................... JavaScript
+│
+├─ 📁 node_modules/ (opcional)
+│  └─ Dependencias npm
+│
+└─ 📄 package.json .................... Configuración npm
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🎨 CATEGORÍAS DISPONIBLES
+═══════════════════════════════════════════════════════════════════════════
+
+Cada artículo debe tener UNA categoría:
+
+┌────────────────┬────────────┬──────────────────────────────────┐
+│ Categoría      │ Color      │ Código CSS                       │
+├────────────────┼────────────┼──────────────────────────────────┤
+│ Economics      │ 🔵 Azul    │ article-card__category--economics   │
+│ Geopolitics    │ 🟢 Verde   │ article-card__category--geopolitics │
+│ Trade          │ 🟡 Oro     │ article-card__category--trade       │
+│ Finance        │ 🟤 Marrón  │ article-card__category--finance     │
+└────────────────┴────────────┴──────────────────────────────────┘
+
+En HTML:
+<span class="article-card__category article-card__category--economics">
+  Economics
+</span>
+
+
+═══════════════════════════════════════════════════════════════════════════
+  📝 CONTENIDO MÍNIMO DE UN ARTÍCULO
+═══════════════════════════════════════════════════════════════════════════
+
+SECCIÓN               REQUERIDO  DESCRIPCIÓN
+─────────────────────────────────────────────────────────────────────────
+
+Meta tags            ✅ Sí      • title (para navegador)
+                                • description (para SEO)
+                                • author (quien lo escribió)
+                                • date (fecha de publicación)
+
+Hero Section         ✅ Sí      • Categoría
+                                • Título principal
+                                • Subtítulo/descripción
+                                • Autor
+                                • Tiempo de lectura
+
+Imagen destacada     ⚠️ Recomendado • Imagen que represente el artículo
+                                    • ~800x400px óptimo
+
+Contenido            ✅ Sí      • Mínimo 3-4 secciones (h2)
+                                • Párrafos explicativos
+                                • Puede incluir:
+                                  - Listas (ul/ol)
+                                  - Citas (blockquote)
+                                  - Destacados
+
+Tags                 ⚠️ Recomendado • 3-6 palabras clave
+
+Footer               ✅ Sí      • Call to action (newsletter)
+                                • Links de navegación
+
+
+═══════════════════════════════════════════════════════════════════════════
+  ✅ CHECKLIST COMPLETO
+═══════════════════════════════════════════════════════════════════════════
+
+ANTES DE EMPEZAR
+  □ Tengo el tema del artículo definido
+  □ Tengo el contenido escrito o plasmado
+  □ Tengo imágenes (o usaré placeholders)
+
+CREAR ARCHIVO
+  □ Copié articulo-ejemplo.html
+  □ Lo renombré correctamente: articulo-tema.html
+  □ Está en la raíz del proyecto (no en carpeta)
+
+EDITAR CONTENIDO
+  □ Cambié <title> a mi título
+  □ Cambié <meta description> a mi descripción
+  □ Cambié <meta author> a mi nombre
+  □ Cambié categoría (economics/geopolitics/trade/finance)
+  □ Cambié título principal <h1>
+  □ Cambié subtítulo
+  □ Cambié autor en hero
+  □ Cambié imagen
+  □ Escribí TODO el contenido
+  □ Agregué mínimo 3 secciones <h2>
+  □ Agregué tags relevantes
+
+AGREGAR TARJETA EN INDEX.HTML
+  □ Busqué <!-- Article Card 7 -->
+  □ Cambié img src y alt
+  □ Cambié categoría
+  □ Cambié título de tarjeta
+  □ Cambié descripción
+  □ Cambié autor
+  □ Cambié fecha
+  □ Cambié href a: articulo-tema.html (IGUAL al archivo)
+
+PRUEBAS FINALES
+  □ Abrí index.html en navegador
+  □ Veo mi tarjeta en la sección Latest Articles
+  □ El link funciona (hago clic en "Read More")
+  □ El artículo carga correctamente
+  □ Se ve bien en desktop
+  □ Se ve bien en tablet (F12 → 768px)
+  □ Se ve bien en mobile (F12 → 375px)
+  □ No hay errores en consola (F12 → Console)
+  □ Header y footer están visibles
+
+VALIDACIÓN
+  □ El nombre del archivo NO tiene espacios
+  □ El nombre del archivo está en minúsculas
+  □ El href coincide exactamente con el nombre
+  □ No hay caracteres especiales en el nombre
+  □ Las imágenes cargan correctamente
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🚀 PRÓXIMOS ARTÍCULOS (MÁS RÁPIDO)
+═══════════════════════════════════════════════════════════════════════════
+
+Segundo artículo:
+├─ Ya sabes el proceso
+├─ Solo copia/renombra/edita
+├─ Tarda: 10-15 minutos
+
+Tercero en adelante:
+├─ Aún más rápido
+├─ Solo copia/renombra/edita (contenido diferente)
+├─ Tarda: 5-10 minutos por artículo
+
+
+═══════════════════════════════════════════════════════════════════════════
+  💾 GUARDAR Y PUBLICAR
+═══════════════════════════════════════════════════════════════════════════
+
+Después de crear tus artículos:
+
+1. Guardar cambios
+   └─ Ctrl+S en cada archivo editado
+
+2. Ver en navegador (3 opciones)
+   └─ Opción A: Doble clic en index.html
+   └─ Opción B: npm run serve
+   └─ Opción C: Live Server extension
+
+3. Publicar en servidor
+   └─ Netlify (drag & drop)
+   └─ GitHub Pages (git push)
+   └─ Vercel (conectar repositorio)
+   └─ Servidor propio (FTP/SSH)
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🎯 MAPA MENTAL: ¿POR DÓNDE EMPIEZO?
+═══════════════════════════════════════════════════════════════════════════
+
+                    ¿Por dónde empiezo?
+                            │
+                ┌───────────┴────────────┐
+                │                        │
+          Es mi primer         Ya sé HTML
+          artículo            y tengo prisa
+                │                        │
+                │                        │
+                ▼                        ▼
+    TUTORIAL_PRIMER_ARTICULO.md    NUEVO_ARTICULO_RAPIDO.md
+         (15 minutos)                 (5 minutos)
+         Paso a paso                  4 pasos rápidos
+         Muy detallado                Directo al código
+
+
+═══════════════════════════════════════════════════════════════════════════
+  📞 PREGUNTAS FRECUENTES RÁPIDAS
+═══════════════════════════════════════════════════════════════════════════
+
+P: ¿Qué archivo debo copiar para nuevo artículo?
+R: articulo-ejemplo.html (es el template perfecto)
+
+P: ¿Dónde guardo el nuevo archivo?
+R: En la raíz del proyecto, igual que articulo-ejemplo.html
+
+P: ¿Qué nombre debo usar?
+R: articulo-tema.html (sin espacios, con guiones, minúsculas)
+
+P: ¿Qué cambio en index.html?
+R: Busca "<!-- Article Card 7 -->" y personaliza esa tarjeta
+
+P: ¿Qué href debo poner?
+R: El mismo nombre del archivo que creaste (articulo-tema.html)
+
+P: ¿Qué categorías hay?
+R: economics, geopolitics, trade, finance
+
+P: ¿Cuánto tarda un artículo?
+R: Primer artículo: 15 min | Siguientes: 5-10 min
+
+P: ¿Necesito compilar SASS?
+R: No, ya está compilado en assets/css/main.css
+
+P: ¿Puedo cambiar colores?
+R: Sí, edita assets/scss/abstracts/_variables.scss
+
+P: ¿Dónde consigo ayuda si me atasco?
+R: Lee AGREGAR_ARTICULO.md sección "Troubleshooting"
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🎓 CONCEPTOS APRENDIDOS DESPUÉS DEL PRIMER ARTÍCULO
+═══════════════════════════════════════════════════════════════════════════
+
+✅ Estructura HTML semántica
+✅ Meta tags para SEO
+✅ BEM (Block Element Modifier)
+✅ Componentes reutilizables
+✅ Bootstrap 5 integración
+✅ Responsive design
+✅ Navegación y links internos
+✅ Personalización de contenido
+✅ Testing en múltiples dispositivos
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🌟 MEJORES PRÁCTICAS
+═══════════════════════════════════════════════════════════════════════════
+
+1. ✅ SIEMPRE copia articulo-ejemplo.html
+   └─ No empieces desde cero
+
+2. ✅ MANTÉN la estructura HTML igual
+   └─ Solo cambia el contenido
+
+3. ✅ PRUEBA en 3 dispositivos
+   └─ Desktop, tablet, mobile
+
+4. ✅ VERIFICA la consola (F12)
+   └─ Busca errores rojos
+
+5. ✅ CREA múltiples artículos rápido
+   └─ Primer: 15 min | Siguientes: 5 min
+
+6. ✅ USA placeholders para imágenes
+   └─ https://via.placeholder.com/800x400?text=Tu+Texto
+
+7. ✅ GUARDA frecuentemente
+   └─ Ctrl+S después de cambios importantes
+
+8. ✅ NO BORRES el header o footer
+   └─ Solo edita el contenido central
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🎬 AHORA MISMO
+═══════════════════════════════════════════════════════════════════════════
+
+¿LISTO PARA EMPEZAR?
+
+OPCIÓN 1 (Recomendado para principiantes):
+├─ Abre: TUTORIAL_PRIMER_ARTICULO.md
+├─ Sigue paso a paso
+├─ Crea tu primer artículo
+└─ ¡Felicidades! 🎉
+
+OPCIÓN 2 (Si tienes experiencia HTML):
+├─ Abre: NUEVO_ARTICULO_RAPIDO.md
+├─ Sigue los 4 pasos
+├─ Crea tu artículo
+└─ ¡Hecho en 5 minutos! ⚡
+
+OPCIÓN 3 (Si quieres entender todo):
+├─ Abre: AGREGAR_ARTICULO.md
+├─ Lee detalladamente
+├─ Crea con confianza
+└─ Comprenderás la arquitectura completa 📚
+
+
+═══════════════════════════════════════════════════════════════════════════
+  ✨ CONCLUSIÓN
+═══════════════════════════════════════════════════════════════════════════
+
+Has recibido:
+
+✅ Un artículo de ejemplo completamente funcional
+✅ 4 diferentes guías para crear artículos (según tu nivel)
+✅ Templates HTML listos para usar
+✅ Ejemplos prácticos paso a paso
+✅ Troubleshooting completo
+✅ Checklist de verificación
+
+AHORA:
+
+1. Elige una guía (TUTORIAL_PRIMER_ARTICULO.md es ideal)
+2. Sigue los pasos
+3. Crea tu primer artículo
+4. ¡Comienza a publicar contenido!
+
+El proyecto está 100% listo para que agregues tantos artículos como necesites.
+
+¡ADELANTE! 🚀
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+ÚLTIMA ACTUALIZACIÓN: Enero 25, 2026
+VERSIÓN: 1.0.0
+ESTADO: ✅ Completamente documentado y listo para usar
+
+═══════════════════════════════════════════════════════════════════════════

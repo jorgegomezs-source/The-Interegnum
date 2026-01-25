@@ -1,0 +1,53 @@
+// ============================================
+// MAIN SASS FILE - 7-1 ARCHITECTURE
+// ============================================
+// This is the main SASS file that imports all partials in the correct order
+// The 7-1 pattern consists of:
+// 1. abstracts/ - Variables and Mixins
+// 2. base/ - Reset and Typography
+// 3. components/ - BEM Components (Cards, Buttons, etc)
+// 4. layout/ - Header, Footer, Grid Systems
+// 5. pages/ - Page-specific Styles (Hero, Articles, etc)
+// 6. themes/ - Theme Variations
+// 7. vendors/ - Third-party Customizations (Bootstrap)
+
+// ============================================
+// 1. ABSTRACTS - Variables & Mixins
+// ============================================
+@import 'abstracts/index';
+
+// ============================================
+// 2. BASE - Reset & Typography
+// ============================================
+@import 'base/index';
+
+// ============================================
+// 3. COMPONENTS - Reusable Components (BEM)
+// ============================================
+@import 'components/index';
+
+// ============================================
+// 4. LAYOUT - Page Layout & Structure
+// ============================================
+@import 'layout/index';
+
+// ============================================
+// 5. PAGES - Page-Specific Styles
+// ============================================
+@import 'pages/index';
+
+// ============================================
+// 6. THEMES - Theme Variations
+// ============================================
+@import 'themes/index';
+
+// ============================================
+// 7. VENDORS - Third-party Customizations
+// ============================================
+@import 'vendors/index';
+
+// ============================================
+// BOOTSTRAP CSS (Compiled Version)
+// ============================================
+// Import compiled Bootstrap CSS for components
+@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';

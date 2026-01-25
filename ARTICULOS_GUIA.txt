@@ -1,0 +1,464 @@
+┌──────────────────────────────────────────────────────────────────────────┐
+│                                                                          │
+│                   AGREGAR ARTÍCULOS - GUÍA COMPLETA                     │
+│                                                                          │
+│                      Para TheInterregnum v1.0.0                         │
+│                                                                          │
+└──────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🚀 INICIO RÁPIDO - PARA APURADOS (2 MINUTOS)
+═══════════════════════════════════════════════════════════════════════════
+
+1. Copia articulo-ejemplo.html → Renombra → Edita
+2. Abre index.html → Busca "Article Card 7" → Personaliza
+3. Cambia href a tu archivo
+4. ¡Listo!
+
+Para más detalles → Lee "NUEVO_ARTICULO_RAPIDO.md"
+
+
+═══════════════════════════════════════════════════════════════════════════
+  📚 DOCUMENTACIÓN DISPONIBLE
+═══════════════════════════════════════════════════════════════════════════
+
+┌─ PARA APRENDICES / PRIMER ARTÍCULO ────────────────────────────────┐
+│                                                                     │
+│  📖 TUTORIAL_PRIMER_ARTICULO.md ← ⭐ EMPIEZA AQUÍ                 │
+│     Guía paso a paso interactiva para tu primer artículo            │
+│     • Crear archivo                                                 │
+│     • Personalizar contenido                                        │
+│     • Agregar tarjeta                                               │
+│     • Probar                                                        │
+│     Tiempo: 15 minutos                                              │
+│     Dificultad: ⭐ Principiante                                     │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─ PARA APURADOS (QUICK REFERENCE) ─────────────────────────────────┐
+│                                                                     │
+│  📝 NUEVO_ARTICULO_RAPIDO.md                                       │
+│     4 pasos simples sin explicaciones detalladas                    │
+│     Tiempo: 5 minutos                                               │
+│     Mejor si: Ya entiendes HTML                                    │
+│                                                                     │
+│  📊 PASOS_VISUALES.txt                                             │
+│     Resumen visual con diagramas ASCII                              │
+│     Mejor si: Prefieres esquemas                                   │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─ PARA PROFUNDIZAR (GUÍA COMPLETA) ───────────────────────────────┐
+│                                                                     │
+│  📘 AGREGAR_ARTICULO.md                                            │
+│     Guía detallada con:                                            │
+│     • Template HTML completo                                        │
+│     • Estilos CSS/SCSS                                             │
+│     • Ejemplos de estructura                                        │
+│     • Troubleshooting                                               │
+│     Tiempo: Lectura 10-15 min + implementación 20-30 min          │
+│     Mejor si: Quieres entender todo                               │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─ PARA REFERENCIA GENERAL ─────────────────────────────────────────┐
+│                                                                     │
+│  📄 USAGE.md                                                       │
+│     Guía general de edición del proyecto                            │
+│     Sección: "Agregar Nuevo Artículo"                              │
+│     Mejor si: Necesitas referencia de USAGE en general             │
+│                                                                     │
+│  📑 INDEX.md                                                        │
+│     Índice de todos los archivos                                    │
+│     Mejor si: Necesitas encontrar algo específico                  │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🎯 ¿CUÁL DEBO LEER?
+═══════════════════════════════════════════════════════════════════════════
+
+SI... ENTONCES LEE...
+─────────────────────────────────────────────────────────────────────────
+
+Es mi primer artículo        → TUTORIAL_PRIMER_ARTICULO.md
+Tengo prisa                  → NUEVO_ARTICULO_RAPIDO.md
+Prefiero ver diagramas       → PASOS_VISUALES.txt
+Quiero entender todo         → AGREGAR_ARTICULO.md
+Necesito referencia HTML     → AGREGAR_ARTICULO.md (sección 1.2)
+Necesito referencia CSS      → AGREGAR_ARTICULO.md (sección 2)
+Ya conocí el proceso         → NUEVO_ARTICULO_RAPIDO.md
+No sé por dónde empezar      → TUTORIAL_PRIMER_ARTICULO.md
+Tengo un problema            → Ver "Troubleshooting" en cualquier guía
+
+
+═══════════════════════════════════════════════════════════════════════════
+  📋 ARCHIVOS CLAVE
+═══════════════════════════════════════════════════════════════════════════
+
+articulo-ejemplo.html
+├─ Descripción: Artículo ejemplo completamente funcional
+├─ Uso: Copia esto como template para nuevos artículos
+├─ Contenido: "Global Economic Trends 2026"
+├─ Tamaño: ~650 líneas
+└─ ⭐ Recomendación: SIEMPRE copia este como base
+
+index.html
+├─ Descripción: Página principal con todas las tarjetas
+├─ Ubicación de tarjetas: Busca "<!-- Article Card 7 -->"
+├─ Dónde agregar: Dentro de <div class="articles__grid">
+├─ Tamaño: ~590 líneas
+└─ ⭐ Aquí agregan la tarjeta de cada artículo
+
+documentación/
+├─ TUTORIAL_PRIMER_ARTICULO.md ← Tutorial interactivo
+├─ NUEVO_ARTICULO_RAPIDO.md ← Guía rápida (4 pasos)
+├─ PASOS_VISUALES.txt ← Diagramas ASCII
+├─ AGREGAR_ARTICULO.md ← Guía completa y detallada
+└─ Este archivo: ARTICULOS_GUIA.txt
+
+
+═══════════════════════════════════════════════════════════════════════════
+  ⚙️ DIAGRAMA: FLUJO DE CREAR UN ARTÍCULO
+═══════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────┐
+│                   CREAR UN NUEVO ARTÍCULO                       │
+└─────────────────────────────────────────────────────────────────┘
+
+START
+  │
+  ├─→ PASO 1: CREAR ARCHIVO HTML
+  │   ├─ Crear archivo: articulo-titulo.html
+  │   ├─ Copiar template (de articulo-ejemplo.html)
+  │   └─ Guardar en raíz del proyecto
+  │
+  ├─→ PASO 2: PERSONALIZAR CONTENIDO
+  │   ├─ Meta tags (title, description, author, date)
+  │   ├─ Hero section (categoría, título, subtítulo, autor)
+  │   ├─ Imagen destacada
+  │   ├─ Contenido del artículo (h2, p, listas, blockquotes)
+  │   └─ Tags finales
+  │
+  ├─→ PASO 3: AGREGAR TARJETA EN INDEX.HTML
+  │   ├─ Buscar "<!-- Article Card 7 -->"
+  │   ├─ Personalizar datos
+  │   ├─ Cambiar href a: articulo-titulo.html
+  │   └─ Guardar
+  │
+  ├─→ PASO 4: PRUEBA
+  │   ├─ Abrir index.html en navegador
+  │   ├─ Ver tarjeta
+  │   ├─ Hacer clic en "Read More"
+  │   ├─ Verificar que carga correctamente
+  │   └─ Probar en mobile (F12)
+  │
+  └─→ ✅ COMPLETO
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🔍 CATEGORÍAS Y COLORES
+═══════════════════════════════════════════════════════════════════════════
+
+┌──────────────────┬─────────────┬──────────────────────────────┐
+│  Categoría       │  Color      │  Código CSS                  │
+├──────────────────┼─────────────┼──────────────────────────────┤
+│  Economics       │  Azul       │  category--economics         │
+│  Geopolitics     │  Verde      │  category--geopolitics       │
+│  Trade          │  Oro        │  category--trade             │
+│  Finance        │  Marrón     │  category--finance           │
+└──────────────────┴─────────────┴──────────────────────────────┘
+
+Ejemplo HTML:
+<span class="article-card__category article-card__category--economics">
+  Economics
+</span>
+
+
+═══════════════════════════════════════════════════════════════════════════
+  ✅ CHECKLIST ANTES DE PUBLICAR
+═══════════════════════════════════════════════════════════════════════════
+
+Antes de dar por completado un artículo, verifica:
+
+ARCHIVO HTML:
+  □ Nombre del archivo: articulo-titulo.html (sin espacios, con guiones)
+  □ Ubicación: Raíz del proyecto (no en carpeta assets)
+  □ Meta tags: title, description, author, date
+  □ Categoría: Seleccionada correctamente (economics/geopolitics/trade/finance)
+  □ Contenido: Escrito completamente
+  □ Imágenes: URLs correctas o archivos locales
+
+INDEX.HTML:
+  □ Tarjeta agregada en Articles section
+  □ href apunta al archivo correcto
+  □ Categoría coincide
+  □ Título actualizado
+  □ Descripción actualizada
+  □ Autor actualizado
+  □ Fecha actualizada
+
+NAVEGACIÓN:
+  □ Tarjeta aparece en index.html
+  □ Link funciona
+  □ Artículo carga correctamente
+  □ Header/footer se ven
+  □ Links a home funcionan
+
+RESPONSIVE:
+  □ Se ve bien en desktop (1920px)
+  □ Se ve bien en tablet (768px)
+  □ Se ve bien en mobile (375px)
+  □ No hay overflow horizontal
+  □ Navbar es responsive
+
+VALIDACIÓN:
+  □ No hay errores en consola (F12 → Console)
+  □ No hay warnings importantes
+  □ HTML válido (https://validator.w3.org/)
+
+
+═══════════════════════════════════════════════════════════════════════════
+  💡 CONSEJOS PROFESIONALES
+═══════════════════════════════════════════════════════════════════════════
+
+1. SIEMPRE COPIA articulo-ejemplo.html
+   → Es la base más segura y ya tiene todos los estilos
+
+2. MANTÉN CONSISTENCIA
+   → Usa el mismo formato para todos los artículos
+   → Mantén estructura HTML similar
+
+3. USA PLACEHOLDERS PARA IMÁGENES
+   → https://via.placeholder.com/400x250?text=Tu+Texto
+   → Reemplaza después si lo necesitas
+
+4. EDITA CONTENIDO CON CUIDADO
+   → No borres el header o footer
+   → No modifiques las clases CSS principales
+   → Solo modifica el contenido entre tags
+
+5. PRUEBA SIEMPRE
+   → Desktop + Tablet + Mobile
+   → Diferentes navegadores
+   → Verifica consola (F12)
+
+6. CREA MÚLTIPLES ARTÍCULOS RÁPIDO
+   → Primer artículo: 15-20 minutos
+   → Segundos artículos: 5-10 minutos
+   → Terceros artículos: 3-5 minutos
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🆘 PROBLEMAS COMUNES Y SOLUCIONES
+═══════════════════════════════════════════════════════════════════════════
+
+PROBLEMA: "El link no funciona"
+┌────────────────────────────────────────────────────────────────┐
+│ Causa probable:                                                │
+│ • El href no coincide con el nombre del archivo                │
+│ • Hay mayúsculas/minúsculas incorrectas                       │
+│                                                                │
+│ Solución:                                                      │
+│ 1. Verifica el nombre exacto del archivo                       │
+│ 2. El href DEBE ser idéntico                                  │
+│ 3. Ejemplo: archivo "articulo-economia.html"                  │
+│            href="articulo-economia.html" ✓                    │
+│            href="Articulo-economia.html" ✗                    │
+└────────────────────────────────────────────────────────────────┘
+
+PROBLEMA: "Los estilos se ven mal"
+┌────────────────────────────────────────────────────────────────┐
+│ Causa probable:                                                │
+│ • No incluiste los CSS correctamente                           │
+│ • Ruta relativa incorrecta                                    │
+│                                                                │
+│ Solución:                                                      │
+│ Asegúrate de incluir en <head>:                               │
+│ <link href="..." bootstrap.min.css" rel="stylesheet" />       │
+│ <link rel="stylesheet" href="./assets/css/main.css" />        │
+└────────────────────────────────────────────────────────────────┘
+
+PROBLEMA: "La imagen no carga"
+┌────────────────────────────────────────────────────────────────┐
+│ Causa probable:                                                │
+│ • URL incompleta o incorrecta                                 │
+│ • Archivo no existe en esa ubicación                          │
+│                                                                │
+│ Solución:                                                      │
+│ • Usa URLs completas: https://via.placeholder.com/800x400     │
+│ • O coloca imágenes en: ./assets/images/nombre.jpg           │
+└────────────────────────────────────────────────────────────────┘
+
+PROBLEMA: "La tarjeta no aparece en index.html"
+┌────────────────────────────────────────────────────────────────┐
+│ Causa probable:                                                │
+│ • Agregaste la tarjeta fuera del grid                          │
+│ • No recargaste la página                                     │
+│                                                                │
+│ Solución:                                                      │
+│ 1. Busca <!-- Article Card 7 -->                              │
+│ 2. Asegúrate de estar dentro de <div class="articles__grid">  │
+│ 3. Recarga: Ctrl+R o Cmd+Shift+R (cache)                      │
+└────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════
+  📞 SOPORTE RÁPIDO
+═══════════════════════════════════════════════════════════════════════════
+
+PREGUNTA                          RESPUESTA / ARCHIVO
+─────────────────────────────────────────────────────────────────
+¿Por dónde empiezo?               → TUTORIAL_PRIMER_ARTICULO.md
+
+¿Estoy en prisa?                  → NUEVO_ARTICULO_RAPIDO.md
+
+¿Necesito código HTML completo?   → AGREGAR_ARTICULO.md
+
+¿Qué es BEM?                      → TECHNICAL.md
+
+¿Cómo editar estilos?             → USAGE.md
+
+¿Dónde está...?                   → INDEX.md
+
+¿Por qué no funciona?             → "Troubleshooting" en documentos
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🎓 ESTRUCTURA HTML DE UN ARTÍCULO (RESUMEN)
+═══════════════════════════════════════════════════════════════════════════
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags (SEO) -->
+    <title>Título | TheInterregnum</title>
+    <meta name="description" content="..." />
+    <meta name="author" content="..." />
+    
+    <!-- CSS -->
+    <link href="bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  
+  <body>
+    <!-- Header (copiar de articulo-ejemplo.html) -->
+    <header>...</header>
+    
+    <!-- Hero section -->
+    <main>
+      <section class="article-page__hero">
+        <h1>Título</h1>
+        <span class="article-page__category">Categoría</span>
+        <!-- Otros datos: autor, fecha, etc -->
+      </section>
+      
+      <!-- Imagen destacada -->
+      <section class="article-page__image-section">
+        <img src="..." />
+      </section>
+      
+      <!-- Contenido -->
+      <section class="article-page__content">
+        <article class="article-page__body">
+          <h2>Sección 1</h2>
+          <p>Contenido...</p>
+          
+          <h2>Sección 2</h2>
+          <p>Contenido...</p>
+          
+          <!-- Más contenido -->
+        </article>
+        
+        <!-- Tags -->
+        <div class="article-page__tags">
+          <span>tag1</span>
+          <span>tag2</span>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Footer (copiar de articulo-ejemplo.html) -->
+    <footer>...</footer>
+    
+    <!-- Scripts -->
+    <script src="bootstrap.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
+
+
+═══════════════════════════════════════════════════════════════════════════
+  🚀 PRÓXIMOS PASOS
+═══════════════════════════════════════════════════════════════════════════
+
+1. Elige una guía (según tu situación)
+2. Lee los primeros 5 minutos
+3. Empieza a crear tu primer artículo
+4. Prueba todo
+5. ¡Publica!
+
+Después:
+
+□ Agregar más artículos
+□ Personalizar colores en _variables.scss
+□ Integrar base de datos (opcional)
+□ Desplegar a servidor (Netlify, Vercel, etc.)
+□ Configurar dominio propio
+□ Agregar analytics
+
+
+═══════════════════════════════════════════════════════════════════════════
+  📊 ESTADÍSTICAS DE TIEMPO
+═══════════════════════════════════════════════════════════════════════════
+
+Primer artículo:
+├─ Lectura guía: 5-10 min
+├─ Crear archivo: 2 min
+├─ Escribir contenido: 20-30 min
+├─ Agregar tarjeta: 5 min
+├─ Pruebas: 5 min
+└─ Total: 35-50 minutos
+
+Segundo artículo:
+├─ Lectura: (ya no necesitas)
+├─ Crear archivo: 1 min
+├─ Escribir contenido: 20-30 min
+├─ Agregar tarjeta: 3 min
+├─ Pruebas: 3 min
+└─ Total: 25-35 minutos
+
+Tercero en adelante:
+├─ Crear archivo: 1 min
+├─ Escribir contenido: 15-25 min (ya sabes la estructura)
+├─ Agregar tarjeta: 2 min
+├─ Pruebas: 2 min
+└─ Total: 20-30 minutos
+
+
+═══════════════════════════════════════════════════════════════════════════
+  ✨ ¡IMPORTANTE!
+═══════════════════════════════════════════════════════════════════════════
+
+La MEJOR manera de aprender es HACIENDO.
+
+No intentes leer y memorizar todo.
+
+Sigue el TUTORIAL_PRIMER_ARTICULO.md paso a paso.
+
+Cuando termines tu primer artículo, entenderás el proceso completamente.
+
+Entonces los siguientes artículos tomarán mucho menos tiempo.
+
+¡Adelante! 🚀
+
+
+═══════════════════════════════════════════════════════════════════════════
+
+ÚLTIMA ACTUALIZACIÓN: Enero 2026
+VERSIÓN: 1.0.0
+DOCUMENTACIÓN: Completa
+
+═══════════════════════════════════════════════════════════════════════════

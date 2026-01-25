@@ -1,0 +1,127 @@
+// ============================================
+// HEADER LAYOUT - BEM Pattern
+// ============================================
+// Block: .header
+// Elements: __navbar, __brand, __brand-text, __menu, __menu-item, __menu-link, __toggler
+
+.header {
+  background-color: $dark-color;
+  padding: $spacing-md 0;
+  position: sticky;
+  top: 0;
+  z-index: $z-index-fixed;
+  box-shadow: $shadow-md;
+
+  // ------- NAVBAR -------
+  &__navbar {
+    // Bootstrap navbar override
+    padding: $spacing-md 0;
+
+    @include respond-to('lg') {
+      padding: $spacing-sm 0;
+    }
+  }
+
+  // ------- BRAND / LOGO -------
+  &__brand {
+    @include flex-center;
+    text-decoration: none;
+    @include transition(all);
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      @include focus-outline(white);
+    }
+  }
+
+  // ------- BRAND TEXT -------
+  &__brand-text {
+    @include heading-style($font-size-xl);
+    color: white;
+    letter-spacing: 2px;
+
+    @include respond-to('md') {
+      font-size: $font-size-lg;
+    }
+  }
+
+  // ------- MENU (NAVIGATION LIST) -------
+  &__menu {
+    list-style: none;
+
+    @include respond-to('lg') {
+      margin-left: $spacing-xl;
+    }
+  }
+
+  // ------- MENU ITEM -------
+  &__menu-item {
+    margin: 0 $spacing-lg;
+
+    @include respond-to('lg') {
+      margin: $spacing-sm 0;
+    }
+  }
+
+  // ------- MENU LINK -------
+  &__menu-link {
+    color: white;
+    text-decoration: none;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-base;
+    @include transition(all);
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: $primary-color;
+      @include transition(width);
+    }
+
+    &:hover {
+      color: $primary-light;
+
+      &::after {
+        width: 100%;
+      }
+    }
+
+    &:focus {
+      @include focus-outline(white);
+    }
+
+    &.active {
+      color: $primary-light;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  // ------- TOGGLER (Mobile Menu) -------
+  &__toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+
+    &:focus {
+      box-shadow: 0 0 0 0.25rem rgba(26, 84, 144, 0.25);
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    &:focus {
+      border-color: white;
+      box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.2);
+    }
+  }
+}

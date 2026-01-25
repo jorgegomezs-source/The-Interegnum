@@ -1,0 +1,339 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                                                                            ║
+║                      ÍNDICE VISUAL - ARCHIVOS CREADOS                     ║
+║                                                                            ║
+║         Para agregar artículos a TheInterregnum - Enero 2026              ║
+║                                                                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ ARCHIVOS DE DOCUMENTACIÓN PARA AGREGAR ARTÍCULOS (8 NUEVOS)             │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+1. ⭐⭐⭐ TUTORIAL_PRIMER_ARTICULO.md (EMPIEZA AQUÍ)
+   ├─ Tipo: Guía paso a paso interactiva
+   ├─ Nivel: Principiante
+   ├─ Tiempo: ~15 minutos
+   ├─ Qué incluye:
+   │  ├─ Crear archivo HTML
+   │  ├─ Personalizar cada sección
+   │  ├─ Agregar tarjeta en index.html
+   │  ├─ Probar en navegador
+   │  └─ Troubleshooting básico
+   ├─ Mejor para: Tu primer artículo
+   └─ Resultado: Un artículo funcional + conocimiento
+
+
+2. ⚡⚡⚡ NUEVO_ARTICULO_RAPIDO.md (MÁS RÁPIDO)
+   ├─ Tipo: 4 pasos simples
+   ├─ Nivel: Intermedio (requiere HTML básico)
+   ├─ Tiempo: ~5 minutos
+   ├─ Qué incluye:
+   │  ├─ Paso 1: Crear archivo
+   │  ├─ Paso 2: Personalizar
+   │  ├─ Paso 3: Agregar tarjeta
+   │  └─ Paso 4: Probar
+   ├─ Mejor para: Si sabes HTML
+   └─ Resultado: Un artículo funcional rápido
+
+
+3. 📘 AGREGAR_ARTICULO.md (MÁS DETALLADO)
+   ├─ Tipo: Guía completa y exhaustiva
+   ├─ Nivel: Avanzado
+   ├─ Tiempo: ~30-40 minutos
+   ├─ Qué incluye:
+   │  ├─ Template HTML base completo
+   │  ├─ Explicación detallada de cada parte
+   │  ├─ Múltiples variantes y opciones
+   │  ├─ Estilos CSS/SCSS
+   │  ├─ Estructura de carpetas
+   │  └─ Troubleshooting exhausto
+   ├─ Mejor para: Querer entender todo
+   └─ Resultado: Conocimiento profundo + artículo
+
+
+4. 📊 PASOS_VISUALES.txt (DIAGRAMAS)
+   ├─ Tipo: Resumen visual con diagramas ASCII
+   ├─ Nivel: Principiante
+   ├─ Tiempo: ~10 minutos
+   ├─ Qué incluye:
+   │  ├─ Flujos visuales
+   │  ├─ Diagramas ASCII
+   │  ├─ Estructura de carpetas dibujada
+   │  ├─ Checklist visual
+   │  └─ Categorías y colores
+   ├─ Mejor para: Visual learners
+   └─ Resultado: Entendimiento visual del proceso
+
+
+5. 📑 ARTICULOS_GUIA.txt (REFERENCIA COMPLETA)
+   ├─ Tipo: Índice y referencia rápida
+   ├─ Nivel: Todos los niveles
+   ├─ Tiempo: ~15 minutos lectura
+   ├─ Qué incluye:
+   │  ├─ Índice de todas las guías
+   │  ├─ Cuál leer según situación
+   │  ├─ Checklist completo
+   │  ├─ FAQs rápidas
+   │  ├─ Troubleshooting común
+   │  └─ Mapa de referencias
+   ├─ Mejor para: Referencia cuando atascado
+   └─ Resultado: Información rápida cuando la necesites
+
+
+6. 🧭 COMENZAR_AQUI.txt (ORIENTACIÓN)
+   ├─ Tipo: Guía inicial de orientación
+   ├─ Nivel: Principiante
+   ├─ Tiempo: ~5 minutos
+   ├─ Qué incluye:
+   │  ├─ Resumen ejecutivo
+   │  ├─ 3 opciones según tu nivel
+   │  ├─ Mapa mental
+   │  ├─ Próximos pasos
+   │  └─ Estructura de carpetas
+   ├─ Mejor para: No saber por dónde empezar
+   └─ Resultado: Saber exactamente qué hacer
+
+
+7. 🗺️ MAPA_DOCUMENTACION.txt (ESTE ARCHIVO)
+   ├─ Tipo: Índice visual y decisión
+   ├─ Nivel: Todos los niveles
+   ├─ Tiempo: ~10 minutos
+   ├─ Qué incluye:
+   │  ├─ Diagrama de decisión
+   │  ├─ Comparativa de documentos
+   │  ├─ Recomendaciones por perfil
+   │  ├─ Preguntas rápidas
+   │  └─ Referencias cruzadas
+   ├─ Mejor para: Elegir la guía correcta
+   └─ Resultado: Saber cuál documento leer
+
+
+8. 📋 RESUMEN_EJECUTIVO.txt
+   ├─ Tipo: Resumen visual ejecutivo
+   ├─ Nivel: Todos los niveles
+   ├─ Tiempo: ~5 minutos
+   ├─ Qué incluye:
+   │  ├─ Lo que se entregó
+   │  ├─ Ultra resumen (2 minutos)
+   │  ├─ Diagrama visual
+   │  ├─ Comparativa de opciones
+   │  └─ Puntos clave
+   ├─ Mejor para: Executives/Apurados
+   └─ Resultado: Visión general completa
+
+
+─────────────────────────────────────────────────────────────────────────
+
+ARCHIVO DE EJEMPLO PRÁCTICO:
+
+articulo-ejemplo.html
+├─ Tipo: Artículo HTML completamente funcional
+├─ Contenido: "Global Economic Trends 2026"
+├─ Líneas: ~650
+├─ Qué contiene:
+│  ├─ Header con navegación (sticky)
+│  ├─ Hero section (categoría, título, autor, fecha)
+│  ├─ Imagen destacada
+│  ├─ Contenido completo (h2, párrafos, listas, citas)
+│  ├─ Tags finales
+│  ├─ Call to action (newsletter)
+│  └─ Footer con links
+├─ Uso: Cópiar como template para nuevos artículos
+├─ Por qué: Ya tiene todos los estilos correctos
+└─ Resultado: Punto de partida perfecto
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 GUÍA RÁPIDA: ¿CUÁL LEER?
+═══════════════════════════════════════════════════════════════════════════════
+
+SI ERES...                           LEE...
+─────────────────────────────────────────────────────────────────────────────
+
+Principiante                        TUTORIAL_PRIMER_ARTICULO.md
+Tienes prisa                        NUEVO_ARTICULO_RAPIDO.md
+Visual learner                      PASOS_VISUALES.txt
+Quiero entender todo                AGREGAR_ARTICULO.md
+Estoy perdido                       MAPA_DOCUMENTACION.txt
+Necesito referencia rápida          ARTICULOS_GUIA.txt
+Necesito orientación inicial        COMENZAR_AQUI.txt
+Soy ejecutivo/apurado               RESUMEN_EJECUTIVO.txt
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  ⏱️ TIEMPO ESTIMADO POR DOCUMENTO
+═══════════════════════════════════════════════════════════════════════════════
+
+DOCUMENTO                           LECTURA    IMPLEMENTACIÓN    TOTAL
+──────────────────────────────────────────────────────────────────────────────
+
+TUTORIAL_PRIMER_ARTICULO.md         5 min      10 min           ~15 min
+NUEVO_ARTICULO_RAPIDO.md            3 min      2-5 min          ~5 min
+AGREGAR_ARTICULO.md                 20 min     10-20 min        ~30-40 min
+PASOS_VISUALES.txt                  10 min     5-10 min         ~15 min
+ARTICULOS_GUIA.txt                  15 min     -                ~15 min
+COMENZAR_AQUI.txt                   5 min      -                ~5 min
+MAPA_DOCUMENTACION.txt              10 min     -                ~10 min
+RESUMEN_EJECUTIVO.txt               5 min      -                ~5 min
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  📊 COMPARATIVA: ¿CUÁL ES MEJOR PARA MÍ?
+═══════════════════════════════════════════════════════════════════════════════
+
+CRITERIO              TUTORIAL  RÁPIDO  COMPLETO  VISUAL  GUÍA  INICIO
+──────────────────────────────────────────────────────────────────────────
+Aprendo rápido        ✓✓        ✓✓✓     ✓✓        ✓✓     ✓      ✓
+Entiendo todo         ✓✓✓       ✓       ✓✓✓       ✓✓     ✓✓     ✓
+Es rápido             ✓         ✓✓✓     -         ✓✓     ✓✓     ✓✓✓
+Tengo experiencia     ✓✓        ✓✓✓     ✓         ✓      ✓✓     ✓
+Necesito referencia   ✓         ✓✓      ✓         ✓      ✓✓✓    ✓
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  🔗 REFERENCIAS CRUZADAS (RELACIÓN ENTRE DOCUMENTOS)
+═══════════════════════════════════════════════════════════════════════════════
+
+TUTORIAL_PRIMER_ARTICULO.md
+├─ Usa: articulo-ejemplo.html como referencia
+├─ Cita: AGREGAR_ARTICULO.md para secciones detalladas
+└─ Recomienda: NUEVO_ARTICULO_RAPIDO.md para segundo artículo
+
+NUEVO_ARTICULO_RAPIDO.md
+├─ Basado en: AGREGAR_ARTICULO.md (versión resumida)
+├─ Usa: articulo-ejemplo.html como template
+└─ Referencia: ARTICULOS_GUIA.txt si hay problemas
+
+AGREGAR_ARTICULO.md
+├─ Template base para: Todos los otros documentos
+├─ Proporciona: Código HTML completo
+└─ Detalla: Cada sección CSS/SCSS
+
+PASOS_VISUALES.txt
+├─ Basado en: TUTORIAL_PRIMER_ARTICULO.md
+├─ Diagramas de: El flujo de NUEVO_ARTICULO_RAPIDO.md
+└─ Checklist de: ARTICULOS_GUIA.txt
+
+ARTICULOS_GUIA.txt
+├─ Índice de: Todos los documentos
+├─ FAQs de: AGREGAR_ARTICULO.md
+├─ Troubleshooting de: Todos los documentos
+└─ Referencia: CHECKLIST.txt del proyecto
+
+MAPA_DOCUMENTACION.txt
+├─ Índice de: Todos estos documentos
+├─ Recomendaciones para: Cada tipo de usuario
+└─ Diagrama de decisión para: Elegir correctamente
+
+COMENZAR_AQUI.txt
+├─ Orienta hacia: Otros documentos según situación
+├─ Resume: RESUMEN_EJECUTIVO.txt
+└─ Proporciona: Orientación general
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  🌈 FLUJO RECOMENDADO (PASO A PASO)
+═══════════════════════════════════════════════════════════════════════════════
+
+OPCIÓN 1 - Principiante completo
+┌────────────────────────────────────────────────────────┐
+│ 1. Leer: MAPA_DOCUMENTACION.txt (este) - 5 min        │
+│ 2. Leer: TUTORIAL_PRIMER_ARTICULO.md - 5 min         │
+│ 3. Seguir pasos tutorial - 10 min                      │
+│ 4. Crear tu artículo - 10 min                          │
+│ TOTAL: ~30 minutos                                      │
+└────────────────────────────────────────────────────────┘
+
+OPCIÓN 2 - Intermedio (tienes experiencia)
+┌────────────────────────────────────────────────────────┐
+│ 1. Leer: NUEVO_ARTICULO_RAPIDO.md - 3 min            │
+│ 2. Seguir 4 pasos - 2 min                              │
+│ 3. Crear tu artículo - 5 min                           │
+│ TOTAL: ~10 minutos                                      │
+└────────────────────────────────────────────────────────┘
+
+OPCIÓN 3 - Experto (quiere entenderlo todo)
+┌────────────────────────────────────────────────────────┐
+│ 1. Leer: AGREGAR_ARTICULO.md - 20 min                │
+│ 2. Entender arquitectura - 10 min                      │
+│ 3. Crear tu artículo - 10 min                          │
+│ TOTAL: ~40 minutos                                      │
+└────────────────────────────────────────────────────────┘
+
+OPCIÓN 4 - Atascado/Necesita help
+┌────────────────────────────────────────────────────────┐
+│ 1. Consultar: ARTICULOS_GUIA.txt - 5 min             │
+│ 2. Ver Troubleshooting - 5 min                         │
+│ 3. Implementar solución - variable                     │
+│ TOTAL: Variable según problema                         │
+└────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  ✅ CHECKLIST: ¿QUÉ TIENES?
+═══════════════════════════════════════════════════════════════════════════════
+
+✓ 8 documentos de guía
+  ├─ TUTORIAL_PRIMER_ARTICULO.md
+  ├─ NUEVO_ARTICULO_RAPIDO.md
+  ├─ AGREGAR_ARTICULO.md
+  ├─ PASOS_VISUALES.txt
+  ├─ ARTICULOS_GUIA.txt
+  ├─ COMENZAR_AQUI.txt
+  ├─ MAPA_DOCUMENTACION.txt
+  └─ RESUMEN_EJECUTIVO.txt
+
+✓ 1 ejemplo práctico
+  └─ articulo-ejemplo.html (650 líneas)
+
+✓ HTML actualizado
+  └─ index.html (con Article Card 7 de ejemplo)
+
+✓ Todas las guías coordinadas
+  └─ Referencias cruzadas
+  └─ Coherencia en toda la documentación
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  🚀 AHORA QUÉ HACER
+═══════════════════════════════════════════════════════════════════════════════
+
+PASO 1: Elige una guía arriba (según tu perfil)
+PASO 2: Abre el archivo
+PASO 3: Lee los primeros 5 minutos
+PASO 4: Comienza a crear tu artículo
+PASO 5: ¡Listo!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+  📝 NOTA IMPORTANTE
+═══════════════════════════════════════════════════════════════════════════════
+
+NO NECESITAS LEER TODOS LOS DOCUMENTOS.
+
+Elige UNO según tu situación y léelo completamente.
+
+Los otros están disponibles como referencia.
+
+El mejor aprendizaje es HACIENDO, no leyendo todos.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+                    🎯 ¿CUÁL DOCUMENTO ABORO AHORA?
+
+         ┌─────────────────────────────────────────────────────┐
+         │ ➜ TUTORIAL_PRIMER_ARTICULO.md (si es principiante) │
+         │ ➜ NUEVO_ARTICULO_RAPIDO.md (si tienes prisa)      │
+         │ ➜ AGREGAR_ARTICULO.md (si quieres detalles)       │
+         └─────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Última actualización: Enero 25, 2026
+Documentación: Completa
+Estado: ✅ Listo para usar

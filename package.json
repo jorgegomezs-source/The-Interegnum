@@ -1,0 +1,34 @@
+{
+  "name": "theinterregnum",
+  "version": "1.0.0",
+  "description": "TheInterregnum - Global Politics & Economics Magazine",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass assets/scss:assets/css",
+    "sass:watch": "sass --watch assets/scss:assets/css",
+    "sass:minify": "sass --style=compressed assets/scss/main.scss assets/css/main.css",
+    "start": "npm run sass:watch",
+    "build": "npm run sass:minify",
+    "serve": "live-server"
+  },
+  "keywords": [
+    "politics",
+    "economics",
+    "global-affairs",
+    "international-relations",
+    "magazine",
+    "html5",
+    "sass",
+    "bootstrap"
+  ],
+  "author": "TheInterregnum",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "live-server": "^1.2.2"
+  }
+}
+

@@ -1,0 +1,28 @@
+// ============================================
+// ARTICLES SECTION
+// ============================================
+// Block: .articles
+// Elements: __grid, __footer
+
+.articles {
+  padding: $spacing-xxxl $spacing-md;
+
+  // ------- GRID LAYOUT -------
+  &__grid {
+    @include grid(3, $spacing-lg);
+    margin-bottom: $spacing-xxxl;
+
+    @include respond-to('lg') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('md') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // ------- FOOTER (Load More Button) -------
+  &__footer {
+    text-align: center;
+  }
+}

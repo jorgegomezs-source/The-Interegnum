@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TheInterregnum - Articles on Global Politics and Economics"
+    />
+    <meta
+      name="keywords"
+      content="politics, economics, global affairs, international relations"
+    />
+    <meta name="author" content="TheInterregnum" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Main CSS (Compiled from SASS) -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>TheInterregnum | Global Politics & Economics</title>
+  </head>
+
+  <body>
+    <!-- ========================================
+         HEADER & NAVIGATION
+         ======================================== -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark header__navbar">
+        <div class="container-lg">
+          <!-- Brand / Logo -->
+          <a class="navbar-brand header__brand" href="#home">
+            <span class="header__brand-text">TheInterregnum</span>
+          </a>
+
+          <!-- Toggler for Mobile -->
+          <button
+            class="navbar-toggler header__toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto header__menu">
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link" href="#articles"
+                  >Articles</a
+                >
+              </li>
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link" href="#categories"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link" href="#about">About</a>
+              </li>
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link" href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="container-lg">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Understanding Global Politics & Economics
+            </h1>
+            <p class="hero__subtitle">
+              In-depth analysis and perspectives on international affairs,
+              market trends, and geopolitical developments
+            </p>
+            <button
+              class="btn btn-primary btn-lg hero__cta-button"
+              data-bs-toggle="modal"
+              data-bs-target="#newsletterModal"
+            >
+              Subscribe to Newsletter
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORIES SECTION -->
+      <section class="categories" id="categories">
+        <div class="container-lg">
+          <div class="section-header">
+            <h2 class="section-header__title">Featured Categories</h2>
+            <p class="section-header__subtitle">Explore our main topics</p>
+          </div>
+
+          <div class="categories__grid">
+            <!-- Category Card 1 -->
+            <article class="category-card category-card--politics">
+              <div class="category-card__icon">📍</div>
+              <h3 class="category-card__title">Geopolitics</h3>
+              <p class="category-card__description">
+                International relations, diplomacy, and regional conflicts
+                analysis
+              </p>
+              <a
+                href="#articles"
+                class="btn btn-sm btn-outline-primary category-card__btn"
+              >
+                Explore
+              </a>
+            </article>
+
+            <!-- Category Card 2 -->
+            <article class="category-card category-card--economics">
+              <div class="category-card__icon">💰</div>
+              <h3 class="category-card__title">Economics</h3>
+              <p class="category-card__description">
+                Market trends, trade policies, and economic indicators
+              </p>
+              <a
+                href="#articles"
+                class="btn btn-sm btn-outline-primary category-card__btn"
+              >
+                Explore
+              </a>
+            </article>
+
+            <!-- Category Card 3 -->
+            <article class="category-card category-card--trade">
+              <div class="category-card__icon">📊</div>
+              <h3 class="category-card__title">International Trade</h3>
+              <p class="category-card__description">
+                Commerce regulations and supply chain developments
+              </p>
+              <a
+                href="#articles"
+                class="btn btn-sm btn-outline-primary category-card__btn"
+              >
+                Explore
+              </a>
+            </article>
+
+            <!-- Category Card 4 -->
+            <article class="category-card category-card--finance">
+              <div class="category-card__icon">📈</div>
+              <h3 class="category-card__title">Finance</h3>
+              <p class="category-card__description">
+                Banking, investments, and financial markets analysis
+              </p>
+              <a
+                href="#articles"
+                class="btn btn-sm btn-outline-primary category-card__btn"
+              >
+                Explore
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED ARTICLES SECTION -->
+      <section class="articles" id="articles">
+        <div class="container-lg">
+          <div class="section-header">
+            <h2 class="section-header__title">Latest Articles</h2>
+            <p class="section-header__subtitle">
+              Stay informed with our recent publications
+            </p>
+          </div>
+
+          <div class="articles__grid">
+            <!-- Article Card 1 -->
+            <article class="article-card">
+              <div class="article-card__image-wrapper">
+                <img
+                  src="https://via.placeholder.com/400x250/1a5490/ffffff?text=Trade+Wars"
+                  alt="Global Trade Wars"
+                  class="article-card__image"
+                />
+                <span
+                  class="article-card__category article-card__category--trade"
+                >
+                  Trade
+                </span>
+              </div>
+              <div class="article-card__content">
+                <h3 class="article-card__title">
+                  The New Era of Global Trade Wars
+                </h3>
+                <p class="article-card__excerpt">
+                  Analyzing the shifting dynamics of international commerce and
+                  the impact on emerging markets...
+                </p>
+                <div class="article-card__meta">
+                  <span class="article-card__author">By John Smith</span>
+                  <span class="article-card__date">Jan 24, 2026</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-primary article-card__btn">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <!-- Article Card 2 -->
+            <article class="article-card">
+              <div class="article-card__image-wrapper">
+                <img
+                  src="https://via.placeholder.com/400x250/2d5a3d/ffffff?text=Geopolitics"
+                  alt="Geopolitical Shifts"
+                  class="article-card__image"
+                />
+                <span
+                  class="article-card__category article-card__category--politics"
+                >
+                  Politics
+                </span>
+              </div>
+              <div class="article-card__content">
+                <h3 class="article-card__title">Geopolitical Shifts in 2026</h3>
+                <p class="article-card__excerpt">
+                  Key developments and strategic alignments reshaping the
+                  international order...
+                </p>
+                <div class="article-card__meta">
+                  <span class="article-card__author">By Sarah Johnson</span>
+                  <span class="article-card__date">Jan 23, 2026</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-primary article-card__btn">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <!-- Article Card 3 -->
+            <article class="article-card">
+              <div class="article-card__image-wrapper">
+                <img
+                  src="https://via.placeholder.com/400x250/5c3d3d/ffffff?text=Finance"
+                  alt="Central Banks"
+                  class="article-card__image"
+                />
+                <span
+                  class="article-card__category article-card__category--finance"
+                >
+                  Finance
+                </span>
+              </div>
+              <div class="article-card__content">
+                <h3 class="article-card__title">
+                  Central Banks and Monetary Policy Trends
+                </h3>
+                <p class="article-card__excerpt">
+                  Understanding the role of central banking in shaping global
+                  economic stability...
+                </p>
+                <div class="article-card__meta">
+                  <span class="article-card__author">By Michael Chen</span>
+                  <span class="article-card__date">Jan 22, 2026</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-primary article-card__btn">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <!-- Article Card 4 -->
+            <article class="article-card">
+              <div class="article-card__image-wrapper">
+                <img
+                  src="https://via.placeholder.com/400x250/3d5c5c/ffffff?text=Economics"
+                  alt="Economic Growth"
+                  class="article-card__image"
+                />
+                <span
+                  class="article-card__category article-card__category--economics"
+                >
+                  Economics
+                </span>
+              </div>
+              <div class="article-card__content">
+                <h3 class="article-card__title">
+                  Emerging Markets: Growth and Challenges
+                </h3>
+                <p class="article-card__excerpt">
+                  Exploring opportunities and obstacles for developing economies
+                  in the global marketplace...
+                </p>
+                <div class="article-card__meta">
+                  <span class="article-card__author">By Emma Wilson</span>
+                  <span class="article-card__date">Jan 21, 2026</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-primary article-card__btn">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <!-- Article Card 5 -->
+            <article class="article-card">
+              <div class="article-card__image-wrapper">
+                <img
+                  src="https://via.placeholder.com/400x250/1a5c90/ffffff?text=Technology"
+                  alt="Tech & Economy"
+                  class="article-card__image"
+                />
+                <span
+                  class="article-card__category article-card__category--trade"
+                >
+                  Tech & Trade
+                </span>
+              </div>
+              <div class="article-card__content">
+                <h3 class="article-card__title">
+                  Digital Trade and Cybersecurity Implications
+                </h3>
+                <p class="article-card__excerpt">
+                  How technology is transforming global commerce and security
+                  considerations...
+                </p>
+                <div class="article-card__meta">
+                  <span class="article-card__author">By David Martinez</span>
+                  <span class="article-card__date">Jan 20, 2026</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-primary article-card__btn">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <!-- Article Card 6 -->
+            <article class="article-card">
+              <div class="article-card__image-wrapper">
+                <img
+                  src="https://via.placeholder.com/400x250/5c3d1a/ffffff?text=Sustainability"
+                  alt="Green Economy"
+                  class="article-card__image"
+                />
+                <span
+                  class="article-card__category article-card__category--economics"
+                >
+                  Sustainability
+                </span>
+              </div>
+              <div class="article-card__content">
+                <h3 class="article-card__title">
+                  Green Economy: The Future of Global Business
+                </h3>
+                <p class="article-card__excerpt">
+                  Environmental policies and their impact on international
+                  economic relations...
+                </p>
+                <div class="article-card__meta">
+                  <span class="article-card__author">By Lisa Anderson</span>
+                  <span class="article-card__date">Jan 19, 2026</span>
+                </div>
+                <a href="#" class="btn btn-sm btn-primary article-card__btn">
+                  Read More →
+                </a>
+              </div>
+            </article>
+
+            <!-- Article Card 7 - EJEMPLO -->
+            <article class="article-card">
+              <div class="article-card__image-wrapper">
+                <img
+                  src="./assets/img/graphic representation of global economy 2026 in base to statistics.jpg"
+                  alt="Where the world is heading in 2026?"
+                  class="article-card__image"
+                />
+                <span
+                  class="article-card__category article-card__category--geopolitic"
+                >
+                  Geopolitics
+                </span>
+              </div>
+              <div class="article-card__content">
+                <h3 class="article-card__title">
+                  Where the world is heading in 2026?
+                </h3>
+                <p class="article-card__excerpt">
+                  Global Power in an Age of Systemic Transition
+                </p>
+                <div class="article-card__meta">
+                  <span class="article-card__author">Jorge Gómez</span>
+                  <span class="article-card__date">Jan 25, 2026</span>
+                </div>
+                <a
+                  href="Where-the-world-is heading-in-2026.html"
+                  class="btn btn-sm btn-primary article-card__btn"
+                >
+                  Read More →
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="articles__footer">
+            <button class="btn btn-primary btn-lg">Load More Articles</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER SECTION -->
+      <section class="newsletter">
+        <div class="container-lg">
+          <div class="newsletter__content">
+            <h2 class="newsletter__title">Stay Updated on Global Affairs</h2>
+            <p class="newsletter__description">
+              Get our latest insights delivered to your inbox twice a week
+            </p>
+            <form class="newsletter__form">
+              <div class="input-group newsletter__input-group">
+                <input
+                  type="email"
+                  class="form-control newsletter__input"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button
+                  class="btn btn-primary newsletter__submit"
+                  type="submit"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+      <div class="container-lg">
+        <div class="footer__grid">
+          <!-- Column 1: About -->
+          <div class="footer__column footer__column--about">
+            <h3 class="footer__title">TheInterregnum</h3>
+            <p class="footer__description">
+              Your trusted source for analysis on global politics and economics
+            </p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" title="Twitter"
+                >Twitter</a
+              >
+              <a href="#" class="footer__social-link" title="LinkedIn"
+                >LinkedIn</a
+              >
+              <a href="#" class="footer__social-link" title="Facebook"
+                >Facebook</a
+              >
+            </div>
+          </div>
+
+          <!-- Column 2: Categories -->
+          <div class="footer__column">
+            <h4 class="footer__subtitle">Categories</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Geopolitics</a></li>
+              <li><a href="#" class="footer__link">Economics</a></li>
+              <li><a href="#" class="footer__link">Trade</a></li>
+              <li><a href="#" class="footer__link">Finance</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Resources -->
+          <div class="footer__column">
+            <h4 class="footer__subtitle">Resources</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Blog</a></li>
+              <li><a href="#" class="footer__link">Research</a></li>
+              <li><a href="#" class="footer__link">Downloads</a></li>
+              <li><a href="#" class="footer__link">Glossary</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Legal -->
+          <div class="footer__column">
+            <h4 class="footer__subtitle">Legal</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer__link">Terms of Service</a></li>
+              <li><a href="#" class="footer__link">Disclaimer</a></li>
+              <li><a href="#" class="footer__link">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2026 TheInterregnum. All rights reserved.
+          </p>
+          <p class="footer__credit">
+            Crafted with attention to detail for informed readers
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========================================
+         MODALS
+         ======================================== -->
+    <!-- Newsletter Modal -->
+    <div
+      class="modal fade"
+      id="newsletterModal"
+      tabindex="-1"
+      aria-labelledby="newsletterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Subscribe to TheInterregnum Newsletter
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Join thousands of professionals who stay informed about global
+              politics and economics. We send curated insights twice a week.
+            </p>
+            <form class="modal-form">
+              <div class="mb-3">
+                <label for="modalEmail" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="modalEmail"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="modalName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="modalName"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="modalTerms"
+                  required
+                />
+                <label class="form-check-label" for="modalTerms">
+                  I agree to receive email communications
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS (optional) -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

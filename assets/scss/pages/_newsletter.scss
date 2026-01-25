@@ -1,0 +1,111 @@
+// ============================================
+// NEWSLETTER SECTION
+// ============================================
+// Block: .newsletter
+// Elements: __content, __title, __description, __form, __input-group, __input, __submit
+
+.newsletter {
+  background: linear-gradient(
+    135deg,
+    rgba($primary-color, 0.9) 0%,
+    rgba($secondary-color, 0.9) 100%
+  );
+  color: white;
+  padding: $spacing-xxxl $spacing-md;
+  margin: $spacing-xxxl 0;
+
+  // ------- CONTENT -------
+  &__content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  // ------- TITLE -------
+  &__title {
+    @include heading-style($font-size-xxl);
+    color: white;
+    margin-bottom: $spacing-md;
+
+    @include respond-to('md') {
+      font-size: $font-size-xl;
+    }
+  }
+
+  // ------- DESCRIPTION -------
+  &__description {
+    font-size: $font-size-lg;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: $spacing-lg;
+
+    @include respond-to('md') {
+      font-size: $font-size-base;
+    }
+  }
+
+  // ------- FORM -------
+  &__form {
+    width: 100%;
+  }
+
+  // ------- INPUT GROUP -------
+  &__input-group {
+    display: flex;
+    gap: $spacing-sm;
+
+    @include respond-to('sm') {
+      flex-direction: column;
+    }
+  }
+
+  // ------- INPUT -------
+  &__input {
+    flex: 1;
+    padding: $spacing-md $spacing-lg;
+    border: none;
+    border-radius: $border-radius-md;
+    font-size: $font-size-base;
+    @include transition(all);
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+    }
+
+    &::placeholder {
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    @include respond-to('sm') {
+      flex: auto;
+    }
+  }
+
+  // ------- SUBMIT BUTTON -------
+  &__submit {
+    padding: $spacing-md $spacing-xl;
+    background-color: white;
+    color: $primary-color;
+    border: none;
+    border-radius: $border-radius-md;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-base;
+    cursor: pointer;
+    @include transition(all);
+    white-space: nowrap;
+
+    &:hover {
+      background-color: #f0f0f0;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+      @include focus-outline(white);
+    }
+
+    @include respond-to('sm') {
+      width: 100%;
+    }
+  }
+}

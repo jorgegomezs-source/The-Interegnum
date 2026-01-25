@@ -1,0 +1,152 @@
+// ============================================
+// CARD COMPONENT - Article Card Block
+// ============================================
+// BEM Block: .article-card
+// Elements: __image-wrapper, __image, __category, __content, __title, __excerpt, __meta, __author, __date, __btn
+
+.article-card {
+  background-color: white;
+  border-radius: $border-radius-lg;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+  @include transition(box-shadow, transform);
+  display: @include flex-column;
+  height: 100%;
+
+  &:hover {
+    box-shadow: $shadow-xl;
+    transform: translateY(-4px);
+
+    .article-card__image {
+      transform: scale(1.05);
+    }
+  }
+
+  // ------- IMAGE WRAPPER -------
+  &__image-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+
+    @include respond-to('sm') {
+      height: 200px;
+    }
+  }
+
+  // ------- IMAGE -------
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include transition(transform);
+  }
+
+  // ------- CATEGORY TAG -------
+  &__category {
+    position: absolute;
+    top: $spacing-md;
+    right: $spacing-md;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 10;
+    color: white;
+
+    &--trade {
+      background-color: $category-trade;
+    }
+
+    &--politics {
+      background-color: $category-politics;
+    }
+
+    &--economics {
+      background-color: $category-economics;
+    }
+
+    &--finance {
+      background-color: $category-finance;
+    }
+
+    &--geopolitic {
+      background-color: $category-geopolitic;
+    }
+  }
+
+  // ------- CONTENT SECTION -------
+  &__content {
+    padding: $spacing-lg;
+    @include flex-column;
+    flex-grow: 1;
+  }
+
+  // ------- TITLE -------
+  &__title {
+    @include heading-style($font-size-lg);
+    margin-bottom: $spacing-md;
+    color: $dark-color;
+    @include text-clamp(2);
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  // ------- EXCERPT -------
+  &__excerpt {
+    color: $gray-color;
+    margin-bottom: $spacing-md;
+    @include text-clamp(3);
+    font-size: $font-size-sm;
+    line-height: $line-height-relaxed;
+  }
+
+  // ------- META INFORMATION -------
+  &__meta {
+    @include flex-between;
+    margin-bottom: $spacing-md;
+    padding-bottom: $spacing-md;
+    border-bottom: 1px solid $border-color;
+    flex-wrap: wrap;
+    gap: $spacing-md;
+
+    @include respond-to('sm') {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  // ------- AUTHOR -------
+  &__author {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    color: $dark-color;
+
+    &::before {
+      content: '✍ ';
+    }
+  }
+
+  // ------- DATE -------
+  &__date {
+    font-size: $font-size-sm;
+    color: $gray-color;
+
+    &::before {
+      content: '📅 ';
+    }
+  }
+
+  // ------- BUTTON -------
+  &__btn {
+    align-self: flex-start;
+    margin-top: auto;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

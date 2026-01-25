@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Where the world is heading in 2026? | TheInterregnum</title>
+    <meta
+      name="description"
+      content="Exploring the global political and economic trends shaping the global scenario in 2026."
+    />
+    <meta name="author" content="Jorge Gómez Seitz" />
+    <meta name="date" content="2026-01-25" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Estilos para página de artículo -->
+    <style>
+      .article-page__hero {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 60px 20px;
+        margin-bottom: 40px;
+      }
+
+      .article-page__meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__category {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .article-page__category--economics {
+        background: rgba(26, 84, 144, 0.9);
+      }
+
+      .article-page__category--geopolitics {
+        background: rgba(45, 90, 61, 0.9);
+      }
+
+      .article-page__category--trade {
+        background: rgba(194, 160, 64, 0.9);
+      }
+
+      .article-page__category--finance {
+        background: rgba(92, 61, 61, 0.9);
+      }
+
+      .article-page__title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .article-page__subtitle {
+        font-size: 20px;
+        opacity: 0.95;
+        margin-bottom: 30px;
+      }
+
+      .article-page__author-info {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__image-section {
+        padding: 40px 20px;
+        background: #f8f9fa;
+      }
+
+      .article-page__featured-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .article-page__image-caption {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 15px;
+        font-style: italic;
+      }
+
+      .article-page__content {
+        padding: 60px 20px;
+      }
+
+      .article-page__body {
+        line-height: 1.8;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .article-page__body h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #1a5490;
+      }
+
+      .article-page__body h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #2d5a3d;
+      }
+
+      .article-page__body p {
+        margin-bottom: 15px;
+      }
+
+      .article-page__body ul,
+      .article-page__body ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .article-page__body li {
+        margin-bottom: 10px;
+      }
+
+      .article-page__quote {
+        border-left: 4px solid #1a5490;
+        padding-left: 20px;
+        margin: 30px 0;
+        font-size: 18px;
+        font-style: italic;
+        color: #555;
+        background: #f0f4f8;
+        padding: 20px;
+        padding-left: 20px;
+        border-radius: 4px;
+      }
+
+      .article-page__highlight {
+        background: #fff3cd;
+        padding: 20px;
+        border-left: 4px solid #ffc107;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+
+      .article-page__tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__tag {
+        background: #e9ecef;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .article-page__cta {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .article-page__cta p {
+        margin-bottom: 20px;
+      }
+
+      .article-page__navigation {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid #ddd;
+      }
+
+      .article-page__navigation a {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .article-page__hero {
+          padding: 40px 20px;
+        }
+
+        .article-page__title {
+          font-size: 32px;
+        }
+
+        .article-page__subtitle {
+          font-size: 18px;
+        }
+
+        .article-page__content {
+          padding: 40px 20px;
+        }
+
+        .article-page__body h2 {
+          font-size: 22px;
+        }
+
+        .article-page__cta {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER/NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg header__navbar">
+        <div class="container">
+          <a class="navbar-brand header__brand" href="index.html">
+            <span class="header__brand-text">TheInterregnum</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#articles"
+                  >Articles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="#newsletter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#newsletterModal"
+                >
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO DEL ARTÍCULO -->
+    <main class="article-page">
+      <!-- Hero del artículo -->
+      <section class="article-page__hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="article-page__meta">
+                <span
+                  class="article-page__category article-page__category--geopolitic"
+                >
+                  Geopolitic
+                </span>
+                <span class="article-page__date">January 25, 2026</span>
+              </div>
+              <h1 class="article-page__title">
+                Where the world is heading in 2026?
+              </h1>
+              <p class="article-page__subtitle">
+                Global Power in an Age of Systemic Transition
+              </p>
+              <div class="article-page__author-info">
+                <span class="article-page__author-name"
+                  >By Jorge Gómez Seitz</span
+                >
+                <span class="article-page__reading-time"
+                  >Reading time: 8 min</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagen destacada -->
+      <section class="article-page__image-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <img
+                src="assets/img/graphic representation of global economy 2026 in base to statistics.jpg"
+                alt="Global Economic Trends 2026"
+                class="article-page__featured-image"
+              />
+              <p class="article-page__image-caption">
+                Global economic indicators point to significant shifts in
+                international trade and finance
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenido principal -->
+      <section class="article-page__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <article class="article-page__body">
+                <h1>Where the World Is Heading in 2026?</h1>
+
+                <p>
+                  <strong>Global Power in an Age of Systemic Transition</strong>
+                </p>
+
+                <p>
+                  The question presumes what remains genuinely uncertain. The
+                  international system that emerged from the Second World War,
+                  consolidated through American hegemony after 1989, and
+                  universalized through neoliberal restructuring has entered a
+                  phase of visible decomposition. Its institutions function
+                  increasingly as instruments of particular interests rather
+                  than collective governance. Its ideological
+                  frameworks—democratic peace, developmental convergence,
+                  rules-based order—have lost persuasive power even among those
+                  who continue to invoke them. Its material foundations, from
+                  dollar supremacy to technological monopoly, face challenges
+                  that no longer appear manageable through the familiar
+                  instruments of financial and military coercion.
+                </p>
+
+                <p>
+                  Yet decomposition is not transition. The displacement of one
+                  order by another requires more than the weakening of existing
+                  structures; it demands the consolidation of alternatives
+                  capable of organizing production, exchange, and security on a
+                  new basis. Whether such consolidation is underway, whether the
+                  emerging configuration will resemble any recognizable
+                  historical model, whether the transformation can occur without
+                  the catastrophic violence that accompanied previous systemic
+                  shifts—these questions remain open. The purpose of this
+                  analysis is not to resolve them through prediction but to
+                  clarify the forces in contention, the constraints they
+                  confront, and the possibilities they variously represent.
+                </p>
+
+                <p>
+                  The year 2026 arrives at a moment when multiple temporalities
+                  intersect: the long cycle of American hegemony, the
+                  medium-term restructuring of global production toward East
+                  Asia, the short-term consequences of military confrontation in
+                  Europe and economic warfare across the Pacific, and the
+                  accelerating pressure of ecological limits that recognize no
+                  historical periodization. To situate oneself within this
+                  conjuncture requires simultaneous attention to structural
+                  determination and political contingency, to the weight of
+                  inherited constraints and the uncertainty of their resolution.
+                  What follows attempts such situated analysis, moving from the
+                  immediate crisis of Western supremacy through the
+                  reconfiguration of major power relations to the question of
+                  whether—and on what terms—sovereign development remains
+                  possible for those nations historically excluded from its
+                  benefits.
+                </p>
+
+                <h2>The Acceleration of History</h2>
+
+                <p>
+                  At least since the beginning of this decade, we have lived in
+                  a world where global history appears to have accelerated.
+                  Months before Russia's military intervention in Ukraine, few
+                  analysts would have predicted that the conflict would escalate
+                  into the full-scale war—if a distinctive kind of war—that we
+                  have witnessed since February 2022. Nevertheless, the complete
+                  subordination of Western European elites to American mandates,
+                  invariably harmful and exploitative toward European economies
+                  and populations, has revealed the extent to which globalist
+                  political elites are committed to the imperial project of the
+                  United States.
+                </p>
+
+                <p>
+                  It is hardly novel to observe that declining empires tend to
+                  become erratic and increasingly violent during periods when
+                  their hegemony is threatened—both by external rivals and
+                  internal turmoil. These have historically been eras of great
+                  wars, from which new geopolitical orders emerge. Our period is
+                  unique in one critical respect: for the first time in history,
+                  the declining hegemon and its rivals possess nuclear weapons,
+                  rendering our era extraordinarily perilable.
+                </p>
+
+                <h2>The Soviet Precedent and Russian Illusions</h2>
+
+                <p>
+                  It may be worth recalling that the Soviet Union—the last great
+                  power to seriously challenge American empire—never posed a
+                  genuine threat in terms of economic scale, nor was it capable
+                  of delivering the "world proletarian revolution" that the
+                  Bolsheviks themselves recognized as unrealistic by 1917.
+                  Having barely survived relentless Western aggression by 1945,
+                  it collapsed just thirty-five years later due to internal
+                  systemic failures. The same system that had achieved
+                  industrialization, victory in World War II, and postwar
+                  reconstruction had, by its end, become stagnant and
+                  demoralized—yet it managed to resist Western predation for
+                  seven decades.
+                </p>
+
+                <p>
+                  The post-Soviet Russian elite naïvely believed that abandoning
+                  socialism would suffice to secure fair and respectful
+                  treatment from their Western counterparts. Such illusions, as
+                  we now know, proved short-lived. The year 2022 marked a
+                  turning point: Russia's military commitment in Ukraine
+                  represents the first major challenge to Western expansionism
+                  worldwide, and in this sense may constitute the opening
+                  chapter of a global conflict that some already regard as a new
+                  world war.
+                </p>
+
+                <h2>The China Challenge</h2>
+
+                <p>
+                  Meanwhile, China has emerged as the first serious contender
+                  through economic power alone. Chinese industrialization and
+                  broader modernization trace an upward trajectory that
+                  contrasts sharply with the declining growth of now-stagnant
+                  Western economies. Paralyzed by financial usury and rentier
+                  extraction, the Western economy today concludes a ruinous
+                  cycle of rampant global plunder—one we can trace at least as
+                  far back as the invasion of Iraq in 2003—accompanied by the
+                  systematic undermining of global political and financial
+                  institutions. The decadent empire serves only a select few:
+                  those who govern democracies through the instrument of money.
+                  Never in history has wealth inequality been so severe in the
+                  United States.
+                </p>
+
+                <p>
+                  The Eastern challenge extends beyond Russia. China's rise is
+                  not merely quantitative but systemic: the Belt and Road
+                  Initiative constructs alternative trade architectures across
+                  Eurasia, Africa, and Latin America; its state-led industrial
+                  policy achieves technological advances in semiconductors,
+                  artificial intelligence, and renewable energy that Western
+                  financialized capitalism has proven structurally incapable of
+                  replicating. The dedollarization of bilateral trade, the
+                  expansion of BRICS, the construction of parallel financial
+                  institutions—these are not aspirations but material processes
+                  already underway. Militarily, the Taiwan question and South
+                  China Sea disputes demonstrate that Beijing will not
+                  indefinitely accept territorial constraints imposed during its
+                  century of humiliation. The AUKUS pact and Pacific base
+                  expansion reveal that Washington comprehends this challenge
+                  clearly, even if European elites remain fixated on their
+                  eastern flank.
+                </p>
+
+                <h2>The Internal Contradictions of the West</h2>
+
+                <p>
+                  Yet the decisive battles of this transition may occur within
+                  the Western core itself. The social contract forged during the
+                  postwar decades—mass consumption, welfare provision,
+                  ideological incorporation of organized labor—has been
+                  systematically dismantled. Permanent austerity,
+                  deindustrialized hinterlands, collapsed public health, and the
+                  opioid epidemic ravaging American working communities: these
+                  are not policy failures but structural necessities of
+                  financialized accumulation. The political symptoms are equally
+                  transparent—Trump, Le Pen, the AfD, the entire roster of
+                  "populist" disturbances—represent not fascist resurgence but
+                  ruling-class incapacity to secure popular consent through
+                  traditional means. The "democracy versus autocracy" framing
+                  deployed against Russia and China serves primarily to
+                  discipline domestic populations, to criminalize alternatives,
+                  to transform class war into civilizational crusade.
+                </p>
+
+                <p>
+                  The response of Western elites to this destabilization reveals
+                  their structural incapacity for reform. Rather than addressing
+                  material grievance through redistribution or reconstructive
+                  industrial policy, they have invested enormous resources in
+                  ideological operations designed to displace class antagonism
+                  onto cultural and territorial terrain. The "democracy versus
+                  autocracy" framing, elevated to official doctrine by the Biden
+                  administration and adopted across European capitals, serves
+                  multiple functions simultaneously. It identifies internal
+                  opposition with external enemies, rendering dissent
+                  treasonous. It substitutes moral condemnation for political
+                  argument, eliminating the need to demonstrate that existing
+                  arrangements actually serve popular interests. It reconstructs
+                  Atlantic unity around military confrontation, subordinating
+                  European economic interests to American strategic imperatives
+                  while presenting this subordination as ethical necessity.
+                </p>
+
+                <p>
+                  This ideological operation is most transparent in its
+                  application to the domestic sphere. The same political forces
+                  that have systematically dismantled democratic participation
+                  through technocratic governance, that have criminalized
+                  popular mobilization against austerity, that have constructed
+                  surveillance and border regimes of unprecedented scale, now
+                  discover democratic virtue as exclusive property of the
+                  Western camp. The contradiction is not merely hypocritical but
+                  functional: the "defense of democracy" against Russian or
+                  Chinese autocracy justifies emergency measures, information
+                  control, and political repression that would be impossible to
+                  legitimate in their own terms. The class war conducted through
+                  four decades of upward redistribution requires permanent
+                  ideological mobilization to prevent its recognition as such.
+                </p>
+
+                <h2>The Global South Realignment</h2>
+
+                <p>
+                  The Ukraine conflict has accelerated a broader realignment
+                  that Washington neither anticipated nor desired. Saudi-Iranian
+                  rapprochement brokered by Beijing, African rejection of
+                  sanctions regimes, the expansion of non-Western trade
+                  settlements in national currencies—these developments indicate
+                  that decolonization of international institutions has
+                  progressed from aspiration to material fact. The unipolar
+                  moment, always more ideological projection than sociological
+                  reality, has definitively ended. What replaces it remains
+                  contested: multipolar coordination, fragmented bloc
+                  competition, or the institutionalized antagonism of a new Cold
+                  War.
+                </p>
+
+                <p>
+                  This transition occurs, however, under conditions without
+                  historical precedent. Previous systemic handovers—from Dutch
+                  to British, from British to American—occurred within a shared
+                  capitalist framework and, in the latter case, required two
+                  world wars to complete. Nuclear deterrence has thus far
+                  prevented general war between great powers, yet it has not
+                  eliminated confrontation but merely displaced it into proxy
+                  conflicts, economic warfare, cyber operations, and
+                  subthreshold competition that continuously threatens
+                  escalation. Meanwhile, the ecological dimension imposes
+                  absolute limits that earlier transitions did not confront. The
+                  Pentagon remains the largest institutional emitter of
+                  greenhouse gases; military establishments worldwide are exempt
+                  from climate accounting; and competition for remaining
+                  accessible resources—lithium, copper, rare earth elements,
+                  productive agricultural land—drives territorial contest
+                  precisely when coordinated reduction of material throughput
+                  has become a civilizational imperative. The nuclear
+                  modernization programs currently underway in all major powers
+                  suggest less deterrence stability than collective preparation
+                  for eventual use.
+                </p>
+
+                <h2>Historical Comparison and Periodization</h2>
+
+                <p>
+                  Historical comparison thus offers limited guidance. The
+                  Dutch-English transition was relatively peaceful because the
+                  Dutch financial aristocracy found profitable integration into
+                  British structures; the English-American transition required
+                  continental destruction to establish clear hierarchy. Our
+                  period combines elements of both: financial interpenetration
+                  of Western and Chinese capital alongside geopolitical
+                  antagonism that periodically threatens military confrontation.
+                  The variable that distinguishes our moment is precisely the
+                  ecological deadline: there will be no postwar reconstruction,
+                  no Bretton Woods settlement, no developmental catch-up if the
+                  atmospheric threshold is crossed. Imperial decline and
+                  planetary boundaries converge, forcing the erratic violence
+                  diagnosed above toward increasingly desperate forms—resource
+                  wars, climate apartheid, forced migration crises managed
+                  through militarized borders.
+                </p>
+
+                <h2>Sovereign Possibilities</h2>
+
+                <p>
+                  The configuration of global power at the opening of the 2020s
+                  exhibits structural features without clear historical
+                  parallel. Previous hegemonic transitions occurred within a
+                  shared capitalist framework and, in the British-American case,
+                  required continental destruction to establish hierarchy. The
+                  contemporary moment combines financial interpenetration with
+                  geopolitical antagonism; nuclear deterrence preventing general
+                  war while displacing confrontation into economic and proxy
+                  conflict; ecological limits imposing absolute constraints that
+                  earlier transitions did not confront.
+                </p>
+
+                <p>
+                  This instability, however, creates openings unavailable during
+                  unipolarity. The dispersal of power reduces the capacity of
+                  any single center to veto autonomous development or impose
+                  structural adjustment. The technological diffusion that
+                  enables industrialization without Western monopoly, financial
+                  alternatives to Bretton Woods institutions, and the
+                  delegitimation of neoliberal orthodoxy collectively expand the
+                  space for sovereign decision-making.
+                </p>
+
+                <p>
+                  The historical record offers measured grounds for optimism.
+                  Bandung demonstrated that collective negotiation could extract
+                  concessions from competing blocs; its contemporary
+                  recurrence—African
+
+                  <!-- Tags -->
+                </p>
+
+                <div class="article-page__tags">
+                  <span class="article-page__tag">economics</span>
+                  <span class="article-page__tag">geopolitics</span>
+                  <span class="article-page__tag">international-trade</span>
+                  <span class="article-page__tag">2026</span>
+                </div>
+
+                <!-- Call to action -->
+                <div class="article-page__cta">
+                  <p>
+                    <strong
+                      >Want to stay informed about global economic
+                      trends?</strong
+                    ><br />
+                    Subscribe to our newsletter for weekly analysis and insights
+                    on international politics and economics.
+                  </p>
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#newsletterModal"
+                  >
+                    Subscribe to Newsletter
+                  </button>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="article-page__navigation">
+                  <a
+                    href="index.html#articles"
+                    class="btn btn-outline-primary btn-sm"
+                  >
+                    ← Back to Articles
+                  </a>
+                </nav>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__column">
+            <h5>TheInterregnum</h5>
+            <p>Global politics and economics analysis</p>
+          </div>
+          <div class="footer__column">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a class="footer__link" href="index.html">Home</a></li>
+              <li>
+                <a class="footer__link" href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="index.html#articles">Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Categories</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Geopolitics</a></li>
+              <li><a class="footer__link" href="#">Economics</a></li>
+              <li><a class="footer__link" href="#">Trade</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Follow</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Twitter</a></li>
+              <li><a class="footer__link" href="#">LinkedIn</a></li>
+              <li><a class="footer__link" href="#">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; 2026 TheInterregnum. All rights reserved. |
+            <a class="footer__link" href="#">Privacy Policy</a> |
+            <a class="footer__link" href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Newsletter Modal -->
+    <div
+      class="modal fade"
+      id="newsletterModal"
+      tabindex="-1"
+      aria-labelledby="newsletterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Subscribe to Newsletter
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="newsletterForm" class="newsletter__form">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

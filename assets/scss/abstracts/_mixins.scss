@@ -1,0 +1,163 @@
+// ============================================
+// MIXINS - Reusable CSS patterns
+// ============================================
+
+// ------- MEDIA QUERIES -------
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == 'xs' {
+    @media (min-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == 'sm' {
+    @media (min-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == 'md' {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg' {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == 'xl' {
+    @media (min-width: $breakpoint-xl) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxl' {
+    @media (min-width: $breakpoint-xxl) {
+      @content;
+    }
+  }
+}
+
+// ------- FLEXBOX UTILITIES -------
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+// ------- GRID UTILITIES -------
+@mixin grid($columns, $gap: $spacing-md) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+// ------- TEXT UTILITIES -------
+@mixin text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-clamp($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@mixin heading-style($size, $weight: $font-weight-bold) {
+  font-family: $font-family-heading;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height-tight;
+  letter-spacing: -0.5px;
+}
+
+// ------- BUTTON UTILITIES -------
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+// ------- TRANSITIONS -------
+@mixin transition($property: all, $duration: $transition-base) {
+  transition: $property $duration;
+}
+
+// ------- HOVER EFFECTS -------
+@mixin hover-lift {
+  @include transition(transform, box-shadow);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-lg;
+  }
+}
+
+// ------- OPACITY MIXIN -------
+@mixin opacity-transition($opacity: 0.8) {
+  @include transition(opacity);
+
+  &:hover {
+    opacity: $opacity;
+  }
+}
+
+// ------- POSITIONING -------
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absolute-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// ------- BACKGROUND -------
+@mixin gradient($startColor, $endColor) {
+  background: linear-gradient(135deg, $startColor 0%, $endColor 100%);
+}
+
+// ------- OVERLAY -------
+@mixin overlay($color: rgba(0, 0, 0, 0.5)) {
+  position: relative;
+
+  &::before {
+    @include absolute-cover;
+    background-color: $color;
+    content: '';
+    z-index: 1;
+  }
+}
+
+// ------- FOCUS STYLES -------
+@mixin focus-outline($color: $primary-color) {
+  outline: 2px solid $color;
+  outline-offset: 2px;
+}

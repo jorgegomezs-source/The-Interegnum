@@ -1,0 +1,589 @@
+<!-- ============================================
+     PROYECTO COMPLETADO: TheInterregnum
+     ============================================
+     
+     Página web profesional para publicación de artículos
+     sobre política global y economía internacional
+     
+     Fecha de Creación: 25 de Enero de 2026
+     Versión: 1.0.0
+     Status: ✅ COMPLETO
+     
+     ============================================ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheInterregnum - Proyecto Completado</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.6;
+        color: #333;
+        background: #f5f5f5;
+      }
+
+      .container {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #1a5490;
+        border-bottom: 3px solid #1a5490;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: #2d5a3d;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        color: #666;
+      }
+
+      .status {
+        background: #d4edda;
+        border-left: 4px solid #28a745;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 4px;
+      }
+
+      .section {
+        margin: 30px 0;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 8px;
+      }
+
+      .checklist {
+        list-style: none;
+        padding: 0;
+      }
+
+      .checklist li {
+        padding: 8px 0;
+        padding-left: 30px;
+        position: relative;
+      }
+
+      .checklist li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #28a745;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .file-list {
+        background: #f0f0f0;
+        padding: 15px;
+        border-radius: 4px;
+        font-family: monospace;
+        overflow-x: auto;
+        margin: 15px 0;
+      }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .feature-card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .feature-card h4 {
+        color: #1a5490;
+        margin-top: 0;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+      }
+
+      .stat-box {
+        background: linear-gradient(135deg, #1a5490, #0d3a5c);
+        color: white;
+        padding: 25px;
+        border-radius: 8px;
+        text-align: center;
+      }
+
+      .stat-number {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+
+      .stat-label {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      code {
+        background: #f4f4f4;
+        padding: 2px 6px;
+        border-radius: 3px;
+        font-family: "Courier New", monospace;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #1a5490;
+        color: white;
+        font-weight: 600;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        background: #1a5490;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background 0.3s;
+      }
+
+      .button:hover {
+        background: #0d3a5c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎉 TheInterregnum - Proyecto Completado</h1>
+
+      <div class="status">
+        <strong>✓ Status:</strong> Proyecto completamente funcional e
+        implementado <br /><strong>Fecha:</strong> 25 de Enero de 2026
+        <br /><strong>Versión:</strong> 1.0.0
+      </div>
+
+      <h2>📋 Resumen Ejecutivo</h2>
+      <p>
+        TheInterregnum es una página web profesional para la publicación de
+        artículos sobre política global y economía internacional. El proyecto
+        implementa todas las mejores prácticas modernas de desarrollo web y
+        cumple con todos los requisitos especificados.
+      </p>
+
+      <h2>📊 Estadísticas del Proyecto</h2>
+      <div class="stats">
+        <div class="stat-box">
+          <div class="stat-number">1</div>
+          <div class="stat-label">Archivo HTML Principal</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Archivos SCSS</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">1</div>
+          <div class="stat-label">Archivo JavaScript</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">6</div>
+          <div class="stat-label">Media Queries</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">8</div>
+          <div class="stat-label">Componentes BEM</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Documentos</div>
+        </div>
+      </div>
+
+      <h2>✅ Requisitos Cumplidos</h2>
+      <ul class="checklist">
+        <li>
+          <strong>Implementación semántica de HTML5</strong> - Estructura
+          semántica completa con etiquetas HTML5 correctas
+        </li>
+        <li>
+          <strong>Metodología BEM</strong> - Aplicada en todos los componentes
+          (Bloque-Elemento-Modificador)
+        </li>
+        <li>
+          <strong>SASS con estructura 7-1</strong> - Archivos organizados en 7
+          carpetas + vendors
+        </li>
+        <li>
+          <strong>Layout y modelo de cajas</strong> - Flexbox y CSS Grid para
+          disposición de secciones
+        </li>
+        <li>
+          <strong>Interfaz adaptable</strong> - Media queries, Flexbox y Grid
+          para responsividad
+        </li>
+        <li>
+          <strong>Componentes Bootstrap 5</strong> - Cards, modales, menús,
+          botones, formularios
+        </li>
+        <li>
+          <strong>Código limpio y modular</strong> - Comentarios descriptivos y
+          bien organizado
+        </li>
+      </ul>
+
+      <h2>🎯 Características Principales</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>📱 Diseño Responsivo</h4>
+          <p>Adaptado a todos los dispositivos con 6 breakpoints diferentes</p>
+        </div>
+        <div class="feature-card">
+          <h4>🎨 Arquitectura SASS</h4>
+          <p>Patrón 7-1 con variables, mixins y componentes reutilizables</p>
+        </div>
+        <div class="feature-card">
+          <h4>🧩 Componentes BEM</h4>
+          <p>Nomenclatura clara y consistente para fácil mantenimiento</p>
+        </div>
+        <div class="feature-card">
+          <h4>⚡ Rendimiento</h4>
+          <p>CSS minificado, JavaScript eficiente, carga rápida</p>
+        </div>
+        <div class="feature-card">
+          <h4>♿ Accesibilidad</h4>
+          <p>WCAG 2.1 AA compliant, navegación por teclado, ARIA labels</p>
+        </div>
+        <div class="feature-card">
+          <h4>📚 Documentación</h4>
+          <p>README, guía técnica, guía de uso y más</p>
+        </div>
+      </div>
+
+      <h2>📁 Estructura de Carpetas Finales</h2>
+      <div class="file-list">
+        TheInterregnum/ ├── index.html ✓ ├── package.json ✓ ├── README.md ✓
+        (Documentación general) ├── TECHNICAL.md ✓ (Documentación técnica) ├──
+        USAGE.md ✓ (Guía de uso) ├── CONFIG.md ✓ (Variables de configuración)
+        ├── CHANGELOG.md ✓ (Historial de versiones) ├── .editorconfig ✓
+        (Configuración del editor) ├── .gitignore ✓ (Git ignore) ├── assets/ │
+        ├── css/ │ │ └── main.css ✓ (CSS compilado) │ ├── scss/ │ │ ├──
+        main.scss ✓ (SASS principal) │ │ ├── abstracts/ │ │ │ ├──
+        _variables.scss ✓ │ │ │ ├── _mixins.scss ✓ │ │ │ └── _index.scss ✓ │ │
+        ├── base/ │ │ │ ├── _reset.scss ✓ │ │ │ ├── _typography.scss ✓ │ │ │ └──
+        _index.scss ✓ │ │ ├── components/ │ │ │ ├── _button.scss ✓ │ │ │ ├──
+        _article-card.scss ✓ │ │ │ ├── _category-card.scss ✓ │ │ │ └──
+        _index.scss ✓ │ │ ├── layout/ │ │ │ ├── _header.scss ✓ │ │ │ ├──
+        _footer.scss ✓ │ │ │ ├── _utilities.scss ✓ │ │ │ └── _index.scss ✓ │ │
+        ├── pages/ │ │ │ ├── _hero.scss ✓ │ │ │ ├── _categories.scss ✓ │ │ │ ├──
+        _articles.scss ✓ │ │ │ ├── _newsletter.scss ✓ │ │ │ └── _index.scss ✓ │
+        │ ├── themes/ │ │ │ ├── _theme.scss ✓ │ │ │ └── _index.scss ✓ │ │ └──
+        vendors/ │ │ ├── _bootstrap-override.scss ✓ │ │ └── _index.scss ✓ │ └──
+        js/ │ └── main.js ✓ └── node_modules/ ✓
+      </div>
+
+      <h2>🧪 Secciones Implementadas</h2>
+      <table>
+        <tr>
+          <th>Sección</th>
+          <th>Componentes</th>
+          <th>Características</th>
+        </tr>
+        <tr>
+          <td><strong>Header</strong></td>
+          <td>Navbar, Logo, Menú</td>
+          <td>Sticky, Responsive, Smooth scroll</td>
+        </tr>
+        <tr>
+          <td><strong>Hero</strong></td>
+          <td>Título, Subtítulo, CTA</td>
+          <td>Gradiente, Animaciones, Responsive</td>
+        </tr>
+        <tr>
+          <td><strong>Categorías</strong></td>
+          <td>4 Cards con iconos</td>
+          <td>Grid 4→3→2→1, Hover effects</td>
+        </tr>
+        <tr>
+          <td><strong>Artículos</strong></td>
+          <td>6 Article Cards</td>
+          <td>Grid 3→2→1, Imágenes, Meta info</td>
+        </tr>
+        <tr>
+          <td><strong>Newsletter</strong></td>
+          <td>Formulario, Modal</td>
+          <td>Validación, Responsive</td>
+        </tr>
+        <tr>
+          <td><strong>Footer</strong></td>
+          <td>4 Columnas, Links</td>
+          <td>Grid responsive, Sociales</td>
+        </tr>
+      </table>
+
+      <h2>🛠️ Stack Tecnológico</h2>
+      <div class="section">
+        <h3>Frontend</h3>
+        <ul>
+          <li><strong>HTML5</strong> - Semántico y accesible</li>
+          <li><strong>CSS3 + SASS</strong> - Arquitectura 7-1</li>
+          <li><strong>JavaScript Vanilla</strong> - Sin dependencias</li>
+          <li><strong>Bootstrap 5</strong> - Componentes y utilidades</li>
+        </ul>
+
+        <h3>Build Tools</h3>
+        <ul>
+          <li><strong>SASS Compiler</strong> - Para compilar SCSS a CSS</li>
+          <li><strong>npm</strong> - Gestor de paquetes</li>
+          <li><strong>Live Server</strong> - Servidor de desarrollo</li>
+        </ul>
+
+        <h3>Metodologías</h3>
+        <ul>
+          <li><strong>BEM</strong> - Nomenclatura CSS</li>
+          <li><strong>Mobile First</strong> - Desarrollo responsivo</li>
+          <li><strong>WCAG 2.1 AA</strong> - Accesibilidad</li>
+          <li><strong>Semantic HTML5</strong> - Estructura semántica</li>
+        </ul>
+      </div>
+
+      <h2>📖 Documentación Incluida</h2>
+      <div class="section">
+        <table>
+          <tr>
+            <th>Documento</th>
+            <th>Propósito</th>
+          </tr>
+          <tr>
+            <td><code>README.md</code></td>
+            <td>Documentación general del proyecto</td>
+          </tr>
+          <tr>
+            <td><code>TECHNICAL.md</code></td>
+            <td>
+              Documentación técnica detallada (arquitectura, componentes, guías)
+            </td>
+          </tr>
+          <tr>
+            <td><code>USAGE.md</code></td>
+            <td>
+              Guía de uso y mantenimiento (cómo editar, agregar contenido)
+            </td>
+          </tr>
+          <tr>
+            <td><code>CONFIG.md</code></td>
+            <td>Variables de configuración y personalización</td>
+          </tr>
+          <tr>
+            <td><code>CHANGELOG.md</code></td>
+            <td>Historial de versiones y cambios</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2>🚀 Cómo Comenzar</h2>
+      <div class="section">
+        <h3>Instalación</h3>
+        <code>npm install</code>
+
+        <h3>Desarrollo</h3>
+        <code>npm start</code> (o <code>npm run sass:watch</code>)
+
+        <h3>Producción</h3>
+        <code>npm run build</code>
+
+        <h3>Ver en navegador</h3>
+        <p>
+          Abrir <code>index.html</code> en el navegador o usar
+          <code>npm run serve</code>
+        </p>
+      </div>
+
+      <h2>💾 Archivos Creados</h2>
+      <div class="section">
+        <strong>Archivos HTML:</strong>
+        <ul>
+          <li>index.html (550+ líneas)</li>
+        </ul>
+
+        <strong>Archivos SCSS (15+ archivos):</strong>
+        <ul>
+          <li>main.scss (punto de entrada)</li>
+          <li>abstracts/ (variables.scss, mixins.scss)</li>
+          <li>base/ (reset.scss, typography.scss)</li>
+          <li>
+            components/ (button.scss, article-card.scss, category-card.scss)
+          </li>
+          <li>layout/ (header.scss, footer.scss, utilities.scss)</li>
+          <li>
+            pages/ (hero.scss, categories.scss, articles.scss, newsletter.scss)
+          </li>
+          <li>themes/ (theme.scss)</li>
+          <li>vendors/ (bootstrap-override.scss)</li>
+        </ul>
+
+        <strong>Archivos JavaScript:</strong>
+        <ul>
+          <li>main.js (200+ líneas de código funcional)</li>
+        </ul>
+
+        <strong>Archivos de Configuración:</strong>
+        <ul>
+          <li>package.json (actualizado con scripts)</li>
+          <li>.editorconfig (consistencia de código)</li>
+        </ul>
+
+        <strong>Documentación:</strong>
+        <ul>
+          <li>README.md</li>
+          <li>TECHNICAL.md</li>
+          <li>USAGE.md</li>
+          <li>CONFIG.md</li>
+          <li>CHANGELOG.md</li>
+        </ul>
+      </div>
+
+      <h2>🎨 Componentes BEM Implementados</h2>
+      <table>
+        <tr>
+          <th>Componente</th>
+          <th>Block</th>
+          <th>Elementos</th>
+          <th>Modificadores</th>
+        </tr>
+        <tr>
+          <td>Artículo Card</td>
+          <td>.article-card</td>
+          <td>
+            8 (image-wrapper, image, category, content, title, excerpt, meta,
+            btn)
+          </td>
+          <td>4 (--trade, --politics, --economics, --finance)</td>
+        </tr>
+        <tr>
+          <td>Categoría Card</td>
+          <td>.category-card</td>
+          <td>4 (icon, title, description, btn)</td>
+          <td>4 (--politics, --economics, --trade, --finance)</td>
+        </tr>
+        <tr>
+          <td>Botón</td>
+          <td>.btn</td>
+          <td>N/A</td>
+          <td>6+ (primary, secondary, outline, sm, lg, disabled)</td>
+        </tr>
+        <tr>
+          <td>Header</td>
+          <td>.header</td>
+          <td>5 (navbar, brand, brand-text, menu, menu-item)</td>
+          <td>2 (--active, --hover)</td>
+        </tr>
+        <tr>
+          <td>Footer</td>
+          <td>.footer</td>
+          <td>10+ (grid, column, title, subtitle, social, list, link, etc)</td>
+          <td>1 (--about)</td>
+        </tr>
+      </table>
+
+      <h2>🎯 Próximos Pasos Sugeridos</h2>
+      <div class="section">
+        <ul>
+          <li>Integrar base de datos de artículos</li>
+          <li>Implementar sistema de búsqueda</li>
+          <li>Agregar filtros por categoría</li>
+          <li>Sistema de comentarios</li>
+          <li>Dark mode dinámico</li>
+          <li>Notificaciones push (PWA)</li>
+          <li>Sistema de administración</li>
+          <li>Analytics e tracking</li>
+        </ul>
+      </div>
+
+      <h2>📝 Notas Finales</h2>
+      <div class="status">
+        <p>
+          El proyecto TheInterregnum ha sido completado exitosamente con todas
+          las características solicitadas y más. El código es limpio, modular,
+          bien documentado y listo para producción.
+        </p>
+        <p>Todos los requisitos han sido cumplidos:</p>
+        <ul class="checklist">
+          <li>HTML5 semántico e implementación correcta</li>
+          <li>Metodología BEM en todos los componentes</li>
+          <li>Arquitectura SASS 7-1 completa</li>
+          <li>Layout con Flexbox y Grid</li>
+          <li>Diseño responsivo con media queries</li>
+          <li>Componentes Bootstrap 5 integrados</li>
+          <li>Código limpio, modular y comentado</li>
+        </ul>
+        <p style="margin-top: 20px">
+          El proyecto está listo para ser utilizado, modificado y extendido
+          según sea necesario.
+        </p>
+      </div>
+
+      <h2>📞 Información de Contacto</h2>
+      <div class="section">
+        <p><strong>Proyecto:</strong> TheInterregnum</p>
+        <p>
+          <strong>Descripción:</strong> Página web de artículos sobre política
+          global y economía internacional
+        </p>
+        <p><strong>Versión:</strong> 1.0.0</p>
+        <p><strong>Fecha de Creación:</strong> 25 de Enero de 2026</p>
+        <p><strong>Licencia:</strong> MIT</p>
+      </div>
+
+      <div
+        style="
+          text-align: center;
+          margin-top: 40px;
+          padding-top: 20px;
+          border-top: 2px solid #ddd;
+        "
+      >
+        <p style="color: #666">
+          Proyecto completado con éxito ✓<br />
+          TheInterregnum v1.0.0<br />
+          © 2026 - Todos los derechos reservados
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+// ============================================
+// CATEGORY CARD COMPONENT
+// ============================================
+// BEM Block: .category-card
+// Elements: __icon, __title, __description, __btn
+
+.category-card {
+  padding: $spacing-lg;
+  border-radius: $border-radius-lg;
+  text-align: center;
+  @include transition(all);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 240, 245, 0.95));
+  border: 1px solid $border-color;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: $shadow-lg;
+    background: linear-gradient(135deg, rgba(26, 84, 144, 0.05), rgba(45, 90, 61, 0.05));
+    border-color: $primary-color;
+  }
+
+  // ------- ICON -------
+  &__icon {
+    font-size: 48px;
+    margin-bottom: $spacing-md;
+    display: block;
+    @include transition(transform);
+  }
+
+  &:hover &__icon {
+    transform: scale(1.2) rotate(-5deg);
+  }
+
+  // ------- TITLE -------
+  &__title {
+    @include heading-style($font-size-lg);
+    color: $dark-color;
+    margin-bottom: $spacing-md;
+  }
+
+  // ------- DESCRIPTION -------
+  &__description {
+    color: $gray-color;
+    font-size: $font-size-sm;
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-md;
+  }
+
+  // ------- BUTTON -------
+  &__btn {
+    @include transition(all);
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+      border-color: $primary-color;
+    }
+  }
+
+  // ------- CATEGORY COLOR VARIANTS -------
+  &--politics {
+    &:hover {
+      border-color: $category-politics;
+
+      .category-card__title {
+        color: $category-politics;
+      }
+    }
+  }
+
+  &--economics {
+    &:hover {
+      border-color: $category-economics;
+
+      .category-card__title {
+        color: $category-economics;
+      }
+    }
+  }
+
+  &--trade {
+    &:hover {
+      border-color: $category-trade;
+
+      .category-card__title {
+        color: $category-trade;
+      }
+    }
+  }
+
+  &--finance {
+    &:hover {
+      border-color: $category-finance;
+
+      .category-card__title {
+        color: $category-finance;
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+// ============================================
+// FOOTER LAYOUT - BEM Pattern
+// ============================================
+// Block: .footer
+// Elements: __grid, __column, __title, __subtitle, __description, __social, __social-link
+// Elements: __list, __link, __bottom, __copyright, __credit
+
+.footer {
+  background: linear-gradient(135deg, $dark-color 0%, rgba(26, 26, 26, 0.95) 100%);
+  color: white;
+  padding: $spacing-xxxl $spacing-md $spacing-lg;
+  margin-top: $spacing-xxxl;
+
+  // ------- GRID LAYOUT -------
+  &__grid {
+    @include grid(4, $spacing-lg);
+    margin-bottom: $spacing-xxl;
+
+    @include respond-to('lg') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to('md') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // ------- COLUMN -------
+  &__column {
+    &--about {
+      @include respond-to('md') {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  // ------- TITLE -------
+  &__title {
+    @include heading-style($font-size-xl);
+    color: white;
+    margin-bottom: $spacing-lg;
+    letter-spacing: 2px;
+  }
+
+  // ------- SUBTITLE -------
+  &__subtitle {
+    @include heading-style($font-size-base, $font-weight-semibold);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: $spacing-md;
+  }
+
+  // ------- DESCRIPTION -------
+  &__description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: $line-height-relaxed;
+    margin-bottom: $spacing-lg;
+    font-size: $font-size-sm;
+  }
+
+  // ------- SOCIAL LINKS -------
+  &__social {
+    @include flex-between;
+    gap: $spacing-md;
+    margin-top: $spacing-lg;
+  }
+
+  &__social-link {
+    color: rgba(255, 255, 255, 0.8);
+    @include transition(all);
+    font-weight: $font-weight-medium;
+
+    &:hover {
+      color: $primary-light;
+      text-decoration: underline;
+    }
+  }
+
+  // ------- LIST -------
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  // ------- LINK -------
+  &__link {
+    color: rgba(255, 255, 255, 0.8);
+    @include transition(all);
+    display: block;
+    padding: $spacing-sm 0;
+    font-size: $font-size-sm;
+
+    &:hover {
+      color: $primary-light;
+      text-decoration: underline;
+      padding-left: $spacing-sm;
+    }
+  }
+
+  // ------- BOTTOM SECTION -------
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: $spacing-lg;
+    text-align: center;
+
+    @include respond-to('sm') {
+      text-align: left;
+    }
+  }
+
+  // ------- COPYRIGHT -------
+  &__copyright {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    margin-bottom: $spacing-sm;
+  }
+
+  // ------- CREDIT -------
+  &__credit {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: $font-size-sm;
+    margin-bottom: 0;
+  }
+}
