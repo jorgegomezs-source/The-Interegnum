@@ -96,3 +96,29 @@
     justify-content: center;
   }
 }
+
+/* Navbar mobile visibility fixes: ensure collapsed menu can expand inside sticky header */
+.header {
+  overflow: visible;
+}
+
+.header .navbar-collapse.collapse {
+  display: none;
+}
+
+.header .navbar-collapse.collapse.show {
+  display: block !important;
+}
+
+.header .navbar-collapse {
+  background: transparent;
+  width: 100%;
+}
+
+.header .navbar-collapse .navbar-nav {
+  padding: 0.5rem 1rem;
+}
+
+.header .navbar-toggler {
+  z-index: 2000;
+}
