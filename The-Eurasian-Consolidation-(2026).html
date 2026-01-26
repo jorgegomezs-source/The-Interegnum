@@ -1,0 +1,1562 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Eurasian Consolidation (2026) | TheInterregnum</title>
+    <meta
+      name="description"
+      content="From Pipeline Politics to War Economy: Competitive Coordination and Its Limits"
+    />
+    <meta name="author" content="Lisa Anderson" />
+    <meta name="date" content="2026-01-18" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Estilos para página de artículo -->
+    <style>
+      .article-page__hero {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 60px 20px;
+        margin-bottom: 40px;
+      }
+
+      .article-page__meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__category {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .article-page__category--economics {
+        background: rgba(26, 84, 144, 0.9);
+      }
+
+      .article-page__category--geopolitics {
+        background: rgba(45, 90, 61, 0.9);
+      }
+
+      .article-page__category--trade {
+        background: rgba(194, 160, 64, 0.9);
+      }
+
+      .article-page__category--finance {
+        background: rgba(92, 61, 61, 0.9);
+      }
+
+      .article-page__title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .article-page__subtitle {
+        font-size: 20px;
+        opacity: 0.95;
+        margin-bottom: 30px;
+      }
+
+      .article-page__author-info {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__image-section {
+        padding: 40px 20px;
+        background: #f8f9fa;
+      }
+
+      .article-page__featured-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .article-page__image-caption {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 15px;
+        font-style: italic;
+      }
+
+      .article-page__content {
+        padding: 60px 20px;
+      }
+
+      .article-page__body {
+        line-height: 1.8;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .article-page__body h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #1a5490;
+      }
+
+      .article-page__body h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #2d5a3d;
+      }
+
+      .article-page__body p {
+        margin-bottom: 15px;
+      }
+
+      .article-page__body ul,
+      .article-page__body ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .article-page__body li {
+        margin-bottom: 10px;
+      }
+
+      .article-page__quote {
+        border-left: 4px solid #1a5490;
+        padding-left: 20px;
+        margin: 30px 0;
+        font-size: 18px;
+        font-style: italic;
+        color: #555;
+        background: #f0f4f8;
+        padding: 20px;
+        padding-left: 20px;
+        border-radius: 4px;
+      }
+
+      .article-page__highlight {
+        background: #fff3cd;
+        padding: 20px;
+        border-left: 4px solid #ffc107;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+
+      .article-page__tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__tag {
+        background: #e9ecef;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .article-page__cta {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .article-page__cta p {
+        margin-bottom: 20px;
+      }
+
+      .article-page__navigation {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid #ddd;
+      }
+
+      .article-page__navigation a {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .article-page__hero {
+          padding: 40px 20px;
+        }
+
+        .article-page__title {
+          font-size: 32px;
+        }
+
+        .article-page__subtitle {
+          font-size: 18px;
+        }
+
+        .article-page__content {
+          padding: 40px 20px;
+        }
+
+        .article-page__body h2 {
+          font-size: 22px;
+        }
+
+        .article-page__cta {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER/NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg header__navbar">
+        <div class="container">
+          <a class="navbar-brand header__brand" href="index.html">
+            <span class="header__brand-text">TheInterregnum</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#articles"
+                  >Articles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="#newsletter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#newsletterModal"
+                >
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO DEL ARTÍCULO -->
+    <main class="article-page">
+      <!-- Hero del artículo -->
+      <section class="article-page__hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="article-page__meta">
+                <span
+                  class="article-page__category article-page__category--politics"
+                >
+                  Politics
+                </span>
+                <span class="article-page__date">January 18, 2026</span>
+              </div>
+              <h1 class="article-page__title">
+                The Eurasian Consolidation (2026)
+              </h1>
+              <p class="article-page__subtitle">
+                From Pipeline Politics to War Economy: Competitive Coordination
+                and Its Limits
+              </p>
+              <div class="article-page__author-info">
+                <span class="article-page__author-name">By Emma Wilson</span>
+                <span class="article-page__reading-time"
+                  >Reading time: 8 min</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagen destacada -->
+      <section class="article-page__image-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <img
+                src="./assets/img/MidAsiaCorridor.jpg"
+                alt="Middle East trade corridor"
+                class="article-page__featured-image"
+              />
+              <p class="article-page__image-caption">
+                A strategic trade corridor linking Asia and Europe through the
+                Middle East.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenido principal -->
+      <section class="article-page__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <article class="article-page__body">
+                <h1>The Eurasian Consolidation (2026)</h1>
+
+                <p>
+                  <strong
+                    >From Pipeline Politics to War Economy: Competitive
+                    Coordination and Its Limits</strong
+                  >
+                </p>
+
+                <p>
+                  The invasion of Ukraine in 2022 and the subsequent Western
+                  sanctions regime accelerated processes that had been
+                  developing for decades: the reorientation of Russian energy
+                  and commodities toward Asian markets, the construction of
+                  infrastructure bypassing Western-controlled transit routes,
+                  and the diplomatic alignment of states excluded from or
+                  marginal to the American-led order. The "turn to the East"
+                  that Russian policy documents had long advocated became
+                  material necessity. The "no limits partnership" between Russia
+                  and China, declared shortly before the invasion, was tested
+                  and deepened by shared confrontation with Western sanctions.
+                  The expansion of BRICS in 2024, incorporating Iran, Saudi
+                  Arabia, the United Arab Emirates, Egypt, and Ethiopia,
+                  provided institutional framework for this reorientation,
+                  however limited its operational capacity. What emerged was
+                  less a planned new order than a
+                  <strong>siege economy</strong>—a hastily assembled network of
+                  alternative routes and mechanisms defined as much by what it
+                  excludes (Western control) as by what it integrates.
+                </p>
+
+                <p>
+                  The question that follows is whether this acceleration
+                  constitutes qualitative transformation—the emergence of
+                  Eurasian bloc capable of challenging Western hegemony—or
+                  quantitative intensification of patterns that remain
+                  constrained by structural obstacles. The analysis examines the
+                  institutional and infrastructural architecture of attempted
+                  consolidation: energy and commodity flows, financial
+                  mechanisms, military cooperation, and the diplomatic
+                  frameworks that coordinate without integrating. The assessment
+                  is skeptical: the Eurasian powers face competitive interests
+                  that preclude genuine alliance, structural dependencies that
+                  Western sanctions have intensified rather than eliminated, and
+                  the temporal contradiction that their cooperation attempts to
+                  address—relative decline of American hegemony—generates
+                  pressures that undermine their own capacity for collective
+                  action.
+                </p>
+
+                <h2>
+                  The Material Base: Energy, Commodities, and Infrastructure
+                </h2>
+
+                <p>
+                  The foundation of Eurasian consolidation is material: the
+                  hydrocarbon reserves of Russia, Iran, and Central Asia; the
+                  mineral resources of Siberia and the Arctic; the agricultural
+                  production of Ukraine, Russia, and Kazakhstan; the industrial
+                  capacity of China and, to lesser extent, India. The
+                  complementarity is apparent: energy and raw materials flow
+                  eastward, manufactured goods flow westward, with
+                  infrastructure construction—pipelines, railways,
+                  ports—enabling circulation that maritime Western dominance had
+                  constrained.
+                </p>
+
+                <p>
+                  The Power of Siberia pipeline, operational since 2019,
+                  delivers Russian gas to China; Power of Siberia 2, under
+                  negotiation, would expand capacity and connect western
+                  Siberian fields. The Eastern Siberia-Pacific Ocean oil
+                  pipeline enables Russian crude export to Asia independent of
+                  European transit. These projects, long delayed by pricing
+                  disputes and Chinese reluctance to over-depend on single
+                  supplier, were accelerated by Western sanctions that
+                  eliminated European alternative. The "strategic partnership"
+                  became material necessity for Russia and commercial
+                  opportunity for China.
+                </p>
+
+                <p>
+                  The Iranian dimension adds further complexity. Sanctioned by
+                  Western powers since 1979, Iran developed infrastructure and
+                  trading relationships oriented toward Asia: oil sales to China
+                  and India, barter arrangements, financial mechanisms bypassing
+                  dollar clearing. The 25-year comprehensive cooperation
+                  agreement with China, signed in 2021, provides framework for
+                  expanded investment, though implementation has been slower
+                  than announced. The normalization of Saudi-Iranian relations,
+                  brokered by China in 2023, reduced Gulf tensions that had
+                  constrained regional energy cooperation, though it did not
+                  eliminate competitive dynamics.
+                </p>
+
+                <p>
+                  The infrastructure of Eurasian consolidation extends beyond
+                  energy to transportation and digital connectivity. The
+                  International North-South Transport Corridor—envisioned since
+                  2002, operationalized since 2022—connects Russia through the
+                  Caucasus and Caspian to Iran and Indian Ocean ports, reducing
+                  transit time and cost compared to Suez Canal routes. The
+                  China-Pakistan Economic Corridor provides alternative Indian
+                  Ocean access bypassing Malacca Strait chokepoint. The Northern
+                  Sea Route, opened by climate change and developed by Russian
+                  investment, offers shorter Europe-Asia transit that remains
+                  ice-limited and militarily vulnerable.
+                </p>
+
+                <p>
+                  The digital infrastructure is similarly contested: Chinese
+                  Huawei 5G networks in Central Asia and Russia, Russian GLONASS
+                  and Chinese BeiDou navigation systems, national internet
+                  infrastructures with varying degrees of Western platform
+                  exclusion. The "cyber-sovereignty" that Eurasian states claim
+                  involves not merely protection from Western surveillance but
+                  construction of alternative networks that Chinese technology
+                  dominates.
+                </p>
+
+                <h2>
+                  The Financial Architecture: De-dollarization and Its Limits
+                </h2>
+
+                <p>
+                  The sanctions weaponization of dollar-based financial
+                  infrastructure—SWIFT exclusion, frozen reserves, secondary
+                  sanctions—generated accelerated efforts toward alternative
+                  arrangements. The bilateral currency swaps between China and
+                  trading partners, the Russian SPFS and Chinese CIPS messaging
+                  systems, the exploration of central bank digital currencies,
+                  and the commodity pricing in national currencies—all represent
+                  attempts to reduce dollar dependency that Western policy has
+                  intensified.
+                </p>
+
+                <p>
+                  The achievements are real but limited. Bilateral trade between
+                  China and Russia is substantially conducted in yuan and
+                  rubles; India purchases Russian oil in rupees; Iran has long
+                  experience with sanctions-evading financial mechanisms. But
+                  the dollar remains dominant in global trade, in foreign
+                  exchange reserves, in commodity pricing. The alternative
+                  systems lack depth, liquidity, and trust; they function for
+                  specific transactions but cannot replicate the dollar's
+                  universal intermediation. The "de-dollarization" that BRICS
+                  rhetoric proclaims is aspiration rather than achievement, and
+                  the structural obstacles—network effects, institutional
+                  inertia, absence of credible alternative—are formidable.
+                </p>
+
+                <p>
+                  The financial integration of Eurasian economies is further
+                  constrained by competitive dynamics. China's financial system
+                  is state-controlled and capital-account restricted; Russia's
+                  has been partially liberalized and then re-constrained by
+                  sanctions; India's remains domestically oriented with limited
+                  convertibility. The "multipolar" financial order that is
+                  envisioned would require coordination that competitive
+                  nationalism prevents: shared reserve currency, integrated
+                  banking supervision, common crisis response mechanisms. The
+                  BRICS New Development Bank and Contingent Reserve Arrangement,
+                  established 2014-2016, remain marginal to global financial
+                  governance, their capitalization inadequate to systemic
+                  challenges.
+                </p>
+
+                <p>
+                  The temporal dimension compounds these constraints.
+                  Dollar-based financial infrastructure was constructed over
+                  decades, with institutional embedding that transformation
+                  cannot achieve quickly. The urgency that sanctions
+                  generated—immediate need for payment mechanisms, reserve
+                  security, investment channels—produced workarounds rather than
+                  alternatives, temporary adaptations that do not cumulate into
+                  systemic replacement. The "transition" to multipolar finance,
+                  if it occurs, will extend across decades that geopolitical
+                  competition may not permit. Thus, the financial 'decoupling'
+                  remains a patchwork of workarounds, while the more profound
+                  technological decoupling—in semiconductors, AI, and advanced
+                  manufacturing—proves a harder, slower frontier, exposing the
+                  fundamental dependency that underpins the rhetoric of
+                  autonomy.
+                </p>
+
+                <h2>
+                  The Ideology of Multipolarity: Sovereignty as a Strategic
+                  Weapon
+                </h2>
+
+                <p>
+                  Beneath the material competition lies a battle of narratives.
+                  The "civilizational" and "multipolar" discourse promoted by
+                  Moscow and Beijing is a potent soft-power tool that resonates
+                  across the Global South, weaponizing post-colonial grievances
+                  to frame Western hegemony as the singular source of
+                  instability. The vocabulary of "sovereignty,"
+                  "non-interference," and "civilizational diversity" provides a
+                  coherent ideological counter to liberal interventionism,
+                  offering a principled rationale for what is often pure
+                  realpolitik. Yet this ideology masks the neo-imperial nature
+                  of their own economic and security projects within Eurasia
+                  itself. It functions as strategic weapon: delegitimizing
+                  Western pressure while legitimizing their own spheres of
+                  influence, creating a diplomatic shield that makes containment
+                  politically costly.
+                </p>
+
+                <h2>Military Cooperation: Alignment Without Alliance</h2>
+
+                <p>
+                  The military dimension of Eurasian consolidation is
+                  characterized by alignment without alliance: coordination
+                  against shared adversary without integrated command, equipment
+                  standardization, or mutual security guarantees. The
+                  Russia-China relationship is most developed: joint exercises,
+                  technology transfer, intelligence sharing, and diplomatic
+                  coordination. But the "no limits partnership" explicitly
+                  excludes formal alliance; Chinese officials emphasize that
+                  relationship "is not targeted at any third party," maintaining
+                  ambiguity that preserves flexibility.
+                </p>
+
+                <p>
+                  The military-technical cooperation is substantial but
+                  asymmetrical. Russia supplies China with advanced weapons
+                  systems—S-400 air defense, Su-35 aircraft—that Chinese
+                  industry subsequently reverse-engineers and replaces with
+                  domestic alternatives. The Ukraine war has accelerated this
+                  dynamic: Russian military equipment has proven inadequate
+                  against NATO-supplied Ukrainian forces, reducing the
+                  attractiveness of Russian arms exports; Chinese observation of
+                  Russian operational difficulties informs its own military
+                  modernization without requiring replication of Russian errors.
+                  The "partnership" involves learning from Russian failure as
+                  much as benefiting from Russian capability.
+                </p>
+
+                <p>
+                  The Iranian dimension adds further complexity. Military
+                  cooperation with Russia—drone technology transfer, satellite
+                  launch assistance, potential missile technology—has developed
+                  since 2022, but remains constrained by Iranian strategic
+                  autonomy and Russian reluctance to provide systems that might
+                  provoke Israeli or American response. The "axis of resistance"
+                  that Iran constructs—Hezbollah, Hamas, Houthis, Iraqi
+                  militias—serves Iranian regional interests that do not
+                  necessarily coincide with Russian or Chinese priorities. The
+                  Gaza war of 2023-2024 demonstrated both coordination
+                  (Iranian-supported forces pressuring Israel on multiple
+                  fronts) and limitation (no direct Iranian intervention,
+                  Russian and Chinese diplomatic caution).
+                </p>
+
+                <p>
+                  The Indian position is most ambiguous. Historical Russian arms
+                  supply and strategic partnership—formalized in 1971 treaty,
+                  continued despite Western pressure—coexists with Quad
+                  alignment with United States, Japan, and Australia; border
+                  confrontation with China that produced lethal clashes in 2020;
+                  and aspiration to strategic autonomy that rejects formal
+                  alliance with either bloc. Indian participation in BRICS and
+                  SCO serves multiple purposes: managing Russia relationship,
+                  constraining Chinese dominance, accessing alternative
+                  institutions without excluding Western partnership. The
+                  "multi-alignment" that Indian strategists claim is not
+                  Eurasian consolidation but its complication.
+                </p>
+
+                <h2>
+                  The Institutional Framework: BRICS, SCO, and Forum Diplomacy
+                </h2>
+
+                <p>
+                  The institutional architecture of Eurasian consolidation is
+                  characterized by proliferation without integration: multiple
+                  forums with overlapping membership, competing agendas, and
+                  limited operational capacity. BRICS provides the most
+                  prominent framework—expanded 2024 to include major energy
+                  exporters and African economies—but remains essentially
+                  consultative, its declarations aspirational, its mechanisms
+                  underdeveloped. The New Development Bank, BRICS's most
+                  concrete achievement, lends at modest scale compared to
+                  Bretton Woods institutions, with governance and currency
+                  arrangements that do not challenge established order.
+                </p>
+
+                <p>
+                  The Shanghai Cooperation Organization (SCO) includes Russia,
+                  China, Central Asian states, India, Pakistan, and Iran, with
+                  observer and dialogue partner status for additional states.
+                  Its security dimension—counter-terrorism cooperation,
+                  intelligence sharing, military exercises—addresses shared
+                  concerns about separatism and instability, but does not extend
+                  to collective defense or integrated command. The economic
+                  dimension—trade facilitation, investment promotion—remains
+                  underdeveloped compared to bilateral arrangements. The SCO
+                  functions primarily as forum for regional dialogue and
+                  bilateral deal-making rather than as cohesive bloc.
+                </p>
+
+                <p>
+                  The Eurasian Economic Union (EEU), Russian-led and Central
+                  Asian-focused, has achieved modest trade integration but
+                  remains dominated by Russian economy and constrained by
+                  Chinese Belt and Road investments that bypass or compete with
+                  EEU mechanisms. The "Greater Eurasian Partnership" that Russia
+                  has proposed would integrate EEU with Chinese Belt and Road,
+                  but implementation has been slow and Chinese investment in
+                  Central Asia proceeds through bilateral channels rather than
+                  multilateral frameworks.
+                </p>
+
+                <p>
+                  The institutional fragmentation reflects competitive interests
+                  that formal integration would require resolving. China prefers
+                  bilateral arrangements that maximize its leverage; Russia
+                  seeks multilateral frameworks that constrain Chinese dominance
+                  and preserve its own influence; India participates without
+                  committing; Iran is constrained by sanctions and regional
+                  isolation; Central Asian states balance multiple relationships
+                  without exclusive alignment. The "multipolarity" that these
+                  institutions claim to represent is less coordinated challenge
+                  to Western hegemony than competitive positioning within
+                  emerging order that none can dominate.
+                </p>
+
+                <h2>
+                  The Obstacles: Competitive Nationalism and Structural
+                  Dependency
+                </h2>
+
+                <p>
+                  The fundamental obstacle to Eurasian consolidation is
+                  competitive nationalism: the pursuit of national interest that
+                  cooperation would require subordinating to collective
+                  framework. Russia and China are strategic partners but also
+                  historical rivals, with territorial disputes resolved but not
+                  forgotten, with competing influence in Central Asia, with
+                  divergent interests in Arctic, Pacific, and Indian Ocean
+                  regions. The "no limits partnership" explicitly maintains
+                  limits: no formal alliance, no integrated military command, no
+                  shared nuclear umbrella, no common market with free movement.
+                </p>
+
+                <p>
+                  The economic asymmetry between China and other Eurasian powers
+                  compounds competitive dynamics. Chinese economy is larger than
+                  all other BRICS combined; its manufacturing capacity exceeds
+                  global demand in multiple sectors; its Belt and Road
+                  investments create debt dependencies that recipient states
+                  resent. The "win-win" rhetoric of Chinese diplomacy masks
+                  structural extraction: raw materials and energy flow to China,
+                  manufactured goods flow outward, with technology transfer and
+                  value-added production concentrated in China. The
+                  "development" that Chinese investment enables is subordinate
+                  insertion into Chinese supply chains rather than autonomous
+                  industrialization.
+                </p>
+
+                <p>
+                  The structural dependencies that Western sanctions intensified
+                  rather than eliminated constrain Eurasian autonomy. Russian
+                  military equipment depends upon Western-origin semiconductors
+                  and components that sanctions restrict and covert procurement
+                  cannot fully replace. Chinese advanced manufacturing depends
+                  upon Taiwan Semiconductor and Dutch ASML equipment that export
+                  controls constrain. Iranian economy depends upon oil export
+                  that sanctions restrict and smuggling cannot fully compensate.
+                  The "decoupling" that Western policy pursues is partial and
+                  asymmetric; the "self-reliance" that Eurasian states claim
+                  remains aspiration rather than achievement.
+                </p>
+
+                <p>
+                  The temporal contradiction is decisive: the relative decline
+                  of American hegemony that creates space for Eurasian
+                  consolidation also generates pressures that undermine it. The
+                  urgency of immediate confrontation—sanctions evasion, military
+                  procurement, diplomatic coordination—takes priority over
+                  long-term institution-building. The competitive dynamics that
+                  American decline enables—Chinese assertion, Russian
+                  desperation, Indian multi-alignment, Iranian regional
+                  ambition—generate conflict that consolidation would require
+                  managing. The "strategic patience" that successful
+                  consolidation would require is incompatible with the crisis
+                  tempo that decline generates.
+                </p>
+
+                <h2>
+                  The War Economy Dimension: Ukraine and the Siege Economy
+                  Forged in Conflict
+                </h2>
+
+                <p>
+                  The Ukraine war has transformed Eurasian consolidation from
+                  diplomatic possibility to material necessity for Russia, and
+                  from commercial opportunity to strategic risk for China. The
+                  Russian economy's conversion to war footing—state-directed
+                  production, labor mobilization, import substitution—has
+                  achieved surprising resilience but at cost of technological
+                  regression and long-term growth sacrifice. This militarized
+                  mobilization creates new, hardened facts on the ground: supply
+                  chains for drones, artillery, and ammunition now snake through
+                  North Korea and Iran, creating dependencies and relationships
+                  that outlive specific conflicts. The "military Keynesianism"
+                  that sustains employment and production is not sustainable
+                  development but the core logic of the siege economy.
+                </p>
+
+                <p>
+                  The Chinese response has been calibrated support without full
+                  commitment: expanded energy and commodity purchases, financial
+                  mechanisms bypassing sanctions, diplomatic protection at
+                  United Nations, but no military equipment supply that would
+                  trigger secondary sanctions and jeopardize Western market
+                  access. The "no limits partnership" has proven to have limits:
+                  Chinese banks restrict transactions with sanctioned Russian
+                  entities; Chinese technology exports comply with American
+                  export controls; Chinese diplomacy maintains Western
+                  relationships alongside Russian partnership.
+                </p>
+
+                <p>
+                  The architecture of this siege economy relies on critical
+                  intermediaries. Turkey and the United Arab Emirates have
+                  become indispensable financial and logistical hubs, leveraging
+                  their non-aligned status to facilitate trade, finance, and
+                  technology flows that formal channels block. Their power
+                  derives not from military might but from their role as the
+                  <strong>pressure valves and backchannels</strong> of the
+                  sanctioned economy, making them both essential and perpetually
+                  vulnerable to the shifting whims of greater powers.
+                </p>
+
+                <p>
+                  The spillover effects extend across Eurasia. Central Asian
+                  states—Kazakhstan, Uzbekistan, others—have exploited Russian
+                  distraction to assert autonomy, resisting integration
+                  initiatives that would subordinate them to Russian-led
+                  frameworks. The Caucasus—Armenia, Azerbaijan, Georgia—has seen
+                  intensified conflict and great power competition that Russian
+                  hegemony had suppressed. The Middle East—Syria, Iran, Saudi
+                  Arabia, Israel—has experienced realignment and conflict that
+                  Russian and Chinese influence cannot stabilize. The
+                  "consolidation" that Ukraine was supposed to accelerate has
+                  generated fragmentation that it cannot control.
+                </p>
+
+                <h2>The Global South in the Interregnum: Playing the Field</h2>
+
+                <p>
+                  This competitive coordination has unlocked agency for states
+                  across Africa, Latin America, and Southeast Asia. Rather than
+                  passive recipients of a new bipolarity, these states are
+                  actively exploiting the interregnum to play powers off each
+                  other—securing investment from China while buying discounted
+                  oil from Russia, acquiring arms from multiple suppliers, and
+                  using BRICS membership to extract concessions from Western
+                  institutions. This is not a story of the Global South aligning
+                  with a Eurasian bloc, but of its political elites skillfully
+                  navigating the fragmentation of hegemonic power to maximize
+                  their own bargaining position, often at the expense of their
+                  own populations' sovereignty and development.
+                </p>
+
+                <h2>
+                  Conclusion: Competitive Coordination and the Interregnum
+                </h2>
+
+                <p>
+                  The Eurasian consolidation that policy discourse and some
+                  analysis identifies is more accurately described as
+                  competitive coordination: alignment against shared adversary
+                  without integration into cohesive bloc, cooperation in
+                  specific domains without collective framework, diplomatic
+                  coordination without mutual commitment. The structural
+                  obstacles—competitive nationalism, economic asymmetry,
+                  structural dependency, temporal contradiction—are not
+                  temporary but constitutive. The "multipolarity" that this
+                  coordination claims to represent is less new order than
+                  extended interregnum: period of American relative decline
+                  without successor hegemony, of institutional fragmentation
+                  without alternative construction.
+                </p>
+
+                <p>
+                  The question for analysis is whether this interregnum can be
+                  extended indefinitely, or whether competitive pressures
+                  generate confrontation that forces alignment into alliance or
+                  dissolution. The Ukraine war has demonstrated both the
+                  possibilities and limits of Eurasian coordination: Russian
+                  resilience with Chinese support, but also Chinese restraint
+                  and Russian isolation. The Taiwan scenario—potential
+                  confrontation that would test China-Russia partnership more
+                  severely—remains speculative but instructive: Chinese priority
+                  for reunification, Russian interest in Western distraction,
+                  but also risk of escalation that neither can control and that
+                  would expose the limits of their partnership.
+                </p>
+
+                <p>
+                  The alternative—genuine Eurasian integration with common
+                  market, collective security, and shared institutions—would
+                  require transformation of national interests that competitive
+                  nationalism prevents. The "civilizational" framing that some
+                  Russian and Chinese discourse proposes—Eurasia as alternative
+                  to Atlantic West—masks national interests that such framing
+                  would require subordinating. The historical
+                  precedent—Soviet-Chinese alliance and its
+                  dissolution—indicates the fragility of partnerships between
+                  communist states with even nominal ideological solidarity; the
+                  contemporary partnership lacks even this.
+                </p>
+
+                <p>
+                  For the states of Eurasia, the interregnum presents
+                  opportunities and risks that competitive coordination attempts
+                  to navigate. For the global South, the proliferation of forums
+                  and partnerships offers leverage that non-alignment previously
+                  provided, but also risks of subordination to new hegemons. For
+                  Western powers, the consolidation that is feared is less
+                  developed than policy response assumes, but the competitive
+                  coordination that exists is sufficient to complicate
+                  containment strategy. The Eurasian project, therefore, is the
+                  geopolitical expression of the interregnum: a fragmented,
+                  reactive, and often contradictory coordination that can
+                  destabilize the old order but cannot birth a stable new one.
+                  It ensures the transition will be defined not by hegemonic
+                  succession, but by prolonged, competitive crisis-management—a
+                  permanent state of emergency masquerading as a new world
+                  order.
+                </p>
+                <h1>References</h1>
+
+                <p><em>Organized by Analytical Themes</em></p>
+
+                <h2>The Siege Economy and Sanctions Evasion</h2>
+
+                <p>
+                  <strong>Claim:</strong> Western sanctions accelerated the
+                  construction of alternative routes and mechanisms defined by
+                  exclusion of Western control rather than positive integration.
+                </p>
+
+                <p>
+                  <strong>Matthew Klein and Michael Pettis</strong> — Analyze
+                  trade imbalances and the global savings glut. See
+                  <em
+                    >Trade Wars Are Class Wars: How Rising Inequality Distorts
+                    the Global Economy and Threatens International Peace</em
+                  >
+                  (2020).
+                </p>
+
+                <p>
+                  <strong>Adam Tooze</strong> — Documents the weaponization of
+                  financial infrastructure and sanctions regime. See
+                  <em>Shutdown: How Covid Shook the World's Economy</em> (2021)
+                  and subsequent analysis of Russia sanctions.
+                </p>
+
+                <p>
+                  <strong>Nicholas Mulder</strong> — Examines the history and
+                  political economy of economic sanctions. See
+                  <em
+                    >The Economic Weapon: The Rise of Sanctions as a Tool of
+                    Modern War</em
+                  >
+                  (2022).
+                </p>
+
+                <p>
+                  <strong>Henry Farrell and Abraham Newman</strong> — Analyze
+                  "weaponized interdependence" and network power. See
+                  "Weaponized Interdependence: How Global Economic Networks
+                  Shape State Coercion" (2019) and subsequent work.
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Analyzes how financial
+                  sanctions accelerate the search for alternatives and the
+                  construction of parallel systems. His work on the "tribute
+                  economy" and the weaponization of dollar hegemony informs
+                  understanding of the siege economy dynamic.
+                </p>
+
+                <h2>Energy Infrastructure and Pipeline Politics</h2>
+
+                <p>
+                  <strong>Claim:</strong> Energy flows and infrastructure
+                  construction enable Eurasian circulation but create
+                  dependencies and pricing disputes.
+                </p>
+
+                <p>
+                  <strong>Thane Gustafson</strong> — Examines Russian energy
+                  politics and the "turn to the East." See
+                  <em>The Bridge: Natural Gas in a Redivided Europe</em> (2020)
+                  and
+                  <em>Klimat: Russia in the Age of Climate Change</em> (2021).
+                </p>
+
+                <p>
+                  <strong>Morena Skalamera</strong> — Analyzes Russia-China
+                  energy relations. See "The Russia-China Gas Deal: Shifting the
+                  Balance" (2014) and subsequent work at Harvard Davis Center.
+                </p>
+
+                <p>
+                  <strong>Keun-Wook Paik</strong> — Documents Sino-Russian oil
+                  and gas pipeline development. See
+                  <em
+                    >Sino-Russian Oil and Gas Cooperation: The Reality and
+                    Implications</em
+                  >
+                  (2012).
+                </p>
+
+                <p>
+                  <strong>Robert Cutler</strong> — Examines Eurasian energy
+                  infrastructure and geopolitics. See work at Carleton
+                  University and Energy Security Research.
+                </p>
+
+                <h2>Financial De-dollarization and Its Limits</h2>
+
+                <p>
+                  <strong>Claim:</strong> Alternative financial mechanisms
+                  function as workarounds rather than systemic alternatives to
+                  dollar dominance.
+                </p>
+
+                <p>
+                  <strong>Eswar Prasad</strong> — Analyzes the dollar's enduring
+                  dominance and challenges to it. See
+                  <em
+                    >The Dollar Trap: How the U.S. Dollar Tightened Its Grip on
+                    Global Finance</em
+                  >
+                  (2014) and
+                  <em
+                    >The Future of Money: How the Digital Revolution Is
+                    Transforming Currencies and Finance</em
+                  >
+                  (2021).
+                </p>
+
+                <p>
+                  <strong>Barry Eichengreen</strong> — Examines international
+                  currency competition. See
+                  <em
+                    >Exorbitant Privilege: The Rise and Fall of the Dollar and
+                    the Future of the International Monetary System</em
+                  >
+                  (2011) and
+                  <em>How Global Currencies Work: Past, Present, and Future</em>
+                  (2017, with Arnaud Mehl and Livia Chițu).
+                </p>
+
+                <p>
+                  <strong>Jonathan Kirshner</strong> — Analyzes the political
+                  economy of currency power. See
+                  <em
+                    >Currency and Coercion: The Political Economy of
+                    International Monetary Power</em
+                  >
+                  (1995) and
+                  <em>American Power after the Financial Crisis</em> (2014).
+                </p>
+
+                <p>
+                  <strong>Zongyuan Zoe Liu</strong> — Examines China's
+                  international financial architecture. See
+                  <em
+                    >Sovereign Funds: How the Communist Party of China Finances
+                    Its Global Ambitions</em
+                  >
+                  (2022).
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Documents the construction
+                  and weaponization of dollar-based financial infrastructure.
+                  See
+                  <em
+                    >Super Imperialism: The Economic Strategy of American
+                    Empire</em
+                  >
+                  (1972, updated 2003) and
+                  <em>Global Fracture: The New International Economic Order</em>
+                  (1977, updated 2005). His analysis of how financial systems
+                  create dependencies informs understanding of de-dollarization
+                  limits.
+                </p>
+
+                <h2>The Ideology of Multipolarity and Sovereignty</h2>
+
+                <p>
+                  <strong>Claim:</strong> "Multipolar" discourse weaponizes
+                  post-colonial grievances while masking neo-imperial projects.
+                </p>
+
+                <p>
+                  <strong>Samuel Moyn</strong> — Analyzes "humane" imperialism
+                  and its critics. See
+                  <em
+                    >Humane: How the United States Abandoned Peace and
+                    Reinvented War</em
+                  >
+                  (2021) and work on international law and empire.
+                </p>
+
+                <p>
+                  <strong>Adom Getachew</strong> — Examines post-colonial
+                  internationalism and its limits. See
+                  <em
+                    >Worldmaking after Empire: The Rise and Fall of
+                    Self-Determination</em
+                  >
+                  (2019).
+                </p>
+
+                <p>
+                  <strong>Vijay Prashad</strong> — Documents the "darker
+                  nations" and Global South politics. See
+                  <em
+                    >The Darker Nations: A People's History of the Third
+                    World</em
+                  >
+                  (2007) and
+                  <em
+                    >The Poorer Nations: A Possible History of the Global
+                    South</em
+                  >
+                  (2012).
+                </p>
+
+                <p>
+                  <strong>Oliver Stuenkel</strong> — Analyzes BRICS and
+                  post-Western global governance. See
+                  <em>The BRICS and the Future of Global Order</em> (2015) and
+                  <em>BRICS: A Guide for the Perplexed</em> (2024).
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Analyzes how ideological
+                  framing of "sovereignty" and "development" obscures structural
+                  extraction. His critique of the "Washington Consensus" and its
+                  alternatives informs understanding of multipolarity ideology.
+                </p>
+
+                <h2>Military Alignment Without Alliance</h2>
+
+                <p>
+                  <strong>Claim:</strong> Russia-China military cooperation
+                  lacks formal alliance structures and is characterized by
+                  asymmetry and learning from failure.
+                </p>
+
+                <p>
+                  <strong>Yu Bin</strong> — Examines Sino-Russian military
+                  relations. See "In Search for a Normal Relationship: China and
+                  Russia into the 21st Century" and work at Wittenberg
+                  University.
+                </p>
+
+                <p>
+                  <strong>Richard Weitz</strong> — Analyzes China-Russia
+                  security cooperation. See work at Hudson Institute and "Why
+                  Russia and China Have Not Formed an Anti-NATO Alliance"
+                  (2020).
+                </p>
+
+                <p>
+                  <strong>Michael Kofman</strong> — Documents Russian military
+                  performance and Chinese observation. See work at CNA and War
+                  on the Rocks on Ukraine and Sino-Russian relations.
+                </p>
+
+                <p>
+                  <strong>Paul J. Bolt and Sharyl N. Cross</strong> — Examine
+                  China-Russia strategic partnership. See
+                  <em
+                    >Neither Friend nor Foe: China, Russia, and the Future of
+                    the Shanghai Cooperation Organization</em
+                  >
+                  (2018).
+                </p>
+
+                <h2>Institutional Fragmentation and Forum Diplomacy</h2>
+
+                <p>
+                  <strong>Claim:</strong> BRICS, SCO, and EEU proliferate
+                  without achieving genuine integration due to competitive
+                  interests.
+                </p>
+
+                <p>
+                  <strong>Alexander Cooley</strong> — Analyzes Central Asian
+                  regimes and great power competition. See
+                  <em
+                    >Great Games, Local Rules: The New Great Power Contest in
+                    Central Asia</em
+                  >
+                  (2012) and
+                  <em
+                    >Exit from Hegemony: The Unraveling of the American Global
+                    Order</em
+                  >
+                  (2020, with Daniel H. Nexon).
+                </p>
+
+                <p>
+                  <strong>Marlene Laruelle</strong> — Examines Russia's Eurasian
+                  integration projects. See
+                  <em
+                    >Russia's Eurasian Integration: Beyond the Post-Soviet
+                    Space</em
+                  >
+                  (2015) and
+                  <em
+                    >Is Russia Fascist? Unraveling Propaganda East and West</em
+                  >
+                  (2022).
+                </p>
+
+                <p>
+                  <strong>Thomas Fingar</strong> — Analyzes China's approach to
+                  global governance. See
+                  <em
+                    >The New Great Game: China and South and Central Asia in the
+                    Era of Reform</em
+                  >
+                  (2016, edited).
+                </p>
+
+                <p>
+                  <strong>Sumit Ganguly and Manjeet S. Pardesi</strong> —
+                  Examine India's multi-alignment strategy. See "India and the
+                  Great Powers: Strategic Alignment, Structural Constraints"
+                  (2009) and subsequent work.
+                </p>
+
+                <h2>Competitive Nationalism and Structural Dependency</h2>
+
+                <p>
+                  <strong>Claim:</strong> National interests and asymmetrical
+                  dependencies prevent genuine Eurasian integration.
+                </p>
+
+                <p>
+                  <strong>Giovanni Arrighi</strong> — Analyzes systemic cycles
+                  of accumulation and hegemonic transition. See
+                  <em
+                    >The Long Twentieth Century: Money, Power, and the Origins
+                    of Our Times</em
+                  >
+                  (1994) and
+                  <em
+                    >Adam Smith in Beijing: Lineages of the Twenty-First
+                    Century</em
+                  >
+                  (2007).
+                </p>
+
+                <p>
+                  <strong>Branko Milanović</strong> — Examines global inequality
+                  and the "trilemma" of globalization. See
+                  <em
+                    >Global Inequality: A New Approach for the Age of
+                    Globalization</em
+                  >
+                  (2016) and
+                  <em
+                    >Capitalism, Alone: The Future of the System That Rules the
+                    World</em
+                  >
+                  (2019).
+                </p>
+
+                <p>
+                  <strong>Dani Rodrik</strong> — Analyzes the "political
+                  trilemma of the world economy." See
+                  <em
+                    >The Globalization Paradox: Democracy and the Future of the
+                    World Economy</em
+                  >
+                  (2011).
+                </p>
+
+                <p>
+                  <strong>Kalpana Wilson</strong> — Examines race, gender, and
+                  neoliberal development. See
+                  <em
+                    >Race, Racism and Development: Interrogating History,
+                    Discourse and Practice</em
+                  >
+                  (2012).
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Documents how structural
+                  dependencies—debt, technology, finance—constrain nominal
+                  sovereignty. His analysis of how "independence" is compatible
+                  with subordination informs understanding of competitive
+                  nationalism limits.
+                </p>
+
+                <h2>War Economy and Militarized Mobilization</h2>
+
+                <p>
+                  <strong>Claim:</strong> Russian conversion to war footing
+                  creates siege economy logic and new dependencies that outlive
+                  specific conflicts.
+                </p>
+
+                <p>
+                  <strong>Janine R. Wedel</strong> — Analyzes "flex organizing"
+                  and post-Soviet state transformation. See
+                  <em
+                    >Collision and Collusion: The Strange Case of Western Aid to
+                    Eastern Europe</em
+                  >
+                  (2001) and
+                  <em
+                    >Shadow Elite: How the World's New Power Brokers Undermine
+                    Democracy, Government, and the Free Market</em
+                  >
+                  (2009).
+                </p>
+
+                <p>
+                  <strong>Chris Miller</strong> — Examines Russian economic
+                  policy and war mobilization. See
+                  <em>Putinomics: Power and Money in Resurgent Russia</em>
+                  (2018) and subsequent analysis of sanctions and adaptation.
+                </p>
+
+                <p>
+                  <strong>Richard Connolly</strong> — Analyzes Russia's
+                  political economy. See
+                  <em
+                    >Russia's Response to Sanctions: How Western Economic
+                    Statecraft Is Reshaping Political Economy in Russia</em
+                  >
+                  (2018).
+                </p>
+
+                <p>
+                  <strong>Timothy Snyder</strong> — Documents Russian imperial
+                  politics and Ukrainian resistance. See
+                  <em>The Road to Unfreedom: Russia, Europe, America</em> (2018)
+                  and
+                  <em>On Tyranny: Twenty Lessons from the Twentieth Century</em>
+                  (2017).
+                </p>
+
+                <h2>The Global South and Interregnum Agency</h2>
+
+                <p>
+                  <strong>Claim:</strong> States across Africa, Latin America,
+                  and Southeast Asia exploit fragmentation to maximize
+                  bargaining position.
+                </p>
+
+                <p>
+                  <strong>Christopher S. Browning</strong> — Analyzes "hedging"
+                  and non-alignment strategies. See "The Geopolitics of Hedging:
+                  Great Power Rivalry and the Sources of Hedging" (2022).
+                </p>
+
+                <p>
+                  <strong>Amitav Acharya</strong> — Examines "multiplex" world
+                  order and Global South agency. See
+                  <em>The End of American World Order</em> (2014) and
+                  <em
+                    >Constructing Global Order: Agency and Change in World
+                    Politics</em
+                  >
+                  (2018).
+                </p>
+
+                <p>
+                  <strong>Sabelo J. Ndlovu-Gatsheni</strong> — Analyzes
+                  decoloniality and Global South politics. See
+                  <em
+                    >The Ndebele Nation: Reflections on Hegemony, Memory and
+                    Historiography</em
+                  >
+                  (2009) and work on decolonial international relations.
+                </p>
+
+                <p>
+                  <strong>Kelebogile Zvobgo and Meredith Loken</strong> —
+                  Examine race, gender, and international relations. See "Why
+                  Race Matters in International Relations" (2020).
+                </p>
+
+                <h2>Intellectual Tradition and Overall Framing</h2>
+
+                <p>
+                  The text's overarching framework is most directly informed by:
+                </p>
+
+                <p>
+                  <strong>Immanuel Wallerstein (World-Systems Analysis)</strong>
+                  — The concepts of hegemonic cycles, core-periphery relations,
+                  and the interregnum between orders. See
+                  <em>The Modern World-System</em> (4 vols., 1974-2011).
+                </p>
+
+                <p>
+                  <strong>Giovanni Arrighi</strong> — The analysis of systemic
+                  cycles of accumulation and the "terminal crisis" of American
+                  hegemony. See
+                  <em
+                    >The Long Twentieth Century: Money, Power, and the Origins
+                    of Our Times</em
+                  >
+                  (1994).
+                </p>
+
+                <p>
+                  <strong>Carl Schmitt (critically appropriated)</strong> — The
+                  concept of "Nomos" and spatial ordering. See
+                  <em
+                    >The Nomos of the Earth in the International Law of the Jus
+                    Publicum Europaeum</em
+                  >
+                  (1950).
+                </p>
+
+                <p>
+                  <strong
+                    >Mackinder and Spykman (critically appropriated)</strong
+                  >
+                  — The "Heartland" theory and rimland geopolitics. See Halford
+                  Mackinder, "The Geographical Pivot of History" (1904) and
+                  Nicholas Spykman, <em>The Geography of the Peace</em> (1944).
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Synthesizes classical
+                  political economy and contemporary finance to analyze the
+                  dynamics of hegemonic transition, the weaponization of
+                  economic infrastructure, and the construction of alternative
+                  systems. His work on the "tribute economy," super imperialism,
+                  and the impossibility of reform within financialized
+                  structures provides essential grounding for the text's
+                  assessment of Eurasian consolidation as competitive
+                  coordination within interregnum rather than genuine
+                  alternative order. His analysis of how declining hegemens
+                  generate pressures that undermine successor coordination
+                  informs the temporal contradiction thesis.
+                </p>
+
+                <p>
+                  <strong>Wolfgang Streeck</strong> — The analysis of capitalist
+                  decomposition and the exhaustion of institutional
+                  stabilization. See
+                  <em>How Will Capitalism End? Essays on a Failing System</em>
+                  (2016).
+                </p>
+
+                <p>
+                  <strong>Antonio Gramsci</strong> — The analysis of
+                  "interregnum" and crisis of authority. See
+                  <em>Selections from the Prison Notebooks</em> (1929-1935,
+                  edited and translated 1971).
+                </p>
+
+                <p>
+                  <strong>Fernand Braudel</strong> — The analysis of long-term
+                  structural trends and the "longue durée." See
+                  <em>Civilization and Capitalism, 15th-18th Century</em> (3
+                  vols., 1979).
+                </p>
+                <!-- Tags -->
+
+                <div class="article-page__tags">
+                  <span class="article-page__tag">economics</span>
+                  <span class="article-page__tag">geopolitics</span>
+                  <span class="article-page__tag">international-trade</span>
+                  <span class="article-page__tag">2026</span>
+                </div>
+
+                <!-- Call to action -->
+                <div class="article-page__cta">
+                  <p>
+                    <strong
+                      >Want to stay informed about global economic
+                      trends?</strong
+                    ><br />
+                    Subscribe to our newsletter for weekly analysis and insights
+                    on international politics and economics.
+                  </p>
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#newsletterModal"
+                  >
+                    Subscribe to Newsletter
+                  </button>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="article-page__navigation">
+                  <a
+                    href="index.html#articles"
+                    class="btn btn-outline-primary btn-sm"
+                  >
+                    ← Back to Articles
+                  </a>
+                </nav>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__column">
+            <h5>TheInterregnum</h5>
+            <p>Global politics and economics analysis</p>
+          </div>
+          <div class="footer__column">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a class="footer__link" href="index.html">Home</a></li>
+              <li>
+                <a class="footer__link" href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="index.html#articles">Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Categories</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Geopolitics</a></li>
+              <li><a class="footer__link" href="#">Economics</a></li>
+              <li><a class="footer__link" href="#">Trade</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Follow</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Twitter</a></li>
+              <li><a class="footer__link" href="#">LinkedIn</a></li>
+              <li><a class="footer__link" href="#">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; 2026 TheInterregnum. All rights reserved. |
+            <a class="footer__link" href="#">Privacy Policy</a> |
+            <a class="footer__link" href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Newsletter Modal -->
+    <div
+      class="modal fade"
+      id="newsletterModal"
+      tabindex="-1"
+      aria-labelledby="newsletterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Subscribe to Newsletter
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="newsletterForm" class="newsletter__form">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initializeNewsletterForm();
   initializeSmoothScroll();
   initializeLoadMoreButton();
+  initializeFeaturedArticle();
 });
 
 /**
@@ -49,6 +50,64 @@ function initializeNavigation() {
 
     updateActiveNavLink(current);
   });
+}
+
+/**
+ * Initialize Featured Article
+ * Finds the most recent article in the articles grid and copies it
+ * to the featured section for centered presentation.
+ */
+function initializeFeaturedArticle() {
+  const articles = Array.from(document.querySelectorAll('.articles .article-card'));
+  const featuredWrap = document.getElementById('featuredWrap');
+
+  if (!featuredWrap || articles.length === 0) return;
+
+  // Parse date helper: expects formats like "Jan 25, 2026"
+  const parseDateText = (el) => {
+    const dateEl = el.querySelector('.article-card__date');
+    if (!dateEl) return 0;
+    const parsed = Date.parse(dateEl.textContent.trim());
+    return isNaN(parsed) ? 0 : parsed;
+  };
+
+  // Find the latest article
+  let latest = articles[0];
+  let latestTime = parseDateText(latest);
+  articles.forEach((a) => {
+    const t = parseDateText(a);
+    if (t > latestTime) {
+      latest = a;
+      latestTime = t;
+    }
+  });
+
+  // Build featured markup from the latest article
+  const img = latest.querySelector('.article-card__image');
+  const title = latest.querySelector('.article-card__title')?.textContent || '';
+  const excerpt = latest.querySelector('.article-card__excerpt')?.textContent || '';
+  const author = latest.querySelector('.article-card__author')?.textContent || '';
+  const date = latest.querySelector('.article-card__date')?.textContent || '';
+  const category = latest.querySelector('.article-card__category')?.textContent || '';
+  const readLink = latest.querySelector('.article-card__btn')?.getAttribute('href') || '#';
+
+  const featuredHTML = `
+    <article class="featured__card">
+      <img class="featured__image" src="${img?.getAttribute('src') || ''}" alt="${img?.getAttribute('alt') || ''}" />
+      <div class="featured__content">
+        ${category ? `<div class="featured__category">${category}</div>` : ''}
+        <h3 class="featured__title">${title}</h3>
+        <p class="featured__excerpt">${excerpt}</p>
+        <div class="featured__meta">
+          <span class="featured__author">${author}</span>
+          <span class="featured__date">${date}</span>
+        </div>
+        <a href="${readLink}" class="btn btn-primary featured__btn">Read More →</a>
+      </div>
+    </article>
+  `;
+
+  featuredWrap.innerHTML = featuredHTML;
 }
 
 /**
