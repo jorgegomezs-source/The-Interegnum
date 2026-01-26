@@ -1,0 +1,1633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Energy Transition as Imperial Battleground | TheInterregnum
+    </title>
+    <meta
+      name="description"
+      content="Green Industrial Policy, Resource Imperialism, and the Limits of Techno-Fixes in the 2020s"
+    />
+    <meta name="author" content="Lisa Anderson" />
+    <meta name="date" content="2026-01-25" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Estilos para página de artículo -->
+    <style>
+      .article-page__hero {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 60px 20px;
+        margin-bottom: 40px;
+      }
+
+      .article-page__meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__category {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .article-page__category--economics {
+        background: rgba(26, 84, 144, 0.9);
+      }
+
+      .article-page__category--geopolitics {
+        background: rgba(45, 90, 61, 0.9);
+      }
+
+      .article-page__category--trade {
+        background: rgba(194, 160, 64, 0.9);
+      }
+
+      .article-page__category--finance {
+        background: rgba(92, 61, 61, 0.9);
+      }
+
+      .article-page__title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .article-page__subtitle {
+        font-size: 20px;
+        opacity: 0.95;
+        margin-bottom: 30px;
+      }
+
+      .article-page__author-info {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__image-section {
+        padding: 40px 20px;
+        background: #f8f9fa;
+      }
+
+      .article-page__featured-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .article-page__image-caption {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 15px;
+        font-style: italic;
+      }
+
+      .article-page__content {
+        padding: 60px 20px;
+      }
+
+      .article-page__body {
+        line-height: 1.8;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .article-page__body h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #1a5490;
+      }
+
+      .article-page__body h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #2d5a3d;
+      }
+
+      .article-page__body p {
+        margin-bottom: 15px;
+      }
+
+      .article-page__body ul,
+      .article-page__body ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .article-page__body li {
+        margin-bottom: 10px;
+      }
+
+      .article-page__quote {
+        border-left: 4px solid #1a5490;
+        padding-left: 20px;
+        margin: 30px 0;
+        font-size: 18px;
+        font-style: italic;
+        color: #555;
+        background: #f0f4f8;
+        padding: 20px;
+        padding-left: 20px;
+        border-radius: 4px;
+      }
+
+      .article-page__highlight {
+        background: #fff3cd;
+        padding: 20px;
+        border-left: 4px solid #ffc107;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+
+      .article-page__tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__tag {
+        background: #e9ecef;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .article-page__cta {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .article-page__cta p {
+        margin-bottom: 20px;
+      }
+
+      .article-page__navigation {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid #ddd;
+      }
+
+      .article-page__navigation a {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .article-page__hero {
+          padding: 40px 20px;
+        }
+
+        .article-page__title {
+          font-size: 32px;
+        }
+
+        .article-page__subtitle {
+          font-size: 18px;
+        }
+
+        .article-page__content {
+          padding: 40px 20px;
+        }
+
+        .article-page__body h2 {
+          font-size: 22px;
+        }
+
+        .article-page__cta {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER/NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg header__navbar">
+        <div class="container">
+          <a class="navbar-brand header__brand" href="index.html">
+            <span class="header__brand-text">TheInterregnum</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#articles"
+                  >Articles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="#newsletter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#newsletterModal"
+                >
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO DEL ARTÍCULO -->
+    <main class="article-page">
+      <!-- Hero del artículo -->
+      <section class="article-page__hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="article-page__meta">
+                <span
+                  class="article-page__category article-page__category--economics"
+                >
+                  Economics
+                </span>
+                <span class="article-page__date">January 25, 2026</span>
+              </div>
+              <h1 class="article-page__title">
+                The Energy Transition as Imperial Battleground (2026)
+              </h1>
+              <p class="article-page__subtitle">
+                Green Industrial Policy, Resource Imperialism, and the Limits of
+                Techno-Fixes in the 2020s
+              </p>
+              <div class="article-page__author-info">
+                <span class="article-page__author-name">By Lisa Anderson</span>
+                <span class="article-page__reading-time"
+                  >Reading time: 10 min</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagen destacada -->
+      <section class="article-page__image-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <img
+                src="./assets/img/eolic next to fumes.jpeg"
+                alt="Global Economic Trends 2026"
+                class="article-page__featured-image"
+              />
+              <p class="article-page__image-caption">
+                The "green" energy transition is the next great project of
+                capitalist restoration—promising to solve climate change,
+                economic stagnation, and imperial decline simultaneously. This
+                analysis argues it cannot deliver: mineral extraction
+                reconstitutes colonial dependency, financialized funding
+                prevents long-term planning, and US-China rivalry distorts
+                transition toward militarization. The Inflation Reduction Act
+                and comparable measures recognize structural constraints without
+                transcending them. Genuine sustainability requires
+                transformation that existing structures prevent; the battle is
+                between transition that replicates empire and transformation
+                that transcends it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenido principal -->
+      <section class="article-page__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <article class="article-page__body">
+                <h1>The Energy Transition as Imperial Battleground (2026)</h1>
+
+                <p>
+                  <strong
+                    >Green Industrial Policy, Resource Imperialism, and the
+                    Limits of Techno-Fix</strong
+                  >
+                </p>
+
+                <p>
+                  The climate imperative has been assimilated into imperial
+                  strategy with remarkable speed. What began as recognition of
+                  ecological limits—scientific consensus on warming,
+                  destabilized weather patterns, accelerating biodiversity
+                  loss—has been transformed into the next great project of
+                  capitalist restoration. The "energy transition," "green new
+                  deal," "net zero"—these formulations promise simultaneous
+                  resolution of environmental crisis and economic stagnation,
+                  technological modernization and social cohesion, competitive
+                  positioning and planetary responsibility. The promise is
+                  familiar: investment flows, job creation, restored industrial
+                  vigor, maintained or enhanced geopolitical advantage. The
+                  structure of justification mirrors the AI hype cycle analyzed
+                  previously—narrative momentum substituting for demonstrated
+                  transformation, speculative projection masking material
+                  constraint.
+                </p>
+
+                <p>
+                  The purpose here is not to dismiss energy transition as
+                  unnecessary or impossible. The fossil economy must be
+                  dismantled; the atmospheric carbon budget is approaching
+                  exhaustion; the consequences of inaction include
+                  civilizational collapse. The question is whether the
+                  transition as presently constituted—through market mechanisms,
+                  corporate investment, and state subsidy within existing
+                  property relations—can achieve its stated objectives, and
+                  whose interests it serves when it fails. The historical record
+                  of capitalist environmental management suggests caution:
+                  technological substitution without consumption reduction,
+                  displacement of costs onto peripheral populations,
+                  greenwashing of continued extraction, and the systematic
+                  prioritization of profit over sustainability.
+                </p>
+
+                <p>
+                  The American empire in 2026 approaches energy transition with
+                  distinctive constraints and opportunities. Its domestic fossil
+                  production—unconventional oil and gas—has achieved nominal
+                  "energy independence" while locking in carbon-intensive
+                  infrastructure for decades. Its manufacturing base, eroded
+                  through financialization and offshore relocation, lacks the
+                  capacity for rapid renewable equipment deployment. Its
+                  political system, captured by fossil interests and ideological
+                  hostility to state intervention, impedes the coordinated
+                  planning that transition requires. Into this gap, "green
+                  industrial policy" has been inserted as compensatory promise:
+                  the Inflation Reduction Act, the CHIPS Act, the infrastructure
+                  bill—massive public expenditure to restore productive capacity
+                  under environmental cover.
+                </p>
+
+                <p>
+                  Whether this insertion can overcome structural obstacles,
+                  represents genuine transformation or subsidy capture, and can
+                  proceed fast enough to meet carbon budgets while maintaining
+                  competitive position against Chinese industrialization—these
+                  questions determine the transition's geopolitical
+                  significance. The assessment here is skeptical: the scale of
+                  transformation required exceeds what financialized capitalism
+                  can deliver, the timeline of climate physics is shorter than
+                  what political and institutional reconstruction permits, and
+                  the competitive dynamics of interstate rivalry distort
+                  transition toward militarization and extraction rather than
+                  sustainability and equity. This is not a bug but a feature:
+                  the transition is being designed as a new regime of
+                  accumulation, creating fresh avenues for profit and
+                  geopolitical control where the old fossil regime is decaying.
+                </p>
+
+                <h2>
+                  The Material Base: Minerals, Infrastructure, and Geopolitical
+                  Competition
+                </h2>
+
+                <p>
+                  Renewable energy systems—solar, wind, batteries, grids—require
+                  material inputs in quantities that dwarf fossil
+                  infrastructure. Copper for electrification; lithium, cobalt,
+                  nickel for batteries; rare earth elements for magnets and
+                  electronics; polysilicon for solar panels; steel and cement
+                  for construction. The International Energy Agency projects
+                  that achieving net zero by 2050 requires a fourfold increase
+                  in mineral extraction by 2040, with some commodities—lithium,
+                  graphite, nickel—growing fortyfold. This is not substitution
+                  but expansion: new extractive frontiers, new environmental
+                  destruction, new colonial relationships.
+                </p>
+
+                <p>
+                  The geographic concentration of these resources reproduces
+                  patterns familiar from oil and gas. Lithium extraction
+                  concentrates in the "lithium triangle" of Chile, Argentina,
+                  and Bolivia; cobalt in the Democratic Republic of Congo; rare
+                  earth processing in China; nickel in Indonesia and the
+                  Philippines. The purported energy transition thus
+                  reconstitutes resource dependency rather than eliminating it,
+                  shifting vulnerability from hydrocarbon flows to mineral
+                  supply chains. The imperial powers that controlled oil
+                  concessions now compete for mining rights, offtake agreements,
+                  and processing capacity.
+                </p>
+
+                <p>
+                  The American response combines domestic subsidy with external
+                  pressure. The Inflation Reduction Act conditions tax credits
+                  on North American content or free-trade partner origin,
+                  explicitly constructing supply chains independent of Chinese
+                  control. The Minerals Security Partnership—administered by the
+                  State Department—coordinates investment in extraction and
+                  processing across allied countries. The Development Finance
+                  Corporation provides capital for projects in Africa, Latin
+                  America, and Asia that meet strategic criteria. The structure
+                  resembles earlier resource imperialism: public risk assumption
+                  for private profit extraction, with environmental and labor
+                  standards externalized onto host populations.
+                </p>
+
+                <p>
+                  Chinese industrial policy has achieved earlier and more
+                  comprehensive positioning. Domestic rare earth mining and
+                  processing, developed over decades, supplies most global
+                  demand. Battery manufacturing capacity exceeds combined
+                  Western output. Solar panel production dominates world
+                  markets. The "new three"—solar, batteries, electric
+                  vehicles—have become export engines comparable to earlier
+                  textile and electronics manufacturing. American policy
+                  responds through containment: tariffs, sanctions, investment
+                  restrictions, and the attempted construction of parallel
+                  supply chains that increase costs and delay deployment.
+                </p>
+
+                <p>
+                  The competitive dynamic distorts transition toward
+                  militarization. Critical minerals are designated "strategic"
+                  justifying stockpiling, price controls, and eventual military
+                  protection of supply routes. The environmental framing
+                  legitimizes extraction that would otherwise face opposition.
+                  The timeline of climate physics—rapid emissions
+                  reduction—conflicts with the timeline of supply chain
+                  construction—decades for mine development, processing
+                  capacity, manufacturing scale. The result is continued fossil
+                  dependency during transition construction, with carbon budgets
+                  exhausted before renewable systems achieve dominance.
+                </p>
+
+                <h2>
+                  The Infrastructure Gap: Grids, Storage, and System Integration
+                </h2>
+
+                <p>
+                  Renewable electricity generation—solar and wind—is
+                  intermittent and geographically dispersed. Utilization
+                  requires transformed grids: expanded transmission to connect
+                  resource-rich regions with consumption centers, distribution
+                  upgrades for bidirectional flow, demand management systems,
+                  and massive storage for temporal mismatch. The infrastructure
+                  investment required exceeds generation capacity costs and
+                  encounters political obstacles that generation does not.
+                </p>
+
+                <p>
+                  American grid infrastructure is antiquated, balkanized, and
+                  institutionally fragmented. Three separate
+                  interconnections—East, West, Texas—with limited capacity
+                  between them. State regulatory authority over utilities
+                  prevents national coordination. Local opposition to
+                  transmission siting—"not in my backyard" extended across
+                  jurisdictions—blocks necessary construction. The
+                  infrastructure bill appropriates funds for grid modernization,
+                  but timelines extend across electoral cycles that may
+                  terminate commitment. The scale of investment
+                  required—trillions of dollars, decades of
+                  construction—conflicts with the quarterly return expectations
+                  of financialized ownership.
+                </p>
+
+                <p>
+                  Storage technologies—batteries, pumped hydro, hydrogen,
+                  emerging alternatives—remain inadequate for seasonal variation
+                  and multi-day calm periods. Lithium-ion batteries, dominant
+                  for vehicles and short-duration storage, face material
+                  constraints and degradation limits. Long-duration
+                  storage—pumped hydro, compressed air, hydrogen—requires
+                  specific geography or suffers efficiency losses that
+                  compromise economic viability. The "100% renewable" scenarios
+                  that dominate policy discourse assume storage solutions that
+                  do not presently exist at required scale and cost.
+                </p>
+
+                <p>
+                  The Chinese grid system, state-owned and centrally planned,
+                  has achieved more rapid integration. Ultra-high-voltage
+                  transmission lines connect western renewable resources with
+                  eastern consumption centers. Massive pumped hydro construction
+                  provides storage capacity. The institutional capacity for
+                  coordinated infrastructure investment that Western
+                  financialized systems lack enables faster transition
+                  deployment. Whether this represents model or exception—whether
+                  Chinese state capacity can be replicated in different
+                  political conditions, whether it can overcome its own
+                  constraints of debt, demography, and ecological
+                  degradation—remains uncertain.
+                </p>
+
+                <h2>
+                  Green Industrial Policy: Subsidy, Capture, and Contradiction
+                </h2>
+
+                <p>
+                  The Inflation Reduction Act—$369 billion in climate and energy
+                  appropriations—represents the largest American industrial
+                  policy intervention since World War II. Its structure reveals
+                  the constraints on transformation within existing political
+                  economy. Tax credits rather than direct public investment
+                  preserve private ownership and profit extraction. Domestic
+                  content requirements increase costs and delay deployment.
+                  Technology-neutral mechanisms subsidize incumbent
+                  technologies—carbon capture, hydrogen from natural
+                  gas—alongside genuine renewables. The fossil fuel industry,
+                  through lobbying and political capture, extracts concessions
+                  that prolong its existence: lease requirements, carbon capture
+                  subsidies, hydrogen production from fractured gas.
+                </p>
+
+                <p>
+                  The employment effects are uncertain and geographically
+                  concentrated. Manufacturing jobs in solar panel and battery
+                  factories, construction jobs in installation and grid
+                  expansion, but limited employment in ongoing operation. The
+                  "just transition" for fossil fuel workers—promised retraining
+                  and relocation—remains largely unrealized. The geographic
+                  concentration of renewable resources—sunbelt solar, plains
+                  wind—contrasts with fossil fuel employment in Appalachia, the
+                  Gulf Coast, the Mountain West, generating political opposition
+                  from regions left behind.
+                </p>
+
+                <p>
+                  The competitive dynamic with China generates further
+                  contradictions. Tariffs on Chinese solar panels and batteries
+                  increase deployment costs, slowing transition. Domestic
+                  content requirements delay projects that cannot source
+                  compliant equipment. The attempted construction of parallel
+                  supply chains—"friend-shoring"—expands to include countries
+                  with lower labor and environmental standards, reproducing the
+                  outsourcing that eroded American manufacturing. The
+                  environmental framing legitimizes trade war and industrial
+                  policy that would otherwise face ideological opposition from
+                  market fundamentalism.
+                </p>
+
+                <p>
+                  The European variant—the Green Deal, REPowerEU—exhibits
+                  comparable tensions. Energy price spikes following the Ukraine
+                  war accelerated renewable deployment but also revived coal and
+                  lignite generation. Industrial competitiveness concerns—energy
+                  costs higher than American or Chinese competitors—generate
+                  demands for subsidy and protection that strain EU coherence.
+                  The "strategic autonomy" framing justifies state intervention
+                  that market orthodoxy previously prohibited, but the
+                  intervention remains constrained by fiscal rules and
+                  competitive dynamics that favor incumbent corporate interests.
+                </p>
+
+                <h2>
+                  The Financialization of Transition: Green Bonds and Short-Term
+                  Logic
+                </h2>
+
+                <p>
+                  Before examining the extractive dimension, the funding
+                  mechanisms deserve attention. The transition is being financed
+                  through instruments that replicate the pathologies of
+                  financialized capitalism. Green bonds, ESG funds, carbon
+                  credits, and speculative venture capital are structurally
+                  oriented toward short-term returns and asset inflation, not
+                  long-term system resilience or ecological restoration. The
+                  logic of shareholder value maximization conflicts with the
+                  patient, high-risk capital deployment that infrastructure
+                  construction and technological innovation require.
+                </p>
+
+                <p>
+                  This creates a fundamental tension: the transition requires
+                  planning horizons of decades, while its funding depends on
+                  markets that evaluate performance in quarters. The result is
+                  investment concentration in "bankable" projects with quick
+                  returns—utility-scale solar farms, electric vehicle charging
+                  networks—while essential but unprofitable components receive
+                  inadequate attention. The financial architecture of the
+                  transition thus builds in the same myopia that created the
+                  climate crisis, with Wall Street firms developing derivatives
+                  and securitization products around green assets that create
+                  new vectors of systemic risk.
+                </p>
+
+                <p>
+                  The Inflation Reduction Act, while channeling public funds,
+                  relies heavily on tax credits that must be monetized through
+                  private financial intermediaries. This ensures that
+                  significant public subsidy becomes financial sector profit
+                  through complex structuring and fee extraction. The transition
+                  becomes another arena for financial engineering, with the same
+                  institutions that precipitated the 2008 crisis now positioned
+                  to profit from the response to climate crisis.
+                </p>
+
+                <h2>
+                  The Extractive Return: Colonial Patterns in Green Transition
+                </h2>
+
+                <p>
+                  The mineral requirements of energy transition reconstitute
+                  colonial extraction under environmental cover. Lithium
+                  extraction in Chile's Atacama Desert consumes water in the
+                  world's driest region, contaminating indigenous communities
+                  and destroying ecosystems. Cobalt mining in the Democratic
+                  Republic of Congo employs child labor in dangerous conditions,
+                  with artisanal miners selling to traders who supply Chinese
+                  processing facilities. Nickel mining in Indonesia deforests
+                  rainforest and generates toxic waste. The "clean energy"
+                  consumed in Western cities requires dirty extraction at the
+                  periphery, with environmental and social costs externalized
+                  onto populations excluded from transition benefits. The
+                  battery that powers an electric vehicle in Berlin or Boston
+                  is, in this sense, a condensed product of colonial relations,
+                  its purported cleanliness predicated on distant sacrifice
+                  zones.
+                </p>
+
+                <p>
+                  The governance mechanisms for managing this extraction remain
+                  inadequate. Corporate social responsibility initiatives and
+                  voluntary standards fail to prevent abuse. Host country
+                  governments, dependent on export revenue and investment,
+                  prioritize extraction over environmental protection and labor
+                  rights. International financial institutions provide capital
+                  for projects that meet formal criteria while generating
+                  systematic harm. The "critical minerals" framing—strategic
+                  necessity, supply security—legitimizes extraction that would
+                  otherwise face opposition, subordinating environmental and
+                  social concerns to competitive positioning.
+                </p>
+
+                <p>
+                  The resistance to this extraction is growing but fragmented.
+                  Indigenous communities in extraction zones organize against
+                  displacement and contamination. Environmental movements in
+                  consuming countries oppose mining in their own territories
+                  while struggling with complicity in overseas extraction. Labor
+                  movements in processing industries demand decent conditions
+                  and living wages. The coordination of this resistance across
+                  supply chains—connecting Congolese miners, Chilean indigenous
+                  communities, European environmentalists, American
+                  consumers—remains nascent, impeded by geographic distance,
+                  informational asymmetry, and the ideological power of "clean
+                  energy" framing.
+                </p>
+
+                <p>
+                  The alternative—genuine sustainability through consumption
+                  reduction, circular economy, extended product life, public
+                  transit, and localized production—conflicts with the growth
+                  imperative that structures capitalist transition. The
+                  "degrowth" perspective—articulated by ecological economists
+                  and social movements—remains marginal to policy discourse,
+                  dismissed as politically impossible despite its scientific
+                  necessity. The transition as constituted prioritizes continued
+                  expansion—of energy supply, material throughput, economic
+                  output—through technological substitution rather than social
+                  transformation.
+                </p>
+
+                <h2>Climate Physics and Political Time</h2>
+
+                <p>
+                  The carbon budget for limiting warming to 1.5°C—if such
+                  limitation remains possible—requires global emissions
+                  reduction of approximately 50% by 2030 and net zero by 2050.
+                  The current trajectory, even with optimistic assumptions about
+                  transition deployment, exceeds this budget. The gap between
+                  required and projected emissions grows with each year of
+                  delay. The "net" in net zero—carbon capture, offset markets,
+                  future technological removal—functions as accounting fiction
+                  that permits continued fossil combustion.
+                </p>
+
+                <p>
+                  The political time of democratic capitalism—electoral cycles,
+                  quarterly returns, budget appropriations—conflicts with the
+                  geological time of climate physics. Infrastructure
+                  construction requires decades; carbon budgets expire in years.
+                  The institutional capacity for long-term planning and
+                  sustained commitment that transition requires has been eroded
+                  by neoliberal restructuring. The competitive dynamics of
+                  interstate rivalry prioritize short-term positioning over
+                  collective survival. Furthermore, the massive new
+                  infrastructure demanded by this transition—mines, processing
+                  plants, gigafactories, grids—creates a "green lock-in," a
+                  decades-long material commitment to a specific,
+                  high-throughput industrial model that may itself become an
+                  obstacle to more adaptive, low-consumption futures.
+                </p>
+
+                <p>
+                  The American political system, with its veto points,
+                  polarization, and capture by fossil interests, appears
+                  particularly incapable of rapid transformation. The Inflation
+                  Reduction Act, passed on partisan lines, faces repeal threats
+                  with each electoral alternation. State-level
+                  variation—California's acceleration versus Texas's
+                  obstruction—generates incoherence that national coordination
+                  cannot resolve. The judicial system, increasingly hostile to
+                  regulatory action, constrains executive capacity that
+                  legislation does not.
+                </p>
+
+                <p>
+                  The Chinese system, with its state capacity for long-term
+                  planning and insulation from electoral pressure, has achieved
+                  more rapid renewable deployment. Yet its emissions continue
+                  growing—coal consumption increased in 2022-2023—because
+                  industrial growth outpaces clean energy addition. The "carbon
+                  peak by 2030, net zero by 2060" commitment, while ambitious,
+                  exceeds the timeline that global carbon budgets permit. The
+                  competitive dynamic with the United States—military
+                  expenditure, technological rivalry, resource
+                  competition—distorts investment priorities and accelerates
+                  fossil infrastructure in both systems, making China the
+                  world's largest driver of both renewable deployment and new
+                  coal power.
+                </p>
+
+                <h2>The Military Dimension: Green War and Climate Security</h2>
+
+                <p>
+                  The climate-security nexus has been assimilated into military
+                  doctrine with disturbing speed. The Pentagon identifies
+                  climate change as "threat multiplier"—generating instability,
+                  migration, resource competition that requires military
+                  response. The framing legitimizes continued military
+                  expenditure, base expansion, and intervention capacity under
+                  environmental cover. The military's own emissions—largest
+                  institutional emitter in the United States—remain exempt from
+                  climate accounting and transition requirements.
+                </p>
+
+                <p>
+                  The "greening" of military operations—solar panels on bases,
+                  biofuels for vehicles, efficiency improvements—functions as
+                  public relations without addressing fundamental contribution
+                  to warming. The weapons systems, supply chains, and global
+                  infrastructure of American military power remain
+                  carbon-intensive. The strategic competition with China—naval
+                  expansion, base construction, weapons modernization—consumes
+                  resources that transition requires.
+                </p>
+
+                <p>
+                  The Arctic emerges as particular zone of militarized climate
+                  impact. Ice retreat opens shipping routes and resource
+                  extraction opportunities that generate territorial
+                  competition. American, Russian, Chinese, and NATO military
+                  posture intensifies in a region experiencing warming four
+                  times global average. The "security" framing—protecting
+                  critical infrastructure, responding to search and rescue
+                  needs—legitimizes military expansion that accelerates the
+                  warming it claims to manage.
+                </p>
+
+                <p>
+                  This militarization extends to critical resource zones. The
+                  "Lithium Triangle" in South America sees increased activity
+                  from U.S. Southern Command and competitive Chinese Belt and
+                  Road investments, framing resource security as national
+                  security issue. The resource competition generated by
+                  transition thus extends rather than reduces the military
+                  footprint of imperial powers, reconstituting geopolitical
+                  rivalry around new resource dependencies. Critical mineral
+                  supply chains require protection; sea lanes for battery
+                  component transport must be secured; extraction sites in
+                  unstable regions demand military presence. The environmental
+                  transition creates its own security demands that justify
+                  expanded imperial projection.
+                </p>
+
+                <h2>Conclusion: Transition Without Transformation</h2>
+
+                <p>
+                  The energy transition as presently constituted cannot achieve
+                  its stated objectives. The scale of transformation
+                  required—rapid emissions reduction, infrastructure
+                  reconstruction, consumption reorganization—exceeds what
+                  financialized capitalism can deliver within climate timelines.
+                  The competitive dynamics of interstate rivalry distort
+                  transition toward extraction, militarization, and continued
+                  fossil dependency. The growth imperative that structures
+                  capitalist development conflicts with the consumption
+                  reduction that sustainability requires.
+                </p>
+
+                <p>
+                  The American empire's attempt at green industrial
+                  policy—massive subsidy, protectionist construction,
+                  competitive containment of China—represents recognition of
+                  these constraints without transcendence of them. The Inflation
+                  Reduction Act and associated measures may achieve partial
+                  industrial restoration and accelerated renewable deployment
+                  without approaching carbon budget compliance or genuine
+                  sustainability. The "jobs versus environment" framing that
+                  structured earlier environmental politics is superseded by
+                  "jobs through environment"—green capitalism as restoration
+                  promise—but the restoration remains partial and the
+                  sustainability illusory.
+                </p>
+
+                <p>
+                  The Chinese alternative—state-led industrialization, rapid
+                  renewable deployment, continued growth—achieves faster
+                  transition metrics without resolving the fundamental
+                  contradiction between expansion and limits. The "ecological
+                  civilization" framing—official Party doctrine—coexists with
+                  coal plant construction, carbon-intensive infrastructure
+                  investment, and global resource extraction that externalizes
+                  environmental costs. Whether Chinese state capacity can
+                  eventually reconcile growth with sustainability, or whether it
+                  encounters hard limits that systemic transition cannot
+                  overcome, remains the great experiment of our period.
+                </p>
+
+                <p>
+                  For the peripheral populations—Congolese cobalt miners,
+                  Chilean lithium extractors, Indonesian nickel workers, Pacific
+                  islanders facing sea level rise—the transition as constituted
+                  offers continuation of exploitation without compensation for
+                  climate damage caused by others' consumption. The "common but
+                  differentiated responsibilities" framework of climate
+                  negotiations—historical emitters bear greater obligation—is
+                  systematically violated by continued extraction, insufficient
+                  finance, and technology withholding. The climate debt remains
+                  unpaid; the ecological debt accumulates.
+                </p>
+
+                <p>
+                  The alternative—genuine transition through consumption
+                  reduction, public ownership of energy systems, democratic
+                  planning of production, international solidarity rather than
+                  competitive rivalry—requires political transformation that
+                  existing structures prevent. The immediate struggle includes
+                  concrete demands: a Global Just Transition Treaty that
+                  mandates technology transfer, debt cancellation, and shared
+                  intellectual property for green technology, funded by
+                  redirecting fossil fuel subsidies and military expenditure.
+                  More fundamentally, it requires connecting resistance across
+                  supply chains and national boundaries to prevent the
+                  environmental framing from legitimizing continued extraction
+                  and militarization, and to demand that transition benefits
+                  flow to workers and communities rather than corporations.
+                  Whether this struggle can achieve scale and coordination
+                  before carbon budgets exhaust and tipping points trigger,
+                  whether the gap between climate physics and political
+                  possibility can be closed through mobilization rather than
+                  catastrophe—these questions determine whether the energy
+                  transition becomes the next chapter of imperial decline or the
+                  opening of genuine transformation. The battle is no longer
+                  between transition and stagnation, but between a transition
+                  that replicates empire and a transformation that transcends
+                  its logic.
+                </p>
+
+                <p>By Lisa Anderson</p>
+                <h1>References</h1>
+
+                <p><em>Organized by Analytical Themes</em></p>
+
+                <h2>The Assimilation of Climate into Imperial Strategy</h2>
+
+                <p>
+                  <strong>Claim:</strong> The climate imperative has been
+                  transformed from ecological recognition into a project of
+                  capitalist restoration and competitive positioning.
+                </p>
+
+                <p>
+                  <strong>Naomi Klein</strong> — Examines how crisis narratives
+                  enable corporate restructuring and the "shock doctrine" of
+                  privatization. See
+                  <em>This Changes Everything: Capitalism vs. the Climate</em>
+                  (2014) and
+                  <em>The Shock Doctrine: The Rise of Disaster Capitalism</em>
+                  (2007).
+                </p>
+
+                <p>
+                  <strong>Christian Parenti</strong> — Analyzes the "politics of
+                  the armed lifeboat" and the militarization of climate
+                  response. See
+                  <em
+                    >Tropic of Chaos: Climate Change and the New Geography of
+                    Violence</em
+                  >
+                  (2011).
+                </p>
+
+                <p>
+                  <strong>Andreas Malm</strong> — Critiques "green capitalism"
+                  and the impossibility of ecological sustainability within
+                  capitalist growth imperatives. See
+                  <em
+                    >Fossil Capital: The Rise of Steam Power and the Roots of
+                    Global Warming</em
+                  >
+                  (2016) and <em>How to Blow Up a Pipeline</em> (2021).
+                </p>
+
+                <p>
+                  <strong
+                    >John Bellamy Foster, Brett Clark, and Richard York</strong
+                  >
+                  — Develop the "metabolic rift" framework for analyzing
+                  ecological crisis under capitalism. See
+                  <em>The Ecological Rift: Capitalism's War on the Earth</em>
+                  (2010).
+                </p>
+
+                <h2>Critical Minerals and Resource Imperialism</h2>
+
+                <p>
+                  <strong>Claim:</strong> The energy transition reconstitutes
+                  resource dependency through intensified mineral extraction
+                  with colonial patterns.
+                </p>
+
+                <p>
+                  <strong>Thea Riofrancos</strong> — Analyzes the "extractive
+                  imperative" in Ecuador and the political economy of resource
+                  nationalism. See
+                  <em
+                    >Resource Radicals: From Petro-Nationalism to
+                    Post-Extractivism in Ecuador</em
+                  >
+                  (2020).
+                </p>
+
+                <p>
+                  <strong>Siddharth Kara</strong> — Documents cobalt mining
+                  conditions in the Democratic Republic of Congo. See
+                  <em
+                    >Cobalt Red: How the Blood of the Congo Powers Our Lives</em
+                  >
+                  (2023).
+                </p>
+
+                <p>
+                  <strong>Giuliano Martiniello</strong> — Examines agrarian
+                  change and extractive capitalism in Africa. See work on "new
+                  scramble for Africa" and green extractivism.
+                </p>
+
+                <p>
+                  <strong>International Energy Agency (IEA)</strong> — Provides
+                  data on mineral requirements for energy transition. See
+                  <em
+                    >The Role of Critical Minerals in Clean Energy
+                    Transitions</em
+                  >
+                  (2021) and subsequent reports.
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Analyzes the historical
+                  patterns of resource imperialism and debt-structured
+                  extraction. See
+                  <em
+                    >Super Imperialism: The Economic Strategy of American
+                    Empire</em
+                  >
+                  (1972, updated 2003) and
+                  <em>Global Fracture: The New International Economic Order</em>
+                  (1977, updated 2005).
+                </p>
+
+                <h2>Infrastructure, Grid Modernization, and State Capacity</h2>
+
+                <p>
+                  <strong>Claim:</strong> Renewable integration requires
+                  transformed infrastructure that financialized and fragmented
+                  systems cannot deliver.
+                </p>
+
+                <p>
+                  <strong>Matthew T. Huber</strong> — Examines the political
+                  economy of electrification and the possibilities for public
+                  power. See
+                  <em>Lifeblood: Oil, Freedom, and the Forces of Capital</em>
+                  (2013) and
+                  <em
+                    >Climate Change as Class War: Building Socialism on a
+                    Warming Planet</em
+                  >
+                  (2022).
+                </p>
+
+                <p>
+                  <strong>Timothy Mitchell</strong> — Analyzes the political
+                  consequences of energy systems and "carbon democracy." See
+                  <em>Carbon Democracy: Political Power in the Age of Oil</em>
+                  (2011).
+                </p>
+
+                <p>
+                  <strong>Gretchen Bakke</strong> — Documents the fragility of
+                  American grid infrastructure. See
+                  <em
+                    >The Grid: The Fraying Wires Between Americans and Our
+                    Energy Future</em
+                  >
+                  (2016).
+                </p>
+
+                <p>
+                  <strong>Mariana Mazzucato</strong> — Examines state capacity
+                  for mission-oriented investment and the entrepreneurial state.
+                  See
+                  <em
+                    >The Entrepreneurial State: Debunking Public vs. Private
+                    Sector Myths</em
+                  >
+                  (2013) and
+                  <em
+                    >Mission Economy: A Moonshot Guide to Changing
+                    Capitalism</em
+                  >
+                  (2021).
+                </p>
+
+                <h2>Green Industrial Policy and Subsidy Capture</h2>
+
+                <p>
+                  <strong>Claim:</strong> The Inflation Reduction Act and
+                  comparable measures reveal constraints on transformation
+                  within financialized capitalism.
+                </p>
+
+                <p>
+                  <strong>Robert Pollin</strong> — Develops frameworks for green
+                  transition and full employment. See
+                  <em>Greening the Global Economy</em> (2015) and work at
+                  Political Economy Research Institute (PERI).
+                </p>
+
+                <p>
+                  <strong>Daniela Gabor</strong> — Analyzes "Wall Street
+                  Consensus" and the financialization of development. See "The
+                  Wall Street Consensus" (2020) and subsequent work on green
+                  finance.
+                </p>
+
+                <p>
+                  <strong>Brett Christophers</strong> — Examines rentier
+                  capitalism and the political economy of asset ownership. See
+                  <em
+                    >Rentier Capitalism: Who Owns the Economy, and Who Pays for
+                    It?</em
+                  >
+                  (2020) and
+                  <em
+                    >The Price is Everything: How Capitalism Came to Colonize
+                    the Future</em
+                  >
+                  (2024).
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Distinguishes between
+                  industrial and finance capitalism, analyzing how debt overhead
+                  and rent extraction prevent productive investment. His
+                  analysis of tax credits as financialized subsidy mechanisms
+                  informs the treatment of IRA structure.
+                </p>
+
+                <h2>Financialization of Transition</h2>
+
+                <p>
+                  <strong>Claim:</strong> Green bonds, ESG funds, and market
+                  mechanisms replicate short-term logics incompatible with
+                  transformation requirements.
+                </p>
+
+                <p>
+                  <strong
+                    >Déborah Danowski and Eduardo Viveiros de Castro</strong
+                  >
+                  — Critique the "imminence of the end" and the politics of
+                  climate temporality. See
+                  <em>The Ends of the World</em> (2016).
+                </p>
+
+                <p>
+                  <strong>Leigh Phillips and Michal Rozworski</strong> — Argue
+                  for planning and abundance against austerity environmentalism.
+                  See
+                  <em
+                    >The People's Republic of Walmart: How the World's Biggest
+                    Corporations are Laying the Foundation for Socialism</em
+                  >
+                  (2019).
+                </p>
+
+                <p>
+                  <strong>Adrienne Buller</strong> — Critiques "green finance"
+                  and the contradictions of market-based climate policy. See
+                  <em
+                    >The Value of a Whale: On the Illusions of Green
+                    Capitalism</em
+                  >
+                  (2022).
+                </p>
+
+                <p>
+                  <strong>Greta Krippner</strong> — Documents the political
+                  construction of financialization. See
+                  <em
+                    >Capitalizing on Crisis: The Political Origins of the Rise
+                    of Finance</em
+                  >
+                  (2011).
+                </p>
+
+                <h2>Extractivism, Colonialism, and Resistance</h2>
+
+                <p>
+                  <strong>Claim:</strong> The transition externalizes
+                  environmental and social costs onto peripheral populations
+                  while legitimizing extraction through green framing.
+                </p>
+
+                <p>
+                  <strong>Eduardo Gudynas</strong> — Develops the concept of
+                  "extractivism" and post-extractivist alternatives. See
+                  "Transitions to Post-Extractivism: Directions, Options, Areas
+                  of Work" (2013) and subsequent work.
+                </p>
+
+                <p>
+                  <strong>Maristella Svampa</strong> — Analyzes "commodities
+                  consensus" in Latin America and the limits of progressive
+                  extractivism. See
+                  <em
+                    >Debates Latinoamericanos: Indianismo, Desarrollo,
+                    Dependencia y Populismo</em
+                  >
+                  (2016).
+                </p>
+
+                <p>
+                  <strong>Max Ajl</strong> — Examines agrarian questions and
+                  ecological politics in the Global South. See
+                  <em>A People's Green New Deal</em> (2021).
+                </p>
+
+                <p>
+                  <strong>Vijay Prashad</strong> — Documents the "darker
+                  nations" and the politics of the Global South. See
+                  <em
+                    >The Darker Nations: A People's History of the Third
+                    World</em
+                  >
+                  (2007) and
+                  <em
+                    >The Poorer Nations: A Possible History of the Global
+                    South</em
+                  >
+                  (2012).
+                </p>
+
+                <p>
+                  <strong>Arturo Escobar</strong> — Develops "territorial"
+                  alternatives to extractive development. See
+                  <em
+                    >Designs for the Pluriverse: Radical Interdependence,
+                    Autonomy, and the Making of Worlds</em
+                  >
+                  (2017).
+                </p>
+
+                <h2>Climate Physics, Temporal Contradiction, and Lock-In</h2>
+
+                <p>
+                  <strong>Claim:</strong> The timeline of infrastructure
+                  construction conflicts with carbon budget exhaustion, creating
+                  "green lock-in" to unsustainable pathways.
+                </p>
+
+                <p>
+                  <strong
+                    >IPCC (Intergovernmental Panel on Climate Change)</strong
+                  >
+                  — Provides scientific basis for carbon budgets and emission
+                  trajectories. See <em>Global Warming of 1.5°C</em> (2018) and
+                  subsequent assessment reports.
+                </p>
+
+                <p>
+                  <strong>Jason W. Moore</strong> — Develops "world-ecology"
+                  framework and analyzes capitalism as "cheapening" of nature.
+                  See
+                  <em
+                    >Capitalism in the Web of Life: Ecology and the Accumulation
+                    of Capital</em
+                  >
+                  (2015).
+                </p>
+
+                <p>
+                  <strong>Andreas Malm</strong> — Analyzes the temporal
+                  contradictions of climate politics and the necessity of
+                  "revolutionary" rupture. See
+                  <em
+                    >Corona, Climate, Chronic Emergency: War Communism in the
+                    Twenty-First Century</em
+                  >
+                  (2020).
+                </p>
+
+                <p>
+                  <strong>Paul Burkett</strong> — Marxist ecological analysis of
+                  climate and capitalism. See
+                  <em>Marx and Nature: A Red and Green Perspective</em> (1999,
+                  expanded 2014).
+                </p>
+
+                <h2>Militarization, Climate Security, and Green War</h2>
+
+                <p>
+                  <strong>Claim:</strong> The climate-security nexus legitimizes
+                  military expansion while exempting military emissions from
+                  transition requirements.
+                </p>
+
+                <p>
+                  <strong>Neta C. Crawford</strong> — Documents Pentagon energy
+                  consumption and military emissions. See
+                  <em
+                    >The Pentagon, Climate Change, and War: Charting the Rise
+                    and Fall of US Military Emissions</em
+                  >
+                  (2022).
+                </p>
+
+                <p>
+                  <strong>Michael T. Klare</strong> — Analyzes resource
+                  competition and military rivalry. See
+                  <em
+                    >All Hell Breaking Loose: The Pentagon's Perspective on
+                    Climate Change</em
+                  >
+                  (2019) and
+                  <em
+                    >The Race for What's Left: The Global Scramble for the
+                    World's Last Resources</em
+                  >
+                  (2012).
+                </p>
+
+                <p>
+                  <strong>Simon Dalby</strong> — Examines the "environmental
+                  security" framing and its political consequences. See
+                  <em>Security and Environmental Change</em> (2009) and
+                  <em
+                    >Anthropocene Geopolitics: Globalization, Security,
+                    Sustainability</em
+                  >
+                  (2020).
+                </p>
+
+                <p>
+                  <strong
+                    >Joanne Liu and the International Campaign to Abolish
+                    Nuclear Weapons (ICAN)</strong
+                  >
+                  — Document the humanitarian consequences of military
+                  environmental impact.
+                </p>
+
+                <h2>Degrowth, Alternatives, and Political Transformation</h2>
+
+                <p>
+                  <strong>Claim:</strong> Genuine sustainability requires
+                  consumption reduction and social transformation that
+                  capitalist transition prevents.
+                </p>
+
+                <p>
+                  <strong>Serge Latouche</strong> — Develops "degrowth" as
+                  project of radical social transformation. See
+                  <em>Farewell to Growth</em> (2009) and
+                  <em
+                    >The Westernization of the World: The Significance, Scope
+                    and Limits of the Drive Towards Global Uniformity</em
+                  >
+                  (1996).
+                </p>
+
+                <p>
+                  <strong>Giorgos Kallis</strong> — Analyzes degrowth as
+                  concrete policy program. See <em>Degrowth</em> (2018) and
+                  <em
+                    >Limits: Why Malthus Was Wrong and Why Environmentalists
+                    Should Care</em
+                  >
+                  (2019).
+                </p>
+
+                <p>
+                  <strong>Jason Hickel</strong> — Argues for "less is more" and
+                  post-growth economics. See
+                  <em>Less is More: How Degrowth Will Save the World</em> (2020)
+                  and
+                  <em
+                    >The Divide: A Brief Guide to Global Inequality and Its
+                    Solutions</em
+                  >
+                  (2017).
+                </p>
+
+                <p>
+                  <strong>Erik Olin Wright</strong> — Analyzes "real utopias"
+                  and transformative institutional change. See
+                  <em>Envisioning Real Utopias</em> (2010) and
+                  <em
+                    >How to Be an Anti-Capitalist in the Twenty-First
+                    Century</em
+                  >
+                  (2019).
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Documents historical
+                  alternatives to debt-peonage capitalism and possibilities for
+                  public banking and democratic financial control. See
+                  <em
+                    >...and Forgive Them Their Debts: Lending, Foreclosure and
+                    Redemption from Bronze Age Finance to the Jubilee Year</em
+                  >
+                  (2018) and
+                  <em
+                    >The Destiny of Civilization: Finance Capitalism, Industrial
+                    Capitalism or Socialism</em
+                  >
+                  (2022).
+                </p>
+
+                <h2>Intellectual Tradition and Overall Framing</h2>
+
+                <p>
+                  The text's overarching framework is most directly informed by:
+                </p>
+
+                <p>
+                  <strong>Immanuel Wallerstein (World-Systems Analysis)</strong>
+                  — The concepts of hegemonic cycles, core-periphery extraction,
+                  and the structural crisis of accumulation. See
+                  <em>The Modern World-System</em> (4 vols., 1974-2011).
+                </p>
+
+                <p>
+                  <strong>Giovanni Arrighi</strong> — The analysis of systemic
+                  cycles of accumulation and the "terminal crisis" of American
+                  hegemony. See
+                  <em
+                    >The Long Twentieth Century: Money, Power, and the Origins
+                    of Our Times</em
+                  >
+                  (1994).
+                </p>
+
+                <p>
+                  <strong>James O'Connor</strong> — The "second contradiction of
+                  capitalism" between production conditions and profit
+                  realization. See
+                  <em>Natural Causes: Essays in Ecological Marxism</em> (1998).
+                </p>
+
+                <p>
+                  <strong>Joan Martinez-Alier</strong> — The "environmentalism
+                  of the poor" and ecological economics. See
+                  <em
+                    >The Environmentalism of the Poor: A Study of Ecological
+                    Conflicts and Valuation</em
+                  >
+                  (2002).
+                </p>
+
+                <p>
+                  <strong>Michael Hudson</strong> — Synthesizes classical
+                  political economy, economic history, and contemporary finance
+                  to analyze the dynamics of debt, empire, and ecological
+                  destruction. His work on the "tribute economy," the
+                  distinction between industrial and finance capitalism, and the
+                  impossibility of reform within financialized structures
+                  provides essential grounding for the text's assessment of
+                  green industrial policy as failed compensatory promise. His
+                  analysis of infrastructure investment, public banking, and the
+                  historical alternatives to debt-peonage informs the treatment
+                  of transformative possibilities.
+                </p>
+
+                <p>
+                  <strong>Wolfgang Streeck</strong> — The analysis of capitalist
+                  decomposition and the exhaustion of institutional
+                  stabilization. See
+                  <em>How Will Capitalism End? Essays on a Failing System</em>
+                  (2016).
+                </p>
+
+                <p>
+                  <strong>Herbert Marcuse</strong> — The critique of
+                  "one-dimensional" society and the possibilities for its
+                  transcendence. See
+                  <em
+                    >One-Dimensional Man: Studies in the Ideology of Advanced
+                    Industrial Society</em
+                  >
+                  (1964) and <em>Counterrevolution and Revolt</em> (1972).
+                </p>
+                <!-- Tags -->
+
+                <div class="article-page__tags">
+                  <span class="article-page__tag">economics</span>
+                  <span class="article-page__tag">geopolitics</span>
+                  <span class="article-page__tag">international-trade</span>
+                  <span class="article-page__tag">2026</span>
+                </div>
+
+                <!-- Call to action -->
+                <div class="article-page__cta">
+                  <p>
+                    <strong
+                      >Want to stay informed about global economic
+                      trends?</strong
+                    ><br />
+                    Subscribe to our newsletter for weekly analysis and insights
+                    on international politics and economics.
+                  </p>
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#newsletterModal"
+                  >
+                    Subscribe to Newsletter
+                  </button>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="article-page__navigation">
+                  <a
+                    href="index.html#articles"
+                    class="btn btn-outline-primary btn-sm"
+                  >
+                    ← Back to Articles
+                  </a>
+                </nav>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__column">
+            <h5>TheInterregnum</h5>
+            <p>Global politics and economics analysis</p>
+          </div>
+          <div class="footer__column">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a class="footer__link" href="index.html">Home</a></li>
+              <li>
+                <a class="footer__link" href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="index.html#articles">Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Categories</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Geopolitics</a></li>
+              <li><a class="footer__link" href="#">Economics</a></li>
+              <li><a class="footer__link" href="#">Trade</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Follow</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Twitter</a></li>
+              <li><a class="footer__link" href="#">LinkedIn</a></li>
+              <li><a class="footer__link" href="#">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; 2026 TheInterregnum. All rights reserved. |
+            <a class="footer__link" href="#">Privacy Policy</a> |
+            <a class="footer__link" href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Newsletter Modal -->
+    <div
+      class="modal fade"
+      id="newsletterModal"
+      tabindex="-1"
+      aria-labelledby="newsletterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Subscribe to Newsletter
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="newsletterForm" class="newsletter__form">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
