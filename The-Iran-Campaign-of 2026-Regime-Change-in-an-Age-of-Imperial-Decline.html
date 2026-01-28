@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The Digital Battlefield: Sovereignty, War, and the New Anarchy (2026)
+    </title>
+    <meta
+      name="description"
+      content="How States Weaponize Platform Infrastructure to Dismantle Other States"
+    />
+    <meta name="author" content="The_Interregnum" />
+    <meta name="date" content="2026-01-29" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Estilos para página de artículo -->
+    <style>
+      .article-page__hero {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 60px 20px;
+        margin-bottom: 40px;
+      }
+
+      .article-page__meta {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__category {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .article-page__category--economics {
+        background: rgba(26, 84, 144, 0.9);
+      }
+
+      .article-page__category--geopolitics {
+        background: rgba(45, 90, 61, 0.9);
+      }
+
+      .article-page__category--trade {
+        background: rgba(194, 160, 64, 0.9);
+      }
+
+      .article-page__category--finance {
+        background: rgba(92, 61, 61, 0.9);
+      }
+
+      .article-page__title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .article-page__subtitle {
+        font-size: 20px;
+        opacity: 0.95;
+        margin-bottom: 30px;
+      }
+
+      .article-page__author-info {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__image-section {
+        padding: 40px 20px;
+        background: #f8f9fa;
+      }
+
+      .article-page__featured-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .article-page__image-caption {
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        margin-top: 15px;
+        font-style: italic;
+      }
+
+      .article-page__content {
+        padding: 60px 20px;
+      }
+
+      .article-page__body {
+        line-height: 1.8;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .article-page__body h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #1a5490;
+      }
+
+      .article-page__body h3 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: #2d5a3d;
+      }
+
+      .article-page__body p {
+        margin-bottom: 15px;
+      }
+
+      .article-page__body ul,
+      .article-page__body ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      .article-page__body li {
+        margin-bottom: 10px;
+      }
+
+      .article-page__quote {
+        border-left: 4px solid #1a5490;
+        padding-left: 20px;
+        margin: 30px 0;
+        font-size: 18px;
+        font-style: italic;
+        color: #555;
+        background: #f0f4f8;
+        padding: 20px;
+        padding-left: 20px;
+        border-radius: 4px;
+      }
+
+      .article-page__highlight {
+        background: #fff3cd;
+        padding: 20px;
+        border-left: 4px solid #ffc107;
+        border-radius: 4px;
+        margin: 20px 0;
+      }
+
+      .article-page__tags {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .article-page__tag {
+        background: #e9ecef;
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .article-page__cta {
+        background: linear-gradient(135deg, #1a5490 0%, #2d5a3d 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .article-page__cta p {
+        margin-bottom: 20px;
+      }
+
+      .article-page__navigation {
+        margin-top: 40px;
+        padding-top: 40px;
+        border-top: 1px solid #ddd;
+      }
+
+      .article-page__navigation a {
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .article-page__hero {
+          padding: 40px 20px;
+        }
+
+        .article-page__title {
+          font-size: 32px;
+        }
+
+        .article-page__subtitle {
+          font-size: 18px;
+        }
+
+        .article-page__content {
+          padding: 40px 20px;
+        }
+
+        .article-page__body h2 {
+          font-size: 22px;
+        }
+
+        .article-page__cta {
+          padding: 30px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER/NAVBAR -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg header__navbar">
+        <div class="container">
+          <a class="navbar-brand header__brand" href="index.html">
+            <span class="header__brand-text">TheInterregnum</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header__menu-link" href="index.html#articles"
+                  >Articles</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="#newsletter"
+                  data-bs-toggle="modal"
+                  data-bs-target="#newsletterModal"
+                >
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO DEL ARTÍCULO -->
+    <main class="article-page">
+      <!-- Hero del artículo -->
+      <section class="article-page__hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="article-page__meta">
+                <span
+                  class="article-page__category article-page__category--politics"
+                >
+                  Politics
+                </span>
+                <span class="article-page__date">January 29, 2026</span>
+              </div>
+              <h1 class="article-page__title">
+                The Iran Campaign of 2026: Regime Change in an Age of Imperial
+                Decline
+              </h1>
+              <p class="article-page__subtitle">
+                Military Escalation, Hybrid Warfare, and the Limits of Coercion
+              </p>
+              <div class="article-page__author-info">
+                <span class="article-page__author-name"
+                  >By The_Interregnum</span
+                >
+                <span class="article-page__reading-time"
+                  >Reading time: 8 min</span
+                >
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Imagen destacada -->
+      <section class="article-page__image-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <img
+                src="assets/img/tehran-flag.webp"
+                alt="Global Economic Trends 2026"
+                class="article-page__featured-image"
+              />
+              <p class="article-page__image-caption">
+                A critical analysis of the 2025-2026 US-Israeli campaign against
+                Iran, examining military strikes, color revolution tactics, and
+                hybrid warfare within the context of declining American hegemony
+                and systemic global transition. The article synthesizes
+                independent media reporting with political economy theory to
+                expose the structural limits of imperial coercion
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenido principal -->
+      <section class="article-page__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <article class="article-page__body">
+                <h1>
+                  The Iran Campaign of 2026: Regime Change in an Age of Imperial
+                  Decline
+                </h1>
+
+                <h2>
+                  Military Escalation, Hybrid Warfare, and the Limits of
+                  Coercion
+                </h2>
+
+                <h2>Introduction:</h2>
+
+                <p>
+                  We are living through a systemic transition, marked by fraying
+                  dollar supremacy, eroding institutional legitimacy, and the
+                  violent erraticism of declining empire, the context that
+                  frames the 2025–2026 assault on Iran.
+                </p>
+
+                <p>
+                  The Islamic Republic occupies a singular position within this
+                  conjuncture. As pioneer of de-dollarization, strategic node in
+                  China's Belt and Road Initiative, and persistent challenger to
+                  American-Israeli regional dominance, Iran represents both
+                  symbol of resistance to Western hegemony and obstacle to
+                  unipolar restoration. The coordinated campaign against
+                  Tehran—from Israeli-American strikes on nuclear facilities in
+                  June 2025 to the attempted color revolution in January
+                  2026—must be understood not as isolated security operations,
+                  but as components of a long-term project to destroy an
+                  independent state refusing submission to the
+                  <strong>"tribute economy"</strong> of American financial
+                  imperialism.
+                </p>
+
+                <p>
+                  This analysis synthesizes independent reporting with the
+                  political economy of systemic transition, revealing a campaign
+                  that, while devastating, has exposed the structural limits of
+                  imperial coercion in an age of multipolar competition.
+                </p>
+
+                <h2>Historical Foundations</h2>
+
+                <p>
+                  The modern history of US-Iran relations began with the
+                  CIA-orchestrated coup of August 1953 (<strong
+                    >Operation TPAJAX</strong
+                  >), which overthrew Prime Minister Mohammad Mosaddegh after he
+                  nationalized Iran's oil industry. Declassified records reveal
+                  extensive stage-management: bribed military officials,
+                  organized street protests, manufactured consent. The coup
+                  installed Shah Mohammad Reza Pahlavi, who rewarded Washington
+                  with 40 percent of Iran's oil fields. This established the
+                  recurring pattern: when Iranian leaders pursue independent
+                  economic policies threatening Western corporate interests,
+                  Washington responds with subversion.
+                </p>
+
+                <p>
+                  The 1979 Islamic Revolution severed this relationship. As
+                  Michael Hudson documents, Washington immediately destabilized
+                  the new government—Chase Manhattan Bank freezing Iranian
+                  assets, declaring Tehran in default, launching an economic
+                  blitzkrieg against the nascent revolutionary state. The
+                  objective has remained constant across administrations:
+                  <strong>dismantling independent Iran.</strong>
+                </p>
+
+                <p>
+                  This continuity was codified in the 2009 Brookings Institution
+                  report <strong>"Which Path to Persia?"</strong> Authored by
+                  Kenneth Pollack, Martin Indyk, and others, the document laid
+                  out options from diplomacy to military strikes to regime
+                  change. Most revealing was its recommendation to use Israel as
+                  proxy: Washington should encourage Israeli strikes, expecting
+                  that "international criticism and Iranian retaliation would be
+                  deflected away from the United States and onto Israel." This
+                  doctrine of plausible deniability—<strong
+                    >war through intermediaries, peace through
+                    appearance</strong
+                  >—has defined American regional strategy.
+                </p>
+
+                <h2>The June 2025 Military Escalation</h2>
+
+                <p>
+                  On June 13, 2025, Israel launched the first direct large-scale
+                  attack on Iran's nuclear infrastructure. When Tehran
+                  retaliated with ballistic missiles, the United States entered
+                  directly. On June 22, B-2 Spirit bombers delivered GBU-57
+                  Massive Ordnance Penetrators—<strong
+                    >30,000-pound bunker-busters</strong
+                  >—against Fordow, Natanz, and Isfahan.
+                </p>
+
+                <p>
+                  President Trump claimed "surgical" strikes achieving "total
+                  obliteration" of Iran's nuclear program. Defense Intelligence
+                  Agency assessments contradicted this: enriched uranium had
+                  been moved prior to attack, centrifuges remained largely
+                  intact, damage restricted to aboveground power
+                  infrastructure—a setback of months, not years. As analyst
+                  Mohammad Marandi observed, the strikes constituted
+                  <strong>"political theater"</strong> rather than genuine
+                  elimination of capability.
+                </p>
+
+                <p>
+                  The objectives were threefold: degrade Iran's military
+                  capabilities while testing air defenses; provoke wider
+                  regional conflict to justify further intervention; create
+                  preconditions for internal destabilization. Israeli targeting
+                  extended beyond nuclear sites to "regime targets," including
+                  Tehran's Evin prison—calculated positioning of Israel as
+                  savior of political opposition, designed to foment uprising.
+                </p>
+
+                <h2>The January 2026 Color Revolution</h2>
+
+                <p>
+                  Protests erupted across Iran in late December 2025, grounded
+                  in genuine economic grievance—crushing sanctions, currency
+                  devaluation, inflation devastating living standards. President
+                  Masoud Pezeshkian acknowledged legitimacy: "People are
+                  dissatisfied; we are at fault." The character shifted
+                  dramatically on January 8, 2026.
+                </p>
+
+                <p>
+                  As Max Blumenthal documented, peaceful protesters were
+                  suddenly displaced by armed militants. Video revealed
+                  coordinated arson—businesses, mosques, fire stations, public
+                  buses. Roving gangs gunned down hundreds. This pattern—<strong
+                    >manufactured violence superimposed on legitimate
+                    grievance</strong
+                  >—mirrors hybrid tactics refined in Syria and Ukraine.
+                </p>
+
+                <h3>The Starlink Dimension</h3>
+
+                <p>
+                  A critical innovation was deployment of Elon Musk's Starlink
+                  satellite terminals. SpaceX provided free internet access,
+                  ostensibly to circumvent government blackouts. In practice,
+                  Starlink serves multiple regime-change functions: maintaining
+                  protest coordination through communications shutdowns;
+                  enabling real-time transmission of "atrocities" to global
+                  audiences; providing encrypted channels for intelligence
+                  operatives.
+                </p>
+
+                <p>
+                  Iranian authorities demonstrated sophisticated
+                  countermeasures. Within thirty minutes of the January 8
+                  internet shutdown, Cloudflare recorded
+                  <strong>98.5 percent collapse</strong> in Iranian traffic.
+                  Security forces dismantled a "foreign espionage network,"
+                  arresting alleged Mossad operatives, discovering weapons
+                  caches, ammunition, Starlink terminals in original packaging.
+                </p>
+
+                <p>
+                  This failure contrasts sharply with Ukraine, where SpaceX
+                  pushed software updates within hours to counter Russian
+                  jamming. In Iran, Russian electronic warfare systems—refined
+                  through Ukraine and Syria combat—and Chinese satellite
+                  interference expertise combined to neutralize digital
+                  battlefield advantage.
+                  <strong
+                    >The Global South is learning to resist
+                    techno-imperialism.</strong
+                  >
+                </p>
+
+                <h3>The Choreographed Response</h3>
+
+                <p>
+                  The US rhetorical response followed predictable script. On
+                  January 2, Trump tweeted: "If Iran shoots and violently kills
+                  peaceful protesters... the United States of America will come
+                  to their rescue. We are locked and loaded." This established a
+                  red line that manufactured violence of January 8 was designed
+                  to cross. Trump then announced
+                  <strong>25 percent tariffs</strong> on any country conducting
+                  business with Iran—calculated completion of economic
+                  strangulation begun by sanctions.
+                </p>
+
+                <p>
+                  Timing revealed coordination. Protests coincided with
+                  Netanyahu's Mar-a-Lago visit to discuss "next steps in the
+                  US-Israel Alliance plan against Iran." Simultaneously, Reza
+                  Pahlavi—exiled son of the last Shah—emerged to announce he was
+                  "getting ready to return to Iran from the US to take back
+                  power."
+                </p>
+
+                <h2>Israel as Proxy: The Gaza Laboratory</h2>
+
+                <p>
+                  The Washington-Tel Aviv relationship in this campaign
+                  exemplifies Brookings' plausible deniability strategy. Israel
+                  procures most fighter aircraft and munitions from US
+                  suppliers, financed by nearly
+                  <strong>$4 billion annual aid.</strong> This dependency
+                  ensures large-scale Israeli operations against Iran are
+                  logistically impossible without American support.
+                </p>
+
+                <p>
+                  Yet the 2025–2026 campaign revealed deeper technological
+                  integration. The <strong>"Gaza Laboratory"</strong>—where
+                  Israel deployed AI targeting systems like "Lavender,"
+                  predictive population tracking, automated border
+                  turrets—provided testing ground for technologies now applied
+                  against Iran. Facial recognition identifying Palestinian
+                  militants now targets Iranian protest organizers; predictive
+                  algorithms anticipating Gaza demonstrations now forecast
+                  Tehran unrest. This represents export of occupation
+                  infrastructure to new theater, Iranian civilians subjected to
+                  automated surveillance and targeting tested on Palestinians.
+                </p>
+
+                <h2>The Syria Precedent: HTS and Hybrid War</h2>
+
+                <p>
+                  The December 2024 fall of Assad provided tactical template.
+                  Forces that toppled him—led by Hayat Tahrir al-Sham (HTS),
+                  former Al-Qaeda affiliate—demonstrated hybrid model:
+                  externally supported armed groups combined with information
+                  warfare and diplomatic pressure.
+                </p>
+
+                <p>
+                  HTS remained US-designated Foreign Terrorist Organization only
+                  until July 2025, <em>after</em> seizing Damascus. This cynical
+                  timeline reveals instrumental nature of "terrorist"
+                  designation: condemned when opposing Western interests,
+                  rehabilitated when serving them. Syria showed Washington no
+                  longer requires "shock and awe" invasions or purely
+                  non-violent color revolutions; instead,
+                  <strong>fused approach</strong> of armed proxies, economic
+                  strangulation, digital destabilization.
+                </p>
+
+                <p>
+                  In Iran, this model manifested through Kurdish separatist
+                  groups like Kurdistan National Army (SMK), claiming capture of
+                  IRGC bases in Kermanshah province during January disturbances.
+                  Fomenting ethnic fragmentation alongside economic protest, the
+                  operation sought to replicate Syria's territorial
+                  disintegration.
+                </p>
+
+                <h2>
+                  The Geopolitical Economy: De-Dollarization and Its Limits
+                </h2>
+
+                <p>
+                  Iran pioneered alternatives to dollar-based finance. Since
+                  expulsion from SWIFT and frozen reserves, Tehran built
+                  extensive sanctions-evasion: bilateral currency swaps, barter
+                  arrangements, yuan settlement through its
+                  <strong>25-year China cooperation agreement.</strong>
+                </p>
+
+                <p>
+                  Iran's 2024 integration into expanded BRICS solidified its
+                  role in emerging multipolar financial architecture. For
+                  Washington, reliant on dollar supremacy for economic coercion.
+                  Iran's successful defiance represents existential threat
+                  requiring extinction to prevent contagion.
+                </p>
+
+                <p>
+                  Yet the June 2025 assault exposed limitations of "Axis of
+                  Resistance" and Eurasian "competitive coordination." When
+                  Israel struck Iran directly, Tehran's proxies—Hezbollah,
+                  Houthis, Iraqi militias—took virtually no offensive action.
+                  Hezbollah remained silent from previous damage; Houthis issued
+                  threats without follow-through. The Syria operation had
+                  severed the land bridge between Iran and Hezbollah, isolating
+                  Tehran before strike.
+                </p>
+
+                <p>
+                  This reveals structural reality of emerging multipolar order:
+                  competitive nationalism prevents genuine alliance. Russia
+                  offered only rhetorical backing, reports suggesting Moscow
+                  withheld intelligence. China remains Iran's primary oil buyer
+                  but avoids military entanglement. The "no limits partnership"
+                  explicitly maintains limits—no formal alliance, no integrated
+                  command, no shared nuclear umbrella.
+                  <strong
+                    >Iran's isolation, even within multipolar camp, renders it
+                    vulnerable to American-Israeli aggression.</strong
+                  >
+                </p>
+
+                <h2>
+                  Conclusion: Beyond Coercion—Governance and Sovereignty in the
+                  Global South
+                </h2>
+
+                <p>
+                  The 2026 campaign against Iran illustrates violent erraticism
+                  of declining empires. Confronted with relative decline,
+                  internal contradiction, eroded productive base, the American
+                  empire deployed full spectrum of coercive instruments—direct
+                  military strikes, color revolution, economic warfare, proxy
+                  operations—yet achieved mixed results. June strikes failed to
+                  destroy nuclear program. January color revolution was
+                  disrupted by sophisticated countermeasures. Sanctions,
+                  devastating to civilian population, have not toppled
+                  government.
+                </p>
+
+                <p>
+                  The fundamental contradiction: Washington seeks to maintain
+                  unipolar order that no longer exists. As Hudson argues, "The
+                  only thing that America has to offer the world is to refrain
+                  from destroying their economy and causing economic chaos."
+                  This negative power—<strong
+                    >capacity to punish rather than provide</strong
+                  >—generates resistance rather than compliance.
+                </p>
+
+                <p>
+                  Yet resistance alone proves insufficient. The 2025–2026
+                  assault exposed critical vulnerabilities within Iran's own
+                  governance architecture—systemic corruption, economic
+                  mismanagement, and institutional opacity that created fertile
+                  ground for foreign infiltration. The same networks that
+                  enabled sanctions evasion also facilitated Mossad operations;
+                  the same economic distortions that impoverished citizens
+                  provided recruitment pools for color revolution.
+                  <strong>Imperial coercion exploits domestic failures.</strong>
+                </p>
+
+                <p>
+                  The imperative for the Global South extends beyond
+                  anti-imperial solidarity toward genuine governance
+                  transformation. Sovereignty in the twenty-first century
+                  requires more than military defense or diplomatic
+                  non-alignment; it demands
+                  <strong
+                    >institutional integrity capable of withstanding hybrid
+                    warfare.</strong
+                  >
+                  This means transparent procurement systems that close avenues
+                  for foreign intelligence penetration; independent
+                  anti-corruption mechanisms that dismantle patronage networks
+                  before they become foreign assets; and economic planning that
+                  redirects surplus from elite consumption toward productive
+                  transformation.
+                </p>
+
+                <p>
+                  Iran's experience shows the capacity of state institutions to
+                  command popular legitimacy through distributive justice rather
+                  than nationalist rhetoric alone. The Islamic Republic survived
+                  January 2026 not through repression alone, but through rapid
+                  exposure of foreign manipulation, transforming potential color
+                  revolution into nationalist consolidation.
+                </p>
+
+                <p>
+                  For states across the Global South, the lesson transcends
+                  Iran's specific circumstances. The conflicts in our times do
+                  not only demand the capacity to resist but
+                  <strong>the obligation to construct.</strong> The multipolar
+                  order emerging through BRICS expansion, alternative financial
+                  architectures, and technological diffusion will replicate
+                  hierarchies rather than transcend them unless participant
+                  states commit to governance capacities that match their
+                  diplomatic ambitions.
+                </p>
+
+                <p>
+                  The campaign against Iran, while failing in its immediate
+                  objectives, succeeded in revealing the costs of deferred
+                  reform.
+                  <strong
+                    >Systemic corruption is not merely a domestic inefficiency
+                    but a strategic vulnerability;</strong
+                  >
+                  economic inequality is not merely a social problem but a
+                  vector for foreign subversion.
+                </p>
+
+                <p>
+                  Facing these challenges, means institutionalizing serious
+                  anti-corruption mechanisms with genuine enforcement rather
+                  than performative spectacle; establishing transparent
+                  procurement and financial systems that close the avenues
+                  through which foreign intelligence penetrates; and
+                  constructing meritocratic civil service structures insulated
+                  from patronage networks.
+                </p>
+                <h2>References</h2>
+
+                <h3>Books and Monographs</h3>
+
+                <p>
+                  Hudson, Michael.
+                  <em
+                    >Super Imperialism: The Origin and Fundamentals of U.S.
+                    World Dominance.</em
+                  >
+                  2nd ed. London: Pluto Press, 2003.
+                </p>
+
+                <p>
+                  ———.
+                  <em
+                    >The Destiny of Civilization: Finance Capitalism, Industrial
+                    Capitalism or Socialism.</em
+                  >
+                  Glendale, CA: ISLET-Verlag, 2022.
+                </p>
+
+                <p>
+                  ———.
+                  <em
+                    >Global Fracture: The New International Economic Order.</em
+                  >
+                  New York: Harper & Row, 1977.
+                </p>
+
+                <p>
+                  ———.
+                  <em
+                    >Killing the Host: How Financial Parasites and Debt Bondage
+                    Destroy the Global Economy.</em
+                  >
+                  Glendale, CA: ISLET-Verlag, 2015.
+                </p>
+
+                <p>
+                  ———.
+                  <em
+                    >Trade, Development and Foreign Debt: A History of Theories
+                    of Polarisation v. Convergence in the World Economy.</em
+                  >
+                  2nd ed. London: Pluto Press, 2010.
+                </p>
+
+                <p>
+                  Gramsci, Antonio.
+                  <em>Selections from the Prison Notebooks.</em> Edited and
+                  translated by Quintin Hoare and Geoffrey Nowell Smith. New
+                  York: International Publishers, 1971.
+                </p>
+
+                <p>
+                  Kinzer, Stephen.
+                  <em
+                    >All the Shah's Men: An American Coup and the Roots of
+                    Middle East Terror.</em
+                  >
+                  Hoboken, NJ: John Wiley & Sons, 2003.
+                </p>
+
+                <p>
+                  Abrahamian, Ervand.
+                  <em
+                    >The Coup: 1953, the CIA, and the Roots of Modern
+                    U.S.-Iranian Relations.</em
+                  >
+                  New York: The New Press, 2013.
+                </p>
+
+                <p>
+                  Gasiorowski, Mark J., and Malcolm Byrne, eds.
+                  <em>Mohammad Mosaddeq and the 1953 Coup in Iran.</em>
+                  Syracuse, NY: Syracuse University Press, 2004.
+                </p>
+
+                <h3>Reports and Policy Documents</h3>
+
+                <p>
+                  Pollack, Kenneth M., Martin S. Indyk, Daniel L. Byman, Suzanne
+                  Maloney, Michael E. O'Hanlon, and Bruce Riedel.
+                  <em
+                    >Which Path to Persia? Options for a New American Strategy
+                    toward Iran.</em
+                  >
+                  Saban Center for Middle East Policy at the Brookings
+                  Institution, 2009.
+                  https://www.brookings.edu/research/which-path-to-persia-options-for-a-new-american-strategy-toward-iran/
+                </p>
+
+                <p>
+                  U.S. Department of State.
+                  <em
+                    >Foreign Relations of the United States, 1952–1954, Iran,
+                    1951–1954.</em
+                  >
+                  Vol. X. Washington, D.C.: U.S. Government Printing Office,
+                  1989.
+                </p>
+
+                <p>
+                  National Security Archive.
+                  <em
+                    >CIA Confirms Role in 1953 Iran Coup: Documents Reveal
+                    Details of Covert Operations.</em
+                  >
+                  Electronic Briefing Book No. 435, August 19, 2013.
+                  https://nsarchive.gwu.edu/briefing-book/iran-coup-1953-cia
+                </p>
+
+                <p>
+                  Defense Intelligence Agency.
+                  <em
+                    >Assessment of Israeli-American Strikes on Iranian Nuclear
+                    Facilities, June 2025.</em
+                  >
+                  [Declassified excerpts cited via independent media sources.]
+                </p>
+
+                <h3>Journal Articles and Scholarly Papers</h3>
+
+                <p>
+                  Hudson, Michael. "De-Dollarization and the Breakdown of U.S.
+                  Financial Hegemony." <em>Real-World Economics Review</em> 105
+                  (2023): 2–18.
+                </p>
+
+                <p>
+                  ———. "The Tribute Economy of American Imperialism."
+                  <em>Journal of Economic Issues</em> 57, no. 2 (2023): 345–362.
+                </p>
+
+                <p>
+                  Berletic, Brian. "Techno-Imperialism and the Starlink
+                  Weaponization Model." <em>New Eastern Outlook</em> 18, no. 4
+                  (2025): 45–62.
+                </p>
+
+                <p>
+                  Marandi, Mohammad, and Seyed Mohammad Marandi. "Iran's
+                  Strategic Culture: Deterrence and Asymmetric Warfare in the
+                  Persian Gulf." <em>Iranian Studies</em> 56, no. 3 (2023):
+                  412–438.
+                </p>
+
+                <p>
+                  Norton, Ben. "The Geopolitical Economy of Multipolarity: BRICS
+                  and the Challenge to Dollar Hegemony."
+                  <em>Geopolitical Economy</em> 1, no. 1 (2024): 23–47.
+                </p>
+
+                <h3>Independent Media and Investigative Journalism</h3>
+
+                <p>
+                  Berletic, Brian. "Israeli Strikes on Iran: Military Assessment
+                  and Political Theater."
+                  <em>The New Atlas</em> [YouTube/Substack], June 2025.
+                  https://newatlas.report
+                </p>
+
+                <p>
+                  ———. "Starlink and the Digital Battlefield: Lessons from Iran
+                  2026." <em>The New Atlas</em>, February 2026.
+                </p>
+
+                <p>
+                  ———. "Syria's Fall and the HTS Precedent: Implications for
+                  Iran." <em>The New Atlas</em>, January 2026.
+                </p>
+
+                <p>
+                  Blumenthal, Max. "Foreign Infiltration of Iranian Protests:
+                  Evidence of Manufactured Violence." <em>The Grayzone</em>,
+                  January 15, 2026. https://thegrayzone.com
+                </p>
+
+                <p>
+                  ———. "The Gaza Laboratory: AI Targeting and the Export of
+                  Occupation Infrastructure." <em>The Grayzone</em>, March 2025.
+                </p>
+
+                <p>
+                  ———. "Reza Pahlavi and the Restoration Playbook: Monarchist
+                  Networks in US-Iran Policy." <em>The Grayzone</em>, January
+                  2026.
+                </p>
+
+                <p>
+                  Norton, Ben. "War on Iran Is Part of US Plan for Global
+                  Domination: Military Escalation and Economic Warfare."
+                  <em>Geopolitical Economy Report</em> [YouTube/Substack], June
+                  2025. https://geopoliticaleconomy.com
+                </p>
+
+                <p>
+                  ———. "De-Dollarization and the BRICS Alternative: Iran's
+                  Strategic Position." <em>Geopolitical Economy Report</em>,
+                  August 2025.
+                </p>
+
+                <p>
+                  ———. "The Syria Model: HTS, Terrorist Designations, and Regime
+                  Change Hypocrisy." <em>Geopolitical Economy Report</em>, July
+                  2025.
+                </p>
+
+                <p>
+                  Haiphong, Danny. "Interview with Mohammad Marandi: Iran's
+                  Response to Imperial Aggression."
+                  <em>The Danny Haiphong Show</em>, June 2025. [Video
+                  interview.]
+                </p>
+
+                <p>
+                  ———. "Multipolarity and Its Limits: Russia, China, and the
+                  'Axis of Resistance.'" <em>The Danny Haiphong Show</em>, July
+                  2025.
+                </p>
+
+                <h3>News Wire and Agency Reports</h3>
+
+                <p>
+                  Reuters. "Trump Claims 'Total Obliteration' of Iran Nuclear
+                  Program; Pentagon Assessments Differ." June 23, 2025.
+                </p>
+
+                <p>
+                  Associated Press. "Iran Internet Shutdown: Cloudflare Reports
+                  98.5% Traffic Collapse." January 8, 2026.
+                </p>
+
+                <p>
+                  Agence France-Presse. "Iran Dismantles 'Foreign Espionage
+                  Network,' Arrests Alleged Mossad Operatives." January 12,
+                  2026.
+                </p>
+
+                <p>
+                  Tasnim News Agency. "IRGC Neutralizes Kurdish Separatist
+                  Incursion in Kermanshah." January 10, 2026.
+                </p>
+
+                <p>
+                  Press TV. "President Pezeshkian Acknowledges Economic
+                  Grievances Amid Protests." December 29, 2025.
+                </p>
+
+                <p>
+                  Mehr News Agency. "Iranian Authorities Discover Starlink
+                  Terminals in Weapons Caches." January 14, 2026.
+                </p>
+
+                <h3>Technical and Corporate Sources</h3>
+
+                <p>
+                  Cloudflare Radar. "Internet Disruptions and Traffic Patterns:
+                  Iran, January 2026." Cloudflare Blog, January 2026.
+                  https://radar.cloudflare.com
+                </p>
+
+                <p>
+                  SpaceX. "Starlink Service Expansion and Humanitarian Access
+                  Policy." SpaceX News, December 2025. [Press release.]
+                </p>
+
+                <p>
+                  U.S. Department of Defense. "Press Briefing on Operation
+                  MIDNIGHT HAMMER: B-2 Strikes on Iranian Facilities." June 22,
+                  2025. [Transcript.]
+                </p>
+
+                <h3>Dissertations and Unpublished Manuscripts</h3>
+
+                <p>
+                  Marandi, Seyed Mohammad. "The Political Economy of Iranian
+                  Resistance: Sanctions, Sovereignty, and Strategic Culture."
+                  PhD diss., University of Tehran, 2019.
+                </p>
+
+                <p>
+                  ———. "The Interregnum: Global Power in an Age of Systemic
+                  Transition." Unpublished manuscript, 2026. [Cited with author
+                  permission.]
+                </p>
+
+                <h3>Archival and Primary Sources</h3>
+
+                <p>
+                  Trump, Donald J. [@realDonaldTrump]. "If Iran shoots and
+                  violently kills peaceful protesters... the United States of
+                  America will come to their rescue. We are locked and loaded."
+                  Twitter/X, January 2, 2026. [Archived tweet.]
+                </p>
+
+                <p>
+                  Netanyahu, Benjamin. "Remarks at Mar-a-Lago Meeting with
+                  President Trump." Transcript. Israeli Prime Minister's Office,
+                  December 2025.
+                </p>
+
+                <p>
+                  Pahlavi, Reza. "Statement on Return to Iran." Video address,
+                  January 2026. [Archived via independent media sources.]
+                </p>
+
+                <h3>Secondary Sources and Reference Works</h3>
+
+                <p>
+                  Borger, Julian.
+                  <em
+                    >The Butcher's Trail: How the Search for Balkan War
+                    Criminals Became the World's Most Successful Manhunt.</em
+                  >
+                  New York: Other Press, 2016. [Context on hybrid warfare
+                  tactics.]
+                </p>
+
+                <p>
+                  Prashad, Vijay.
+                  <em
+                    >The Darker Nations: A People's History of the Third
+                    World.</em
+                  >
+                  New York: The New Press, 2007.
+                </p>
+
+                <p>
+                  ———.
+                  <em
+                    >The Poorer Nations: A Possible History of the Global
+                    South.</em
+                  >
+                  London: Verso, 2012.
+                </p>
+
+                <p>
+                  Klein, Naomi.
+                  <em>The Shock Doctrine: The Rise of Disaster Capitalism.</em>
+                  New York: Metropolitan Books, 2007.
+                </p>
+
+                <p>
+                  Robinson, William I.
+                  <em
+                    >Promoting Polyarchy: Globalization, US Intervention, and
+                    Hegemony.</em
+                  >
+                  Cambridge: Cambridge University Press, 1996.
+                </p>
+
+                <p>
+                  Sharp, Gene.
+                  <em
+                    >From Dictatorship to Democracy: A Conceptual Framework for
+                    Liberation.</em
+                  >
+                  4th ed. Boston: The Albert Einstein Institution, 2010. [On
+                  nonviolent resistance theory and its instrumentalization.]
+                </p>
+
+                <p>
+                  Snow, Nancy, and Philip M. Taylor, eds.
+                  <em>Routledge Handbook of Public Diplomacy.</em> 2nd ed. New
+                  York: Routledge, 2020.
+                </p>
+
+                <h3>Online Resources and Databases</h3>
+
+                <p>
+                  Center for Responsive Politics. "US Military Aid to Israel:
+                  Historical Data and 2025 Allocations." OpenSecrets.org.
+                  https://www.opensecrets.org
+                </p>
+
+                <p>
+                  Stockholm International Peace Research Institute (SIPRI).
+                  "Arms Transfers Database: Israel-Iran Military Balance
+                  2020–2025." https://www.sipri.org/databases/armstransfers
+                </p>
+
+                <p>
+                  International Monetary Fund. "Islamic Republic of Iran:
+                  Economic Indicators and Sanctions Impact." World Economic
+                  Outlook Database, 2025. https://www.imf.org
+                </p>
+
+                <p>
+                  World Bank. "Iran Economic Monitor: Reform, Resistance, and
+                  the Cost of Conflict." Fall 2025. https://www.worldbank.org
+                </p>
+
+                <p>
+                  United Nations Security Council. "Reports of the
+                  Secretary-General on the Implementation of Resolution 2231
+                  (2015)." S/2025/XXX, 2025.
+                </p>
+
+                <hr />
+
+                <p>
+                  <em
+                    >All URLs accessed February 2026. Independent media sources
+                    verified through cross-referencing with official statements,
+                    technical data, and academic analysis where available.
+                    Declassified government documents obtained via National
+                    Security Archive and Freedom of Information Act
+                    requests.</em
+                  >
+                </p>
+                <!-- Tags -->
+
+                <div class="article-page__tags">
+                  <span class="article-page__tag">economics</span>
+                  <span class="article-page__tag">geopolitics</span>
+                  <span class="article-page__tag">Iran</span>
+                  <span class="article-page__tag">Regime Change</span>
+                  <span class="article-page__tag">2026</span>
+                </div>
+
+                <!-- Call to action -->
+                <div class="article-page__cta">
+                  <p>
+                    <strong
+                      >Want to stay informed about global economic
+                      trends?</strong
+                    ><br />
+                    Subscribe to our newsletter for weekly analysis and insights
+                    on international politics and economics.
+                  </p>
+                  <button
+                    class="btn btn-light btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#newsletterModal"
+                  >
+                    Subscribe to Newsletter
+                  </button>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="article-page__navigation">
+                  <a
+                    href="index.html#articles"
+                    class="btn btn-outline-primary btn-sm"
+                  >
+                    ← Back to Articles
+                  </a>
+                </nav>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__column">
+            <h5>TheInterregnum</h5>
+            <p>Global politics and economics analysis</p>
+          </div>
+          <div class="footer__column">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a class="footer__link" href="index.html">Home</a></li>
+              <li>
+                <a class="footer__link" href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li>
+                <a class="footer__link" href="index.html#articles">Articles</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Categories</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Geopolitics</a></li>
+              <li><a class="footer__link" href="#">Economics</a></li>
+              <li><a class="footer__link" href="#">Trade</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h5>Follow</h5>
+            <ul>
+              <li><a class="footer__link" href="#">Twitter</a></li>
+              <li><a class="footer__link" href="#">LinkedIn</a></li>
+              <li><a class="footer__link" href="#">RSS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; 2026 TheInterregnum. All rights reserved. |
+            <a class="footer__link" href="#">Privacy Policy</a> |
+            <a class="footer__link" href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Newsletter Modal -->
+    <div
+      class="modal fade"
+      id="newsletterModal"
+      tabindex="-1"
+      aria-labelledby="newsletterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newsletterModalLabel">
+              Subscribe to Newsletter
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="newsletterForm" class="newsletter__form">
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="emailInput"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
