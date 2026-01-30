@@ -1,0 +1,178 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// ============================================
+// HOME PAGE STYLES
+// ============================================
+
+// ------- HERO SECTION -------
+.hero {
+  background: linear-gradient(135deg, $idx-primary-dark 0%, darken($idx-primary-dark, 10%) 100%);
+  color: white;
+  padding: $idx-spacing-xxxl $idx-spacing-md;
+  text-align: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-family: $idx-font-family-heading;
+    font-weight: 700;
+    margin-bottom: $idx-spacing-lg;
+    line-height: 1.2;
+
+    @include respond-to('md') {
+      font-size: 2rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: $idx-spacing-xl;
+    opacity: 0.9;
+    line-height: 1.6;
+
+    @include respond-to('md') {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__cta-button {
+    padding: $idx-spacing-md $idx-spacing-xl;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// ------- FEATURED SECTION -------
+.featured {
+  padding: $idx-spacing-xxl 0;
+  background: linear-gradient(180deg, #f8fafc, white);
+
+  &__wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+    @include respond-to('lg') {
+      flex-direction: row;
+      align-items: center; // Vertical center
+    }
+  }
+
+  &__card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08); // Big soft shadow
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.02);
+
+    @include respond-to('lg') {
+      flex-direction: row;
+      min-height: 450px; // Substancial height
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    @include respond-to('lg') {
+      width: 55%; // Image slightly larger
+      height: auto;
+    }
+  }
+
+  &__content {
+    padding: $idx-spacing-xl;
+    @include flex-column;
+    justify-content: center;
+    background-color: white;
+
+    @include respond-to('lg') {
+      width: 45%;
+      padding: 60px; // Generous padding
+    }
+  }
+
+  &__category {
+    display: inline-block;
+    background-color: $idx-accent-color;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: $idx-spacing-md;
+    align-self: flex-start;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-family: $idx-font-family-heading;
+    color: $idx-primary-dark;
+    line-height: 1.2;
+    margin-bottom: $idx-spacing-md;
+  }
+
+  &__excerpt {
+    font-size: 1.1rem;
+    color: lighten($idx-dark-color, 20%);
+    margin-bottom: $idx-spacing-lg;
+  }
+
+  &__meta {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    color: $idx-gray-color;
+    font-weight: 500;
+    margin-bottom: $idx-spacing-lg;
+    
+    // Add separator dot
+    span + span {
+      &::before {
+        content: '•';
+        margin-right: 15px;
+        color: #ccc;
+      }
+    }
+  }
+
+  &__btn {
+    align-self: flex-start;
+    padding: 12px 30px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 2px solid $idx-primary-dark;
+    color: $idx-primary-dark;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $idx-primary-dark;
+      color: white;
+      transform: translateY(-2px);
+    }
+  }
+}

@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact TheInterregnum - Get in touch with our editorial team"
+    />
+    <meta name="author" content="TheInterregnum" />
+
+    <!-- Bootstrap CSS (CDN for GitHub Pages) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS (Compiled from SASS) -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>TheInterregnum | Contact</title>
+  </head>
+
+  <body>
+    <!-- ========================================
+         HEADER & NAVIGATION
+         ======================================== -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark header__navbar">
+        <div class="container-lg">
+          <!-- Brand / Logo -->
+          <a class="navbar-brand header__brand" href="index.html">
+            <span class="header__brand-text">The_Interregnum</span>
+          </a>
+
+          <!-- Toggler for Mobile -->
+          <button
+            class="navbar-toggler header__toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto header__menu">
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link" href="index.html#articles"
+                  >Articles</a
+                >
+              </li>
+              <li class="nav-item header__menu-item">
+                <a
+                  class="nav-link header__menu-link"
+                  href="index.html#categories"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item header__menu-item">
+                <a class="nav-link header__menu-link active" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ========================================
+         MAIN CONTENT
+         ======================================== -->
+    <main class="main">
+      <!-- HERO / INTRO SECTION -->
+      <section class="mt-5 mb-5">
+        <div class="container-lg">
+          <div class="section-header text-center">
+            <h1 class="section-header__title">Get in Touch</h1>
+            <p class="section-header__subtitle">
+              We welcome inquiries, tips, and feedback
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT CONTENT -->
+      <section class="mb-6">
+        <div class="container-lg">
+          <div class="row g-5">
+            <!-- Contact Info Column -->
+            <div class="col-lg-5">
+              <div class="pe-lg-5">
+                <h2 class="mb-4">Contact Information</h2>
+                <p class="mb-5 text-muted">
+                  For general inquiries, press releases, or secure tips, please
+                  use the appropriate channel below. We strive to respond to all
+                  legitimate queries within 48 hours.
+                </p>
+
+                <div class="mb-4">
+                  <h5>📧 General Inquiries</h5>
+                  <p>
+                    <a
+                      href="mailto:info@theinterregnum.com"
+                      class="text-decoration-none"
+                      >info@theinterregnum.com</a
+                    >
+                  </p>
+                </div>
+
+                <div class="mb-4">
+                  <h5>🔒 Secure Tips (Signal/PGP)</h5>
+                  <p class="text-muted small">
+                    For sensitive information, use our PGP key or contact us via
+                    Signal.
+                  </p>
+                  <p><strong>Signal:</strong> +1 (555) 012-3456</p>
+                </div>
+
+                <div class="mb-4">
+                  <h5>📍 Office</h5>
+                  <p class="text-muted">
+                    The Interregnum<br />
+                    123 Journalism Row<br />
+                    Global City, GC 10001
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Form Column -->
+            <div class="col-lg-7">
+              <div class="p-4 bg-light rounded-3">
+                <h3 class="h4 mb-4">Send us a Message</h3>
+                <form>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="inputName" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName"
+                        placeholder="Your Name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputEmail" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="inputEmail"
+                        placeholder="name@example.com"
+                        required
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="inputSubject" class="form-label"
+                        >Subject</label
+                      >
+                      <select class="form-select" id="inputSubject">
+                        <option selected>General Inquiry</option>
+                        <option value="1">Editorial Feedback</option>
+                        <option value="2">Report a Correction</option>
+                        <option value="3">Pitch a Story</option>
+                        <option value="4">Technical Issue</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="inputMessage" class="form-label"
+                        >Message</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="inputMessage"
+                        rows="6"
+                        placeholder="Your message..."
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="gridCheck"
+                        />
+                        <label
+                          class="form-check-label small text-muted"
+                          for="gridCheck"
+                        >
+                          I agree to the privacy policy and understand that The
+                          Interregnum protects source confidentiality.
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                      <button
+                        type="button"
+                        class="btn btn-primary btn-lg w-100"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION (Optional but good for contact pages) -->
+      <section class="py-5 bg-white mb-5 border-top">
+        <div class="container-lg">
+          <h2 class="h3 mb-4 text-center">Frequently Asked Questions</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      How do I pitch an article?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      We accept pitches for investigative pieces and analytical
+                      essays. Please send a 200-word abstract and writing
+                      samples to <strong>pitches@theinterregnum.com</strong>.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Can I repost your articles?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion"
+                  >
+                    <div class="accordion-body">
+                      Yes! All our content is licensed under
+                      <strong>Creative Commons CC BY-NC-SA 4.0</strong>. You are
+                      free to republish for non-commercial purposes as long as
+                      you credit The Interregnum and link back to the original
+                      article.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+      <div class="container-lg">
+        <div class="footer__grid">
+          <!-- Column 1: About -->
+          <div class="footer__column footer__column--about">
+            <h3 class="footer__title">TheInterregnum</h3>
+            <p class="footer__description">
+              Your trusted source for analysis on global politics and economics
+            </p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" title="Twitter"
+                >Twitter</a
+              >
+              <a href="#" class="footer__social-link" title="LinkedIn"
+                >LinkedIn</a
+              >
+              <a href="#" class="footer__social-link" title="Facebook"
+                >Facebook</a
+              >
+            </div>
+          </div>
+
+          <!-- Column 2: Categories -->
+          <div class="footer__column">
+            <h4 class="footer__subtitle">Categories</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Geopolitics</a></li>
+              <li><a href="#" class="footer__link">Economics</a></li>
+              <li><a href="#" class="footer__link">Trade</a></li>
+              <li><a href="#" class="footer__link">Finance</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Resources -->
+          <div class="footer__column">
+            <h4 class="footer__subtitle">Resources</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Blog</a></li>
+              <li><a href="#" class="footer__link">Research</a></li>
+              <li><a href="#" class="footer__link">Downloads</a></li>
+              <li><a href="#" class="footer__link">Glossary</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Legal -->
+          <div class="footer__column">
+            <h4 class="footer__subtitle">Legal</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer__link">Terms of Service</a></li>
+              <li><a href="#" class="footer__link">Disclaimer</a></li>
+              <li>
+                <a href="contact.html" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2026 TheInterregnum. All rights reserved.
+          </p>
+          <p class="footer__credit">
+            Crafted with attention to detail for informed readers
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (CDN for GitHub Pages) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
