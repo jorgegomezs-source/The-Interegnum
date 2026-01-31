@@ -313,3 +313,5 @@ if (typeof module !== 'undefined' && module.exports) {
     isInViewport,
   };
 }
+
+// Conceptual map animation
